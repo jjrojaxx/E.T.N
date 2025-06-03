@@ -8,7 +8,7 @@
                 </NuxtLink>
                 <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                     <div class="flex justify-center items-center gap-3">
-                        <a href="#">
+                        <a href="https://www.facebook.com/profile.php?id=61576302114497&rdid=Vsy7PpkDtqLICZSw&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16ShF2pzJW%2F#">
                             <svg class="size-7 hover:text-[#250e8f] transition-all text-gray-800 dark:text-white" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                 viewBox="0 0 24 24">
@@ -17,7 +17,7 @@
                                     clip-rule="evenodd" />
                             </svg>
                         </a>
-                        <a href="#">
+                        <a href="https://www.instagram.com/e.t.c.n_manuelatanasiogirardot?igsh=MWtxbHhlaGF5aXM0cw%3D%3D">
                             <svg class="size-7 hover:text-[#250e8f] transition-all text-gray-800 dark:text-white mt-0.4" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24">
@@ -26,7 +26,7 @@
                                     clip-rule="evenodd" />
                             </svg>
                         </a>
-                        <a href="#">
+                        <a href="https://www.tiktok.com/@e.t.n.manuel.atanasio?_t=ZM-8wt6LM8p46P&_r=1">
                             <svg class="size-5.5 hover:text-[#250e8f] transition-all text-gray-800 dark:text-white" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 449.45 515.38">
@@ -51,18 +51,14 @@
                     <ul
                         class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-950 md:dark:bg-gray-950 dark:border-gray-700">
                         <li>
-                            <a href="#"
+                            <a  href="/"
                                 class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-[#150484] transition-all"
                                 aria-current="page">Inicio</a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a  href="/sobre-nosotros"
                                 class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#250e8f] md:dark:hover:text-[#150484] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition-all">Sobre
                                 nosotros</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#150484] md:dark:hover:text-[#150484] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition-all">Evaluacion</a>
                         </li>
                         <li>
                             <a href="#"
