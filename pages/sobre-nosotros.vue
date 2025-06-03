@@ -10,21 +10,6 @@
                     Formamos personas desde el nivel inicial hasta el secundario con un enfoque integral, moderno y
                     humano.
                 </p>
-                <div class="flex flex-row">
-                    <a href="#formulario"
-                        class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-white bg-[#150484] rounded-lg hover:bg-[#041184]  focus:ring-4">
-                        Solicitar Información
-                        <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd"
-                                d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 00-1.414 1.414L13.586 9H3a1 1 0 100 2h10.586l-3.293 3.293a1 1 0 000 1.414z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </a>
-                    <a href="#nosotros"
-                        class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white border border-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-white dark:hover:bg-[#041184] dark:hover:border-[#041184] dark:focus:ring-gray-800">
-                        Conocé más
-                    </a>
-                </div>
             </div>
         </div>
     </section>
@@ -40,20 +25,8 @@
                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg"
                 alt="dashboard image">
             <div class="mt-4 md:mt-0">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Let's create more
-                    tools and ideas that brings us together.</h2>
-                <p class="mb-6 font-normal text-gray-700 md:text-lg">Flowbite helps you connect with
-                    friends and communities of people who share your interests. Connecting with your friends and family
-                    as well as discovering new ones is easy with features like Groups.</p>
-                <a href="#formulario"
-                    class="mt-6 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-white bg-[#150484] rounded-lg hover:bg-[#041184]  focus:ring-4">
-                    Leer mas
-                    <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd"
-                            d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 00-1.414 1.414L13.586 9H3a1 1 0 100 2h10.586l-3.293 3.293a1 1 0 000 1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </a>
+                <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Nuestra Historia</h2>
+                <p class="mb-6 font-normal text-gray-700 md:text-lg">La E.T.C. "Manuel Atanasio Girardot" ha estado formando técnicos profesionales integrales en Maracay, Aragua, Venezuela, desde su fundación el 29 de enero de 1973. Nuestro objetivo es proporcionar una educación de calidad que combine una sólida base técnica con valores morales y culturales, preparando a los estudiantes para el éxito profesional y para ser ciudadanos críticos y comprometidos.</p>
             </div>
         </div>
     </section>
@@ -62,20 +35,8 @@
         <div
             class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
             <div class="mt-4 md:mt-0">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">Let's create more
-                    tools and ideas that brings us together.</h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">Flowbite helps you connect with
-                    friends and communities of people who share your interests. Connecting with your friends and family
-                    as well as discovering new ones is easy with features like Groups.</p>
-                <a href="#formulario"
-                    class="mt-6 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-white bg-[#150484] rounded-lg hover:bg-[#041184]  focus:ring-4">
-                    Leer mas
-                    <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd"
-                            d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 00-1.414 1.414L13.586 9H3a1 1 0 100 2h10.586l-3.293 3.293a1 1 0 000 1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </a>
+                <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 ">Nuestra Misión</h2>
+                <p class="mb-6 font-normal text-gray-500 md:text-lg">Formar profesionales técnicos integrales en el área de comercio y servicios administrativos, mediante una educación de calidad que combine sólidos conocimientos técnicos con el fomento de valores morales y culturales, preparando a nuestros estudiantes para su exitosa inserción laboral y su contribución activa como ciudadanos críticos y comprometidos con la sociedad. </p>
             </div>
             <img class="w-full dark:hidden"
                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
@@ -84,6 +45,22 @@
                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg"
                 alt="dashboard image">
 
+        </div>
+    </section>
+
+        <section class="bg-gray-950">
+        <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+            <img class="w-full dark:hidden"
+                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
+                alt="dashboard image">
+            <img class="w-full hidden dark:block"
+                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg"
+                alt="dashboard image">
+            <div class="mt-4 md:mt-0">
+                <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Nuestra Visión</h2>
+                <p class="mb-6 font-normal text-gray-700 md:text-lg">Ser la institución técnica de referencia en Maracay y Aragua, reconocida por formar profesionales integrales con excelencia académica y sólidos valores, preparados para afrontar con éxito los desafíos del futuro y contribuir significativamente al desarrollo de nuestra sociedad.</p>
+            </div>
         </div>
     </section>
 
