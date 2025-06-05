@@ -17,12 +17,8 @@
     <section class="bg-gray-950">
         <div
             class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-            <img class="w-full dark:hidden rounded-xl"
-                src="../assets/img/foto1.jpg"
-                alt="dashboard image">
-            <img class="w-full hidden dark:block rounded-xl"
-                src="../assets/img/foto1.jpg"
-                alt="dashboard image">
+            <img class="w-full dark:hidden rounded-xl" src="../../assets/img/foto1.jpg" alt="dashboard image">
+            <img class="w-full hidden dark:block rounded-xl" src="../../assets/img/foto1.jpg" alt="dashboard image">
             <div class="mt-4 md:mt-0">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">¿Que es la Telematica?
                 </h2>
@@ -45,7 +41,8 @@
                     <li>🖍️ Garantizar la Seguridad de la Información y las Comunicaciones</li>
                     <li>🖍️ Investigar e Innovar en Tecnologías Emergentes</li>
                 </ul>
-                <h3 class="mt-4 text-2xl tracking-tight font-bold text-gray-900 mb-4">Áreas de Estudio Clave / Asignaturas Principales</h3>
+                <h3 class="mt-4 text-2xl tracking-tight font-bold text-gray-900 mb-4">Áreas de Estudio Clave /
+                    Asignaturas Principales</h3>
                 <ul>
                     <li>📚 Tecnología</li>
                     <li>📚 Proyectos de Economía Socio productivo</li>
@@ -55,8 +52,7 @@
                     <li>📚 Algebra</li>
                 </ul>
             </div>
-            <img class="w-full dark:hiddenrounded-xl rounded-xl "
-                src="../assets/img/foto2.jpg"
+            <img class="w-full dark:hiddenrounded-xl rounded-xl " src="../../assets/img/foto2.jpg"
                 alt="dashboard image">
         </div>
     </section>
@@ -64,21 +60,20 @@
     <section class="bg-gray-950">
         <div
             class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-            <img class="w-full dark:hidden rounded-xl"
-                src="../assets/img/foto4.jpg"
-                alt="dashboard image">
-            <img class="w-full rounded-xl hidden dark:block"
-                src="../assets/img/foto4.jpg"
-                alt="dashboard image">
+            <img class="w-full dark:hidden rounded-xl" src="../../assets/img/foto4.jpg" alt="dashboard image">
+            <img class="w-full rounded-xl hidden dark:block" src="../../assets/img/foto4.jpg" alt="dashboard image">
             <div class="mt-4 md:mt-0">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Perfil del Estudiante
                 </h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">El perfil de un estudiante de telemática se caracteriza por una combinación de intereses, habilidades y aptitudes que le permiten desenvolverse con éxito en este campo multidisciplinario. La telemática, que fusiona la informática y las telecomunicaciones, requiere un conjunto específico de cualidades en sus estudiantes.</p>
+                <p class="mb-6 font-normal text-gray-500 md:text-lg">El perfil de un estudiante de telemática se
+                    caracteriza por una combinación de intereses, habilidades y aptitudes que le permiten desenvolverse
+                    con éxito en este campo multidisciplinario. La telemática, que fusiona la informática y las
+                    telecomunicaciones, requiere un conjunto específico de cualidades en sus estudiantes.</p>
             </div>
         </div>
     </section>
 
-        <section class="bg-white">
+    <section class="bg-white">
         <div
             class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
             <div class="mt-4 md:mt-0">
@@ -90,21 +85,32 @@
                     <li>🖍️ Ingeniería en Sistemas de Información</li>
                 </ul>
             </div>
-            <img class="w-full dark:hidden rounded-xl"
-                src="../assets/img/foto3.jpg"
-                alt="dashboard image">
-            <img class="w-full hidden dark:block rounded-xl"
-                src="../assets/img/foto3.jpg"
-                alt="dashboard image">
+            <img class="w-full dark:hidden rounded-xl" src="../../assets/img/foto3.jpg" alt="dashboard image">
+            <img class="w-full hidden dark:block rounded-xl" src="../../assets/img/foto3.jpg" alt="dashboard image">
 
         </div>
     </section>
 
+    <section class="bg-gray-950">
+        <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+            <img class="w-full dark:hidden rounded-xl" src="../../assets/img/foto4.jpg" alt="dashboard image">
+            <img class="w-full rounded-xl hidden dark:block" src="../../assets/img/foto4.jpg" alt="dashboard image">
+            <div class="mt-4 md:mt-0">
+                <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Perfil del Estudiante
+                </h2>
+                <p class="mb-6 font-normal text-gray-500 md:text-lg">El perfil de un estudiante de telemática se
+                    caracteriza por una combinación de intereses, habilidades y aptitudes que le permiten desenvolverse
+                    con éxito en este campo multidisciplinario. La telemática, que fusiona la informática y las
+                    telecomunicaciones, requiere un conjunto específico de cualidades en sus estudiantes.</p>
+            </div>
+        </div>
+    </section>
 
 </template>
 <style scoped>
 .bg-img {
-    background-image: url('../assets/img/bg-hero.jpg');
+    background-image: url('../../assets/img/bg-hero.jpg');
     background-size: cover;
     background-position: center;
 }

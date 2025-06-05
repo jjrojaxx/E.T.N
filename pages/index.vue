@@ -121,6 +121,7 @@ const images = [
                         d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
                         clip-rule="evenodd"></path>
                 </svg>
+
             </div>
             <h3 class="mb-2 text-xl font-bold text-gray-900">Electricidad</h3>
             <p class="text-gray-500 dark:text-gray-700 text-center">Carrera técnica enfocada en la instalación,
@@ -161,7 +162,7 @@ const images = [
                 actividades turísticas, impulsando el desarrollo sostenible y la experiencia cultural de los destinos.
             </p>
         </div>
-        <a href="/telematica"
+        <a href="blog/telematica"
             class="flex flex-col items-center hover:scale-105 duration-300 p-4 rounded-2xl hover:bg-blue-300 transition-all cursor-pointer">
             <div class=" text-center flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#150484]
             lg:h-12 lg:w-12">
@@ -175,6 +176,37 @@ const images = [
             <h3 class="mb-2 text-xl font-bold text-gray-900">Telematica</h3>
             <p class="text-gray-500 dark:text-gray-700 text-center">Carrera que combina telecomunicaciones y tecnologías
                 de la información para diseñar, implementar y mantener redes y sistemas de comunicación eficientes</p>
+        </a>
+
+        <a href="/blog/telematica"
+            class="flex flex-col items-center hover:scale-105 duration-300 p-4 rounded-2xl hover:bg-blue-300 transition-all cursor-pointer">
+            <div class=" text-center flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#150484]
+            lg:h-12 lg:w-12">
+                <svg class="w-5 h-5 text-white lg:w-6 lg:h-6" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
+                    stroke-width="3" stroke="#ffffff" fill="none">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <circle cx="33.69" cy="32" r="24.99" stroke-linecap="round"></circle>
+                        <polygon points="33.43 20.18 22.84 27.88 26.89 40.32 39.98 40.32 44.02 27.88 33.43 20.18"
+                            stroke-linecap="round"></polygon>
+                        <polyline points="40.41 7.92 33.43 13.48 26.59 8.04" stroke-linecap="round"></polyline>
+                        <line x1="33.43" y1="20.18" x2="33.43" y2="13.48" stroke-linecap="round"></line>
+                        <polyline points="58.68 32 50.6 25.92 53.78 17.14" stroke-linecap="round"></polyline>
+                        <polyline points="40.72 55.99 44.02 46.39 54.05 46.49" stroke-linecap="round"></polyline>
+                        <polyline points="25.61 55.65 22.55 46.39 13.26 46.39" stroke-linecap="round"></polyline>
+                        <polyline points="8.7 32 15.99 25.97 13.16 17.76" stroke-linecap="round"></polyline>
+                        <line x1="22.84" y1="27.88" x2="15.99" y2="25.97" stroke-linecap="round"></line>
+                        <line x1="26.89" y1="40.32" x2="22.55" y2="46.39" stroke-linecap="round"></line>
+                        <line x1="39.98" y1="40.32" x2="44.02" y2="46.39" stroke-linecap="round"></line>
+                        <line x1="44.02" y1="27.89" x2="50.6" y2="25.92" stroke-linecap="round"></line>
+                    </g>
+                </svg>
+            </div>
+            <h3 class="mb-2 text-xl font-bold text-gray-900 text-center">Promotor de entrenamiento deportivo</h3>
+            <p class="text-gray-500 dark:text-gray-700 text-center">Carrera orientada a la preparación física,
+                planificación de rutinas y promoción de hábitos saludables, formando profesionales capaces de guiar y
+                motivar en el ámbito del deporte y la actividad física.</p>
         </a>
         </div>
         </div>
@@ -219,14 +251,20 @@ const images = [
                     docentes, reflejando el compromiso con la formación integral y el futuro de Venezuela.</p>
             </div>
             <div class="grid grid-cols-4 gap-4">
-                <img src="../public/img/carrusel-1.jpg" alt="" class="w-full h-auto rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
-                <img src="../public/img/carrusel-2.jpg" alt="" class="w-full h-auto rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
-                <img src="../public/img/carrusel-3.jpg" alt="" class="w-full h-auto rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
-                <img src="../public/img/carrusel-4.jpg" alt="" class="w-full h-auto rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
+                <img src="../public/img/carrusel-1.jpg" alt=""
+                    class="w-full h-auto rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
+                <img src="../public/img/carrusel-2.jpg" alt=""
+                    class="w-full h-auto rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
+                <img src="../public/img/carrusel-3.jpg" alt=""
+                    class="w-full h-auto rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
+                <img src="../public/img/carrusel-4.jpg" alt=""
+                    class="w-full h-auto rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
             </div>
             <div class="grid grid-cols-2 grid-rows-1 gap-4">
-                <img src="../public/img/carrusel-5.jpg" alt="" class="w-full h-80 rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
-                <img src="../public/img/carrusel-1.jpg" alt="" class="w-full h-80 rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
+                <img src="../public/img/carrusel-5.jpg" alt=""
+                    class="w-full h-80 rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
+                <img src="../public/img/carrusel-1.jpg" alt=""
+                    class="w-full h-80 rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
             </div>
         </div>
     </section>
