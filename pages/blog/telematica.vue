@@ -1,14 +1,16 @@
 <script setup></script>
 <template>
     <!-- Hero de pagina -->
-    <section class="bg-white dark:bg-gray-950 mt-23">
-        <div class="max-w-screen px-4 py-42 mx-auto bg-img">
+    <section class="bg-img mt-23 ">
+        <div class="max-w-screen px-4 py-42 mx-auto">
             <div class="flex flex-col items-center">
-                <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">Telematica
-                </h1>
-                <p class="text-center max-w-2xl mb-6 font-normal text-white lg:mb-8 md:text-lg lg:text-xl">La telemática
-                    es un campo interdisciplinario que combina las tecnologías de las telecomunicaciones con la
-                    informática para gestionar y transmitir información de manera eficiente</p>
+                <h1 class="mb-4 text-3xl font-bold md:text-5xl lg:text-6xl gradient-text">Impulsa el
+                    futuro digital con Telemática</h1>
+                <p class="text-center max-w-2xl mb-6 font-normal gradient-p lg:mb-8 md:text-lg lg:text-xl">Explora
+                    una
+                    carrera que une redes, telecomunicaciones y tecnología. Pon a prueba lo aprendido con un test
+                    interactivo y descubre si estás listo para transformar el mundo digital.</p>
+                <a href="test/telematica" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-white bg-[#150484] rounded-lg hover:bg-[#041184]  focus:ring-4">Relizar Test</a>
             </div>
         </div>
     </section>
@@ -110,25 +112,57 @@
 </template>
 <style scoped>
 .bg-img {
-    background-image: url('../../assets/img/bg-hero.jpg');
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(135deg,
+            #0c0c3c 0%,
+            #030712 20%,
+            #4a4a4a 40%,
+            #ffffff 60%,
+            #3a2ba8 80%,
+            #17057f 100%);
+    background-size: 300% 300%;
+    animation: pulseGradient 10s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
 }
 
-.bg-img::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.897);
-    /* negro con opacidad */
-    z-index: 1;
+@keyframes pulseGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
-.bg-img>* {
-    position: relative;
-    z-index: 2;
+.gradient-text {
+    background: linear-gradient(135deg,
+            #ffffff,
+            #ffffff,
+            #02050c,
+            #06061b);
+    background-size: 300% 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    line-height: 80px;
+    animation: pulseGradient 10s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
 }
+.gradient-p {
+    background: linear-gradient(135deg,
+            #ffffff,
+            #ffffff,
+            #02050c,
+            #06061b);
+    background-size: 300% 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: pulseGradient 10s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+}
+
 </style>
