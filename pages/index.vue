@@ -58,7 +58,7 @@ const images = [
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
             <div class="mb-8 lg:mb-16">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-center text-gray-900">Conoce las Menciones que
-                    ofrece la <br />E.T.N Manuel Atanasio Girardot</h2>
+                    ofrece la <br />E.T.C.N Manuel Atanasio Girardot</h2>
                 <p class="text-gray-500 sm:text-xl dark:text-gray-600 text-center px-10">Las menciones que ofrece
                     nuestra escuela técnica es una oportunidad para todo joven que desee alcanzar una gran profesión y
                     tener un futuro profesional para ejercer, por eso he aquí donde encontrarás los nombres y la
@@ -221,8 +221,8 @@ const images = [
         <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
             <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                 <h2 class="mb-4  text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Conoce la historia de
-                    nuestra escuela E.T.N “Manuel Atanasio Girardot</h2>
-                <p class="mb-4"> La E.T.C. "Manuel Atanasio Girardot", fundada el 29 de enero de 1973, busca formar
+                    nuestra escuela E.T.C.N “Manuel Atanasio Girardot</h2>
+                <p class="mb-4"> La E.T.C.N "Manuel Atanasio Girardot", fundada el 29 de enero de 1973, busca formar
                     tecnólogos eficientes con valores morales y culturales. Con el apoyo del Ministerio de Educación,
                     directivos, docentes y empresarios, la institución ha reestructurado su especialidad técnica para
                     ofrecer una formación integral. El objetivo es que los estudiantes desarrollen conocimientos
@@ -251,7 +251,7 @@ const images = [
                 <h2 class="mb-4 text-center text-4xl tracking-tight font-bold text-gray-900">Un vistazo a algunos de
                     nuestros momentos</h2>
                 <p class="text-center mb-6 text-gray-700 font-normal">Sumérgete en nuestra galería y revive la historia,
-                    los logros y la vibrante vida de la E.T.C. "Manuel Atanasio Girardot". Cada imagen captura un
+                    los logros y la vibrante vida de la E.T.C.N "Manuel Atanasio Girardot". Cada imagen captura un
                     pedacito de nuestra comunidad, desde eventos memorables hasta el día a día de nuestros estudiantes y
                     docentes, reflejando el compromiso con la formación integral y el futuro de Venezuela.</p>
             </div>
