@@ -64,155 +64,179 @@ const images = [
                     tener un futuro profesional para ejercer, por eso he aquí donde encontrarás los nombres y la
                     información de cada una de ellas.</p>
             </div>
-            <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 justify-center">
-                <div class="flex flex-col items-center hover:scale-105 duration-300 p-4 rounded-2xl hover:bg-blue-300 transition-all cursor-pointer"">
-                    <div class=" flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12
-                    lg:w-12 dark:bg-primary-900 bg-[#150484]">
-                    <svg class="w-5 h-5 lg:w-6 lg:h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        width="24" height="24" fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M8 17.345a4.76 4.76 0 0 0 2.558 1.618c2.274.589 4.512-.446 4.999-2.31.487-1.866-1.273-3.9-3.546-4.49-2.273-.59-4.034-2.623-3.547-4.488.486-1.865 2.724-2.899 4.998-2.31.982.236 1.87.793 2.538 1.592m-3.879 12.171V21m0-18v2.2" />
-                    </svg>
-                </div>
-                <h3 class="mb-2 text-xl font-bold text-gray-900">Administracion</h3>
-                <p class="text-gray-500 dark:text-gray-700 text-center">Carrera enfocada en la gestión eficiente de
-                    recursos, liderazgo organizacional y toma de decisiones estratégicas para el éxito empresarial.</p>
-            </div>
-            <a href="blog/aduana"
-            class="flex flex-col items-center hover:scale-105 duration-300 p-4 rounded-2xl hover:bg-blue-300 transition-all cursor-pointer">
-            <div class="flex flex-col items-center hover:scale-105 duration-300 p-4 rounded-2xl hover:bg-blue-300 transition-all cursor-pointer">
 
-                    <div
-                        class=" flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12
-                bg-[#150484]">
-                <svg class="w-5 h-5 text-white lg:w-6 lg:h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                    width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                    <path fill-rule="evenodd"
-                        d="M6 2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 1 0 0-2h-2v-2h2a1 1 0 0 0 1-1V4a2 2 0 0 0-2-2h-8v16h5v2H7a1 1 0 1 1 0-2h1V2H6Z"
-                        clip-rule="evenodd" />
-                </svg>
-            </div>
-            <h3 class="mb-2 text-xl font-bold text-gray-900">Aduana</h3>
-            <p class="text-gray-500 dark:text-gray-700 text-center">Carrera orientada al control, gestión y regulación
-                del comercio exterior, garantizando el cumplimiento de normativas aduaneras y fiscales.</p>
-        
+            <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 justify-center">
+                <a href="blog/administracion">
+                    <div class="flex flex-col items-center hover:scale-105 duration-300 p-4 rounded-2xl hover:bg-blue-300 transition-all cursor-pointer"">
+                    <div class=" flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12
+                        lg:w-12 dark:bg-primary-900 bg-[#150484]">
+                        <svg class="w-5 h-5 lg:w-6 lg:h-6 text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 17.345a4.76 4.76 0 0 0 2.558 1.618c2.274.589 4.512-.446 4.999-2.31.487-1.866-1.273-3.9-3.546-4.49-2.273-.59-4.034-2.623-3.547-4.488.486-1.865 2.724-2.899 4.998-2.31.982.236 1.87.793 2.538 1.592m-3.879 12.171V21m0-18v2.2" />
+                        </svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold text-gray-900">Administracion</h3>
+                    <p class="text-gray-500 dark:text-gray-700 text-center">Carrera enfocada en la gestión eficiente de
+                        recursos, liderazgo organizacional y toma de decisiones estratégicas para el éxito empresarial.
+                    </p>
             </div>
             </a>
-        <div
-            class="flex flex-col items-center hover:scale-105 duration-300 p-4 rounded-2xl hover:bg-blue-300 transition-all cursor-pointer">
-            <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 bg-[#150484]">
-                <svg class="w-5 h-5 text-white lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
-                        clip-rule="evenodd"></path>
-                    <path
-                        d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z">
-                    </path>
-                </svg>
-            </div>
-            <h3 class="mb-2 text-xl font-bold text-gray-900">Contabilidad</h3>
-            <p class="text-gray-500 dark:text-gray-700 text-center">Carrera centrada en el registro, análisis e
-                interpretación de la información financiera para la toma de decisiones en organizaciones públicas y
-                privadas.</p>
-        </div>
-        <div
-            class="flex flex-col items-center hover:scale-105 duration-300 p-4 rounded-2xl hover:bg-blue-300 transition-all cursor-pointer">
-            <div class=" flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12
+            <a href="blog/aduana"
+                class="flex flex-col items-center hover:scale-105 duration-300 p-4 rounded-2xl hover:bg-blue-300 transition-all cursor-pointer">
+                <div
+                    class="flex flex-col items-center hover:scale-105 duration-300 p-4 rounded-2xl hover:bg-blue-300 transition-all cursor-pointer">
+
+                    <div class=" flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12
+                bg-[#150484]">
+                        <svg class="w-5 h-5 text-white lg:w-6 lg:h-6" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M6 2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 1 0 0-2h-2v-2h2a1 1 0 0 0 1-1V4a2 2 0 0 0-2-2h-8v16h5v2H7a1 1 0 1 1 0-2h1V2H6Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold text-gray-900">Aduana</h3>
+                    <p class="text-gray-500 dark:text-gray-700 text-center">Carrera orientada al control, gestión y
+                        regulación
+                        del comercio exterior, garantizando el cumplimiento de normativas aduaneras y fiscales.</p>
+
+                </div>
+            </a>
+            <a href="blog/contabilidad">
+                <div
+                    class="flex flex-col items-center hover:scale-105 duration-300 p-4 rounded-2xl hover:bg-blue-300 transition-all cursor-pointer">
+                    <div
+                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 bg-[#150484]">
+                        <svg class="w-5 h-5 text-white lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                            <path
+                                d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold text-gray-900">Contabilidad</h3>
+                    <p class="text-gray-500 dark:text-gray-700 text-center">Carrera centrada en el registro, análisis e
+                        interpretación de la información financiera para la toma de decisiones en organizaciones
+                        públicas y
+                        privadas.</p>
+                </div>
+            </a>
+            <a href="blog/electricidad">
+                <div
+                    class="flex flex-col items-center hover:scale-105 duration-300 p-4 rounded-2xl hover:bg-blue-300 transition-all cursor-pointer">
+                    <div class=" flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12
             lg:w-12 bg-[#150484]">
-                <svg class="w-5 h-5 text-white lg:w-6 lg:h-6 " fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
-                        clip-rule="evenodd"></path>
-                </svg>
+                        <svg class="w-5 h-5 text-white lg:w-6 lg:h-6 " fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                                clip-rule="evenodd"></path>
+                        </svg>
 
-            </div>
-            <h3 class="mb-2 text-xl font-bold text-gray-900">Electricidad</h3>
-            <p class="text-gray-500 dark:text-gray-700 text-center">Carrera técnica enfocada en la instalación,
-                mantenimiento y supervisión de sistemas eléctricos, promoviendo la seguridad y eficiencia energética.
-            </p>
-        </div>
-        <div
-            class="flex flex-col items-center hover:scale-105 duration-300 p-4 rounded-2xl hover:bg-blue-300 transition-all cursor-pointer">
-            <div class=" flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold text-gray-900">Electricidad</h3>
+                    <p class="text-gray-500 dark:text-gray-700 text-center">Carrera técnica enfocada en la instalación,
+                        mantenimiento y supervisión de sistemas eléctricos, promoviendo la seguridad y eficiencia
+                        energética.
+                    </p>
+                </div>
+            </a>
+            <a href="blog/economia-digital">
+                <div
+                    class="flex flex-col items-center hover:scale-105 duration-300 p-4 rounded-2xl hover:bg-blue-300 transition-all cursor-pointer">
+                    <div class=" flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12
             bg-[#150484]">
-                <svg class="w-5 h-5 lg:w-6 lg:h-6 text-white" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z">
-                    </path>
-                </svg>
-            </div>
-            <h3 class="mb-2 text-xl font-bold text-gray-900">Economia Digital</h3>
-            <p class="text-gray-500 dark:text-gray-700 text-center">Carrera orientada al uso estratégico de tecnologías
-                digitales, datos y plataformas online para impulsar modelos de negocio innovadores y transformar la
-                economía global.</p>
-        </div>
-        <div
-            class="flex flex-col items-center hover:scale-105 duration-300 p-4 rounded-2xl hover:bg-blue-300 transition-all cursor-pointer">
-            <div class=" text-center flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#150484]
+                        <svg class="w-5 h-5 lg:w-6 lg:h-6 text-white" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold text-gray-900">Economia Digital</h3>
+                    <p class="text-gray-500 dark:text-gray-700 text-center">Carrera orientada al uso estratégico de
+                        tecnologías
+                        digitales, datos y plataformas online para impulsar modelos de negocio innovadores y transformar
+                        la
+                        economía global.</p>
+                </div>
+            </a>
+            <a href="blog/turismo">
+                <div
+                    class="flex flex-col items-center hover:scale-105 duration-300 p-4 rounded-2xl hover:bg-blue-300 transition-all cursor-pointer">
+                    <div class=" text-center flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#150484]
             lg:h-12 lg:w-12">
 
-                <svg class="w-5 h-5 text-white lg:w-6 lg:h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                    width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                    <path fill-rule="evenodd"
-                        d="M12 2a1 1 0 0 1 .932.638l7 18a1 1 0 0 1-1.326 1.281L13 19.517V13a1 1 0 1 0-2 0v6.517l-5.606 2.402a1 1 0 0 1-1.326-1.281l7-18A1 1 0 0 1 12 2Z"
-                        clip-rule="evenodd" />
-                </svg>
+                        <svg class="w-5 h-5 text-white lg:w-6 lg:h-6" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M12 2a1 1 0 0 1 .932.638l7 18a1 1 0 0 1-1.326 1.281L13 19.517V13a1 1 0 1 0-2 0v6.517l-5.606 2.402a1 1 0 0 1-1.326-1.281l7-18A1 1 0 0 1 12 2Z"
+                                clip-rule="evenodd" />
+                        </svg>
 
-            </div>
-            <h3 class="mb-2 text-xl font-bold text-gray-900">Turismo</h3>
-            <p class="text-gray-500 dark:text-gray-700 text-center"> Carrera enfocada en la gestión y promoción de
-                actividades turísticas, impulsando el desarrollo sostenible y la experiencia cultural de los destinos.
-            </p>
-        </div>
-        <a href="blog/telematica"
-            class="flex flex-col items-center hover:scale-105 duration-300 p-4 rounded-2xl hover:bg-blue-300 transition-all cursor-pointer">
-            <div class=" text-center flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#150484]
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold text-gray-900">Turismo</h3>
+                    <p class="text-gray-500 dark:text-gray-700 text-center"> Carrera enfocada en la gestión y promoción
+                        de
+                        actividades turísticas, impulsando el desarrollo sostenible y la experiencia cultural de los
+                        destinos.
+                    </p>
+                </div>
+            </a>
+            <a href="blog/telematica"
+                class="flex flex-col items-center hover:scale-105 duration-300 p-4 rounded-2xl hover:bg-blue-300 transition-all cursor-pointer">
+                <div class=" text-center flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#150484]
             lg:h-12 lg:w-12">
-                <svg class="w-5 h-5 text-white lg:w-6 lg:h-6 " fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
-                        clip-rule="evenodd"></path>
-                </svg>
-            </div>
-            <h3 class="mb-2 text-xl font-bold text-gray-900">Telematica</h3>
-            <p class="text-gray-500 dark:text-gray-700 text-center">Carrera que combina telecomunicaciones y tecnologías
-                de la información para diseñar, implementar y mantener redes y sistemas de comunicación eficientes</p>
-        </a>
-
-        <a href="/blog/telematica"
-            class="flex flex-col items-center hover:scale-105 duration-300 p-4 rounded-2xl hover:bg-blue-300 transition-all cursor-pointer">
-            <div class=" text-center flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#150484]
+                    <svg class="w-5 h-5 text-white lg:w-6 lg:h-6 " fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <h3 class="mb-2 text-xl font-bold text-gray-900">Telematica</h3>
+                <p class="text-gray-500 dark:text-gray-700 text-center">Carrera que combina telecomunicaciones y
+                    tecnologías
+                    de la información para diseñar, implementar y mantener redes y sistemas de comunicación eficientes
+                </p>
+            </a>
+            <a href="/blog/promotor-deportivo"
+                class="flex flex-col items-center hover:scale-105 duration-300 p-4 rounded-2xl hover:bg-blue-300 transition-all cursor-pointer">
+                <div class=" text-center flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#150484]
             lg:h-12 lg:w-12">
-                <svg class="w-5 h-5 text-white lg:w-6 lg:h-6" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
-                    stroke-width="3" stroke="#ffffff" fill="none">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <circle cx="33.69" cy="32" r="24.99" stroke-linecap="round"></circle>
-                        <polygon points="33.43 20.18 22.84 27.88 26.89 40.32 39.98 40.32 44.02 27.88 33.43 20.18"
-                            stroke-linecap="round"></polygon>
-                        <polyline points="40.41 7.92 33.43 13.48 26.59 8.04" stroke-linecap="round"></polyline>
-                        <line x1="33.43" y1="20.18" x2="33.43" y2="13.48" stroke-linecap="round"></line>
-                        <polyline points="58.68 32 50.6 25.92 53.78 17.14" stroke-linecap="round"></polyline>
-                        <polyline points="40.72 55.99 44.02 46.39 54.05 46.49" stroke-linecap="round"></polyline>
-                        <polyline points="25.61 55.65 22.55 46.39 13.26 46.39" stroke-linecap="round"></polyline>
-                        <polyline points="8.7 32 15.99 25.97 13.16 17.76" stroke-linecap="round"></polyline>
-                        <line x1="22.84" y1="27.88" x2="15.99" y2="25.97" stroke-linecap="round"></line>
-                        <line x1="26.89" y1="40.32" x2="22.55" y2="46.39" stroke-linecap="round"></line>
-                        <line x1="39.98" y1="40.32" x2="44.02" y2="46.39" stroke-linecap="round"></line>
-                        <line x1="44.02" y1="27.89" x2="50.6" y2="25.92" stroke-linecap="round"></line>
-                    </g>
-                </svg>
-            </div>
-            <h3 class="mb-2 text-xl font-bold text-gray-900 text-center">Promotor de entrenamiento deportivo</h3>
-            <p class="text-gray-500 dark:text-gray-700 text-center">Carrera orientada a la preparación física,
-                planificación de rutinas y promoción de hábitos saludables, formando profesionales capaces de guiar y
-                motivar en el ámbito del deporte y la actividad física.</p>
-        </a>
+                    <svg class="w-5 h-5 text-white lg:w-6 lg:h-6" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
+                        stroke-width="3" stroke="#ffffff" fill="none">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <circle cx="33.69" cy="32" r="24.99" stroke-linecap="round"></circle>
+                            <polygon points="33.43 20.18 22.84 27.88 26.89 40.32 39.98 40.32 44.02 27.88 33.43 20.18"
+                                stroke-linecap="round"></polygon>
+                            <polyline points="40.41 7.92 33.43 13.48 26.59 8.04" stroke-linecap="round"></polyline>
+                            <line x1="33.43" y1="20.18" x2="33.43" y2="13.48" stroke-linecap="round"></line>
+                            <polyline points="58.68 32 50.6 25.92 53.78 17.14" stroke-linecap="round"></polyline>
+                            <polyline points="40.72 55.99 44.02 46.39 54.05 46.49" stroke-linecap="round"></polyline>
+                            <polyline points="25.61 55.65 22.55 46.39 13.26 46.39" stroke-linecap="round"></polyline>
+                            <polyline points="8.7 32 15.99 25.97 13.16 17.76" stroke-linecap="round"></polyline>
+                            <line x1="22.84" y1="27.88" x2="15.99" y2="25.97" stroke-linecap="round"></line>
+                            <line x1="26.89" y1="40.32" x2="22.55" y2="46.39" stroke-linecap="round"></line>
+                            <line x1="39.98" y1="40.32" x2="44.02" y2="46.39" stroke-linecap="round"></line>
+                            <line x1="44.02" y1="27.89" x2="50.6" y2="25.92" stroke-linecap="round"></line>
+                        </g>
+                    </svg>
+                </div>
+                <h3 class="mb-2 text-xl font-bold text-gray-900 text-center">Promotor de entrenamiento deportivo</h3>
+                <p class="text-gray-500 dark:text-gray-700 text-center">Carrera orientada a la preparación física,
+                    planificación de rutinas y promoción de hábitos saludables, formando profesionales capaces de guiar
+                    y
+                    motivar en el ámbito del deporte y la actividad física.</p>
+            </a>
         </div>
         </div>
     </section>
@@ -346,5 +370,4 @@ const images = [
     position: relative;
     z-index: 2;
 }
-
 </style>

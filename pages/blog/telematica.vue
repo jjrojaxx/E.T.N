@@ -3,11 +3,9 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 const svgColors = ref([])
 const items = [
     'Tecnología',
-    'Proyectos de Economía Socio productivo',
     'Programación',
     'Diseño de Software',
     'Redes',
-    'Algebra',
     'ingeniería en Telemática',
     'Desarrollar y Aplicar Servicios Telemáticos',
     'Ingeniería en Redes y Comunicaciones',
@@ -312,8 +310,7 @@ onBeforeUnmount(() => {
             </div>
 
             <div>
-                <h3 class="mb-4 mt-6 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">Aplicaciones de la
-                    telemática
+                <h3 class="mb-4 mt-6 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">Ventajas de la Telemática
                 </h3>
 
                 <ul>
