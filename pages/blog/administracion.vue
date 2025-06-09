@@ -10,7 +10,13 @@ const items = [
     'Logística y Distribución Internacional',
 ]
 
+const showResult = ref(false)
+const selectedAnswers = ref([])
+const correctAnswers = ['C', 'B', 'C', 'C']
+const score = ref(0)
+const showModal1 = ref(false)
 const track = ref(null)
+
 let translateX = ref(0)
 let animationFrameId
 let speed = 1 // píxeles por frame (~60fps)
@@ -54,6 +60,44 @@ onBeforeUnmount(() => {
     cancelAnimationFrame(animationFrameId)
 })
 
+// Modal para mostrar el test
+const calcularResultado = () => {
+    let puntos = 0
+    selectedAnswers.value.forEach((respuesta, index) => {
+        if (respuesta === correctAnswers[index]) {
+            puntos += 25
+        }
+    })
+    score.value = puntos
+    showModal1.value = false
+    showResult.value = true
+}
+
+const reiniciarTest = () => {
+    // Reinicia el score y vuelve a mostrar el modal de preguntas
+    score.value = 0
+    showModal1.value = true
+    showResult.value = false
+
+    // Limpia las respuestas seleccionadas
+    selectedAnswers.value = [];
+}
+
+const closetModalResult = () => {
+    score.value = 0
+    showResult.value = false
+    selectedAnswers.value = [];
+}
+
+const obtenerMensaje = () => {
+    if (score.value === 100) return "🎉 ¡Excelente! Has dominado el tema de la telemática.";
+    if (score.value >= 75) return "💪 Muy bien, tienes buen conocimiento.";
+    if (score.value >= 50) return "👍 Aceptable, pero aún puedes mejorar.";
+    if (score.value >= 25) return "🧐 Necesitas repasar un poco más.";
+    return "😅 No acertaste ninguna. ¡Intenta de nuevo!";
+}
+
+
 </script>
 <template>
     <!-- Hero de pagina -->
@@ -61,7 +105,7 @@ onBeforeUnmount(() => {
         <div class="max-w-screen px-4 px mx-auto">
             <div class="flex flex-col items-center mb-4">
                 <h1 class="text-center mb-4 text-3xl font-bold md:text-5xl lg:text-6xl gradient-text">Impulsa el
-                    futuro digital con <br> la Aduana</h1>
+                    futuro digital con <br>Administracion</h1>
                 <p class="text-center max-w-2xl mb-6 font-normal gradient-p lg:mb-8 md:text-lg lg:text-xl">Explora
                     una
                     carrera que une redes, telecomunicaciones y tecnología. Pon a prueba lo aprendido con un test
@@ -103,19 +147,25 @@ onBeforeUnmount(() => {
             class="gap-8 items-center justify-between py-12 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-24 lg:px-6">
             <img class="w-full rounded-xl" src="../../assets/img/telematicaHero.jpg" alt="dashboard image">
             <div class="mt-4 md:mt-0">
-                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Que es la Aduana?
+                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Que es la
+                    Aduana?
                 </h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">Una aduana es una oficina pública ubicada en puntos estratégicos como puertos, aeropuertos, fronteras o estaciones ferroviarias, encargada de controlar el tráfico de mercancías que ingresan y salen de un país. Su función principal es verificar y fiscalizar estas mercancías, asegurando el cumplimiento de las leyes vigentes.</p>
+                <p class="mb-6 font-normal text-gray-500 md:text-lg">Una aduana es una oficina pública ubicada en puntos
+                    estratégicos como puertos, aeropuertos, fronteras o estaciones ferroviarias, encargada de controlar
+                    el tráfico de mercancías que ingresan y salen de un país. Su función principal es verificar y
+                    fiscalizar estas mercancías, asegurando el cumplimiento de las leyes vigentes.</p>
             </div>
         </div>
     </section>
 
     <section class="bg-blue-100">
         <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid-cols-2 sm:py-16 lg:px-6">
-            <h2 class="mb-8 text-3xl lg:text-5xl tracking-tight font-bold text-gray-950 text-center">Principales funciones
+            <h2 class="mb-8 text-3xl lg:text-5xl tracking-tight font-bold text-gray-950 text-center">Principales
+                funciones
             </h2>
             <div class="flex gap-4 flex-wrap justify-center">
-                <div class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
+                <div
+                    class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
                     <svg class="size-16 text-[#150484]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
                         height="24" fill="currentColor" viewBox="0 0 24 24">
                         <path fill-rule="evenodd"
@@ -123,10 +173,13 @@ onBeforeUnmount(() => {
                             clip-rule="evenodd" />
                     </svg>
 
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">Regular el comercio exterior</h5>
-                    <p class="font-normal text-gray-800 text-center"> Controlan y supervisan el movimiento de bienes importados y exportados para garantizar el cumplimiento de las normativas.</p>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">Regular el comercio
+                        exterior</h5>
+                    <p class="font-normal text-gray-800 text-center"> Controlan y supervisan el movimiento de bienes
+                        importados y exportados para garantizar el cumplimiento de las normativas.</p>
                 </div>
-                <div class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
+                <div
+                    class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
                     <svg class="size-16 text-[#150484]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
                         height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -134,11 +187,14 @@ onBeforeUnmount(() => {
                     </svg>
 
 
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight  text-[#150484] text-center"> Cobro de impuestos y aranceles
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight  text-[#150484] text-center"> Cobro de impuestos y
+                        aranceles
                     </h5>
-                    <p class="font-normal text-gray-800 text-center"> Recaudan los tributos correspondientes a las operaciones de comercio internacional.</p>
+                    <p class="font-normal text-gray-800 text-center"> Recaudan los tributos correspondientes a las
+                        operaciones de comercio internacional.</p>
                 </div>
-                <div class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
+                <div
+                    class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
                     <svg class="size-16 text-[#150484]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
                         height="24" fill="currentColor" viewBox="0 0 24 24">
                         <path
@@ -148,11 +204,14 @@ onBeforeUnmount(() => {
                     </svg>
 
 
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">Prevención de productos ilegales</h5>
-                    <p class="font-normal text-gray-800 text-center"> Impiden la entrada y salida de mercancías prohibidas como drogas, armas y otros productos ilegales.</p>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">Prevención de
+                        productos ilegales</h5>
+                    <p class="font-normal text-gray-800 text-center"> Impiden la entrada y salida de mercancías
+                        prohibidas como drogas, armas y otros productos ilegales.</p>
                 </div>
 
-                 <div class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
+                <div
+                    class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
                     <svg class="size-16 text-[#150484]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
                         height="24" fill="currentColor" viewBox="0 0 24 24">
                         <path
@@ -162,8 +221,10 @@ onBeforeUnmount(() => {
                     </svg>
 
 
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">Lucha contra el fraude aduanero</h5>
-                    <p class="font-normal text-gray-800 text-center"> Detectan y evitan falsificaciones, adulteraciones y evasiones fiscales para proteger la economía.</p>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">Lucha contra el fraude
+                        aduanero</h5>
+                    <p class="font-normal text-gray-800 text-center"> Detectan y evitan falsificaciones, adulteraciones
+                        y evasiones fiscales para proteger la economía.</p>
                 </div>
 
             </div>
@@ -172,12 +233,20 @@ onBeforeUnmount(() => {
     </section>
 
     <section class="bg-blue-100">
-        <div class="gap-8 items-center flex-col sm:flex-row py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:flex md:grid-cols-2 sm:py-16 lg:px-6">
+        <div
+            class="gap-8 items-center flex-col sm:flex-row py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:flex md:grid-cols-2 sm:py-16 lg:px-6">
             <div class="mt-4 md:mt-0 w-full">
-                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Origen e historia de la Aduana
+                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Origen e historia de la
+                    Aduana
                 </h2>
                 <p class="mb-6 font-normal text-gray-900 md:text-lg">
-                 Las aduanas tienen su origen en <strong>la antigüedad</strong>, cuando las civilizaciones comenzaron a comerciar bienes a través de fronteras territoriales. Ya en el Imperio Romano existían sistemas de control y cobro de impuestos sobre mercancías que cruzaban sus límites. El concepto moderno de aduanas se consolidó durante la Edad Media y la época colonial, con la regulación formal del comercio internacional y la implementación de aranceles para proteger las economías nacionales. Actualmente, las aduanas desempeñan un papel fundamental en la regulación del comercio exterior, el control sanitario, la seguridad y la recaudación fiscal a nivel global.</p>
+                    Las aduanas tienen su origen en <strong>la antigüedad</strong>, cuando las civilizaciones comenzaron
+                    a comerciar bienes a través de fronteras territoriales. Ya en el Imperio Romano existían sistemas de
+                    control y cobro de impuestos sobre mercancías que cruzaban sus límites. El concepto moderno de
+                    aduanas se consolidó durante la Edad Media y la época colonial, con la regulación formal del
+                    comercio internacional y la implementación de aranceles para proteger las economías nacionales.
+                    Actualmente, las aduanas desempeñan un papel fundamental en la regulación del comercio exterior, el
+                    control sanitario, la seguridad y la recaudación fiscal a nivel global.</p>
             </div>
             <div class="w-full">
                 <img class="w-full dark:hiddenrounded-xl rounded-xl " src="../../assets/img/seccion-1.png"
@@ -185,14 +254,17 @@ onBeforeUnmount(() => {
             </div>
         </div>
     </section>
+
     <section class="bg-blue-100">
-        <div class="gap-8 items-start flex flex-col-reverse sm:flex-row py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:flex md:grid-cols-2 sm:py-16 lg:px-6">
+        <div
+            class="gap-8 items-start flex flex-col-reverse sm:flex-row py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:flex md:grid-cols-2 sm:py-16 lg:px-6">
             <div class="w-full">
                 <img class="w-full dark:hiddenrounded-xl rounded-xl " src="../../assets/img/seccion-1.png"
                     alt="dashboard image">
             </div>
             <div class="mt-4 md:mt-0 w-full">
-                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Importancia de las Aduanas</h2>
+                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Importancia de las Aduanas
+                </h2>
                 <ul>
                     <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
                         <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -201,7 +273,8 @@ onBeforeUnmount(() => {
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
                                 clip-rule="evenodd" />
                         </svg>
-                        <strong>Garantizar la seguridad nacional: Impidiendo la circulación de productos ilegales o peligrosos</strong>
+                        <strong>Garantizar la seguridad nacional: Impidiendo la circulación de productos ilegales o
+                            peligrosos</strong>
                     </li>
                     <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
                         <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -221,7 +294,8 @@ onBeforeUnmount(() => {
                                 clip-rule="evenodd" />
                         </svg>
 
-                        <strong>Contribuir a la economía: A través de la recaudación de impuestos que financian al Estado.</strong>
+                        <strong>Contribuir a la economía: A través de la recaudación de impuestos que financian al
+                            Estado.</strong>
                     </li>
                     <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
                         <svg class="size-7.5 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -230,18 +304,21 @@ onBeforeUnmount(() => {
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
                                 clip-rule="evenodd" />
                         </svg>
-                        <strong>  Luchar contra el comercio ilícito: Disminuyendo el tráfico ilegal de mercancías.</strong>
+                        <strong> Luchar contra el comercio ilícito: Disminuyendo el tráfico ilegal de
+                            mercancías.</strong>
                     </li>
-                  
+
                 </ul>
             </div>
         </div>
     </section>
 
     <section class="bg-blue-100">
-        <div class="w-full flex flex-col lg:flex-row justify-between items-start pt-0 pb-2 px-4 mx-auto max-w-screen-xl">
+        <div
+            class="w-full flex flex-col lg:flex-row justify-between items-start pt-0 pb-2 px-4 mx-auto max-w-screen-xl">
             <div>
-                <h2 class="mb-4 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">Estudio Clave / Asignaturas Principales</h2>
+                <h2 class="mb-4 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">Estudio Clave / Asignaturas
+                    Principales</h2>
                 <ul>
                     <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
                         <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -315,7 +392,8 @@ onBeforeUnmount(() => {
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
                                 clip-rule="evenodd" />
                         </svg>
-                        <strong>Aduana terrestre: Controla mercancías que circulan por carretera o zonas fronterizas.</strong>
+                        <strong>Aduana terrestre: Controla mercancías que circulan por carretera o zonas
+                            fronterizas.</strong>
                     </li>
                     <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
                         <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -381,21 +459,26 @@ onBeforeUnmount(() => {
                         </svg>
                         <strong>Logística y Distribución Internacional</strong>
                     </li>
-                  
+
                 </ul>
             </div>
 
             <div>
                 <h3 class="mb-4 mt-6 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">¿Por que estudiar Aduana?
                 </h3>
-                <p><strong>Estudiar Aduana te permite participar activamente en el comercio internacional, asegurando el cumplimiento de leyes y regulaciones al importar o exportar mercancías. Es una carrera con alta demanda laboral, tanto en el sector público como privado, y te forma en áreas clave como logística, legislación, seguridad y gestión aduanera. Además, contribuyes a la economía del país y a la protección frente a productos ilegales.</strong></p>
-              
+                <p><strong>Estudiar Aduana te permite participar activamente en el comercio internacional, asegurando el
+                        cumplimiento de leyes y regulaciones al importar o exportar mercancías. Es una carrera con alta
+                        demanda laboral, tanto en el sector público como privado, y te forma en áreas clave como
+                        logística, legislación, seguridad y gestión aduanera. Además, contribuyes a la economía del país
+                        y a la protección frente a productos ilegales.</strong></p>
+
             </div>
         </div>
-        
-        
+
+
 
     </section>
+
     <section class="bg-gray-950">
         <div
             class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
@@ -404,25 +487,349 @@ onBeforeUnmount(() => {
             <div class="mt-4 md:mt-0">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Perfil del Estudiante
                 </h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">El estudiante de aduanas se distingue por una combinación de conocimientos, habilidades y competencias que le permiten desenvolverse eficazmente en el ámbito del comercio internacional y la gestión aduanera. Este perfil requiere capacidad analítica, atención al detalle, conocimientos legales y administrativos, así como habilidades para la resolución de problemas y la toma de decisiones en un entorno dinámico y regulado.</p>
+                <p class="mb-6 font-normal text-gray-500 md:text-lg">El estudiante de aduanas se distingue por una
+                    combinación de conocimientos, habilidades y competencias que le permiten desenvolverse eficazmente
+                    en el ámbito del comercio internacional y la gestión aduanera. Este perfil requiere capacidad
+                    analítica, atención al detalle, conocimientos legales y administrativos, así como habilidades para
+                    la resolución de problemas y la toma de decisiones en un entorno dinámico y regulado.</p>
             </div>
         </div>
     </section>
 
+    <button @click="showModal1 = true" data-popover-target="popover-animation" id="extralarge-modal" type="button"
+        class="text-white bg-[#150484] focus:ring-4 focus:outline-none cursor-pointer focus:ring-blue-300 font-medium rounded-full fixed bottom-6 right-6 text-sm px-5 py-5 text-center transition-all hover:scale-101 "><svg
+            class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd"
+                d="M6 2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 1 0 0-2h-2v-2h2a1 1 0 0 0 1-1V4a2 2 0 0 0-2-2h-8v16h5v2H7a1 1 0 1 1 0-2h1V2H6Z"
+                clip-rule="evenodd" />
+        </svg>
+    </button>
 
-
-    
-<button data-popover-target="popover-animation" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Animated popover</button>
-
-<div data-popover id="popover-animation" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
-    <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
-        <h3 class="font-semibold text-gray-900 dark:text-white">Popover animation</h3>
+    <div data-popover id="popover-animation" role="tooltip"
+        class="absolute z-10 inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-1 dark:text-gray-400 dark:border-gray-900 dark:bg-gray-950">
+        <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-800 dark:bg-gray-900">
+            <h3 class="font-semibold text-gray-900 dark:text-white">Realiza nuestro test</h3>
+        </div>
+        <div class="px-3 py-2">
+            <p>Haga click aqui para hacer la pequeña encuesta</p>
+        </div>
+        <div data-popper-arrow></div>
     </div>
-    <div class="px-3 py-2">
-        <p>And here's some amazing content. It's very engaging. Right?</p>
-    </div>
-    <div data-popper-arrow></div>
-</div>
+
+
+    <transition name="fade">
+        <div v-if="showModal1"
+            class="fixed w-full inset-0 z-50 flex items-center justify-center bg-[#000000ec] bg-opacity-50 px-4 py-8">
+            <transition name="scale">
+                <div
+                    class="bg-white dark:bg-gray-950 rounded-2xl shadow-lg w-full max-w-4xl max-h-[90vh] overflow-y-auto animate-fade-in">
+                    <!-- HEADER -->
+                    <div class="flex items-center justify-between p-5 border-b border-gray-200 dark:border-gray-900">
+                        <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">🎉Bienvenido a
+                            nuestro test sobre la Aduana</h3>
+                        <button @click="showModal1 = false"
+                            class="cursor-pointer text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center">
+                            <svg class="w-3 h-3" fill="none" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1l6 6m0 0l6 6M7 7l6-6M7 7L1 13" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- BODY -->
+                    <div class="py-6 px-4 sm:px-18 space-y-4 text-gray-700 dark:text-gray-300">
+                        <div class="question mb-8">
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 1: ¿Qué es
+                                una aduana?</h2>
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[0] === 'A',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[0] !== 'A'
+                                }">
+
+                                <div class="flex hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg">
+                                    <input type="radio" class="hidden" name="q1" value="A"
+                                        v-model="selectedAnswers[0]" />
+                                    <p class="text-gray-800 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Un banco
+                                        internacional que regula el comercio.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[0] === 'B',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[0] !== 'B'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q1" value="B"
+                                        v-model="selectedAnswers[0]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Una entidad
+                                        encargada de administrar los impuestos internos.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[0] === 'C',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[0] !== 'C'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q1" value="C"
+                                        v-model="selectedAnswers[0]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Un organismo
+                                        encargado de controlar el ingreso y salida de mercancías en un país</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[0] === 'D',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[0] !== 'D'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q1" value="D"
+                                        v-model="selectedAnswers[0]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Una empresa privada
+                                        de logística internacional.</p>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="question mb-8">
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 2: ¿Qué
+                                documento se utiliza para declarar una importación?</h2>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[1] === 'A',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[1] !== 'A'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q2" value="A"
+                                        v-model="selectedAnswers[1]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Pasaporte
+                                        comercial.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[1] === 'B',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[1] !== 'B'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q2" value="B"
+                                        v-model="selectedAnswers[1]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Declaración de
+                                        aduana.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[1] === 'C',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[1] !== 'C'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q2" value="C"
+                                        v-model="selectedAnswers[1]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Factura de
+                                        exportación.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[1] === 'D',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[1] !== 'D'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q2" value="D"
+                                        v-model="selectedAnswers[1]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Licencia de
+                                        funcionamiento.</p>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="question mb-8">
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 3: ¿Qué
+                                significa arancel aduanero?</h2>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[2] === 'A',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[2] !== 'A'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q3" value="A"
+                                        v-model="selectedAnswers[2]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>El tiempo de espera
+                                        en una aduana.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[2] === 'B',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[2] !== 'B'
+                                }">
+                                <div
+                                    class="flex items-center p-2 hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q3" value="B"
+                                        v-model="selectedAnswers[2]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>El permiso de
+                                        entrada para turistas.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[2] === 'C',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[2] !== 'C'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q3" value="C"
+                                        v-model="selectedAnswers[2]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>El impuesto
+                                        aplicado a productos importados o exportados.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[2] === 'D',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[2] !== 'D'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q3" value="D"
+                                        v-model="selectedAnswers[2]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>El seguro
+                                        obligatorio del transporte internacional.</p>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="question mb-4">
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 4: ¿Cuál de las siguientes funciones pertenece a la aduana?</h2>
+
+                            <label class="flex items-center p-2  transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[3] === 'A',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[3] !== 'A'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q4" value="A"
+                                        v-model="selectedAnswers[3]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Hacer campañas de vacunación.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[3] === 'B',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[3] !== 'B'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q4" value="B"
+                                        v-model="selectedAnswers[3]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Regular el contenido publicitario.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2  transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[3] === 'C',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[3] !== 'C'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q4" value="C"
+                                        v-model="selectedAnswers[3]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Controlar el contrabando de mercancías.</p>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[3] === 'D',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[3] !== 'D'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q4" value="D"
+                                        v-model="selectedAnswers[3]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Organizar elecciones nacionales.</p>
+                                </div>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- FOOTER -->
+                    <div class="flex justify-end gap-2 p-4 border-t border-gray-200 dark:border-gray-900">
+                        <button @click="calcularResultado()"
+                            class="cursor-pointer bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Mostrar
+                            resultado 🖍️</button>
+                    </div>
+                </div>
+            </transition>
+        </div>
+    </transition>
+
+    <transition name="fade">
+        <div v-if="showResult"
+            class="fixed inset-0 z-50 flex items-center justify-center bg-[#000000ec] bg-opacity-50 px-4 py-8">
+            <div class="bg-white dark:bg-gray-950 rounded-2xl shadow-lg w-full max-w-xl p-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-4">🎯 Resultado del Test</h2>
+                <p class="text-xl text-center text-gray-700 dark:text-gray-300">Obtuviste <strong>{{ score }}%</strong>
+                    de respuestas correctas.</p>
+                <p class="text-lg text-center text-gray-700 dark:text-gray-300 italic">
+                    {{ obtenerMensaje() }}
+                </p>
+
+                <div class="mt-6 text-center">
+
+                    <button @click="reiniciarTest()"
+                        class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded-lg mr-3">
+                        🔁 Volver a intentar
+                    </button>
+                    <button @click="closetModalResult()"
+                        class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </transition>
 
 </template>
 <style scoped>
@@ -513,19 +920,37 @@ onBeforeUnmount(() => {
     animation: pulseGradient 10s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
 }
 
-@media screen {}
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.25s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.scale-enter-active,
+.scale-leave-active {
+    transition: transform 0.25s ease;
+}
+
+.scale-enter-from,
+.scale-leave-to {
+    transform: scale(0.95);
+}
 
 @media screen and (max-width: 1023px) {
     .gradient-text {
         line-height: 60px;
     }
 }
+
 @media screen and (max-width: 767px) {
     .gradient-text {
         line-height: 40px;
     }
 }
-@media screen and (max-width: 369px) {
 
-}
+@media screen and (max-width: 369px) {}
 </style>
