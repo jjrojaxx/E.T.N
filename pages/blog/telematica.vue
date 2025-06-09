@@ -49,7 +49,6 @@ const calcularResultado = () => {
     showModal1.value = false
     showResult.value = true
 }
-
 const reiniciarTest = () => {
     // Reinicia el score y vuelve a mostrar el modal de preguntas
     score.value = 0
@@ -115,9 +114,9 @@ onBeforeUnmount(() => {
                     carrera que une redes, telecomunicaciones y tecnología. Pon a prueba lo aprendido con un test
                     interactivo y descubre si estás listo para transformar el mundo digital.</p>
                 <div class="flex flex-col sm:flex-row">
-                    <a href="test/telematica"
+                    <button @click="showModal1 = true" 
                         class="mb-2 sm:mb-0 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-white bg-[#150484] rounded-lg hover:bg-[#041184]  focus:ring-4">Relizar
-                        Test</a>
+                        Test</button>
                     <a href="/"
                         class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-white border-3 border-white rounded-lg hover:border-[#041184] hover:bg-[#041184] transition-all focus:ring-4">Ver
                         otras mensiones
@@ -961,6 +960,4 @@ onBeforeUnmount(() => {
         line-height: 40px;
     }
 }
-
-@media screen and (max-width: 369px) {}
 </style>
