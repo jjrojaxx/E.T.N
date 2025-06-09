@@ -149,20 +149,23 @@ const obtenerMensaje = () => {
             class="gap-8 items-center justify-between py-12 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-24 lg:px-6">
             <img class="w-full rounded-xl" src="../../assets/img/telematicaHero.jpg" alt="dashboard image">
             <div class="mt-4 md:mt-0">
-                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Qué es un Promotor de entrenamiento deportivo?
-                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Que es la
-                    Telematica?
+                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Qué es un
+                    Promotor de entrenamiento deportivo?
                 </h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">Un Promotor de Entrenamiento Deportivo es un profesional capacitado para organizar, coordinar e impulsar actividades físicas y deportivas en comunidades, instituciones educativas o centros recreativos. Su labor está enfocada en fomentar el ejercicio, el bienestar físico y los hábitos saludables en personas de todas las edades, adaptando rutinas y programas de acuerdo con las necesidades de cada grupo.
-                   Este profesional actúa como un enlace entre la población y el acceso a prácticas deportivas organizadas, ya sea en el ámbito recreativo, competitivo o educativo.
-                </p>           
+                <p class="mb-6 font-normal text-gray-500 md:text-lg">Un Promotor de Entrenamiento Deportivo es un
+                    profesional capacitado para organizar, coordinar e impulsar actividades físicas y deportivas en
+                    comunidades, instituciones educativas o centros recreativos. Su labor está enfocada en fomentar el
+                    ejercicio, el bienestar físico y los hábitos saludables en personas de todas las edades, adaptando
+                    rutinas y programas de acuerdo con las necesidades de cada grupo.
+                    Este profesional actúa como un enlace entre la población y el acceso a prácticas deportivas
+                    organizadas, ya sea en el ámbito recreativo, competitivo o educativo.
+                </p>
             </div>
         </div>
     </section>
 
     <section class="bg-blue-100">
         <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid-cols-2 sm:py-16 lg:px-6">
-            <h2 class="mb-8 text-3xl lg:text-5xl tracking-tight font-bold text-gray-950 text-center"> Punto positivo y Negativo
             <h2 class="mb-8 text-3xl lg:text-5xl tracking-tight font-bold text-gray-950 text-center">Los 3 planos de la
                 telemática
             </h2>
@@ -177,8 +180,10 @@ const obtenerMensaje = () => {
                     </svg>
 
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">positivas</h5>
-                    <p class="font-normal text-gray-800 text-center"> Puedes contribuir directamente al bienestar y desarrollo social de la comunidad, promoviendo estilos de vida saludables y la inclusión a través del deporte.
-                     </p>
+                    <p class="font-normal text-gray-800 text-center"> Puedes contribuir directamente al bienestar y
+                        desarrollo social de la comunidad, promoviendo estilos de vida saludables y la inclusión a
+                        través del deporte.
+                    </p>
                 </div>
                 <div
                     class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
@@ -189,11 +194,12 @@ const obtenerMensaje = () => {
                     </svg>
 
 
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight  text-[#150484] text-center">negativas
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#150484] text-center">Plano de señalización
                         y control
                     </h5>
-                    <p class="font-normal text-gray-800 text-center">A veces el trabajo puede requerir horarios irregulares o fines de semana, especialmente durante eventos deportivos o actividades comunitarias.</p>
+                    <p class="font-normal text-gray-800 text-center">A veces el trabajo puede requerir horarios
+                        irregulares o fines de semana, especialmente durante eventos deportivos o actividades
+                        comunitarias.</p>
                     <p class="font-normal text-gray-800 text-center">Maneja la comunicación entre el sistema y el
                         usuario para decisiones efectivas</p>
                 </div>
@@ -221,14 +227,17 @@ const obtenerMensaje = () => {
         <div
             class="gap-8 items-center flex-col sm:flex-row py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:flex md:grid-cols-2 sm:py-16 lg:px-6">
             <div class="mt-4 md:mt-0 w-full">
-                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Origen y evolución del rol del promotor deportivo
-                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Origen e historia de la
-                    telemática
-                </h2>
+                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Origen y evolución del rol
+                    del promotor deportivo</h2>
                 <p class="mb-6 font-normal text-gray-900 md:text-lg">
-                  El rol del promotor deportivo surgió con la necesidad de democratizar el acceso al deporte y mejorar la calidad de vida de las poblaciones mediante la actividad física. A partir del siglo XX, con el crecimiento del deporte escolar, comunitario y profesional, se hizo evidente la necesidad de contar con figuras especializadas que pudieran organizar y motivar la práctica deportiva de manera inclusiva y estructurada.
-                  Hoy en día, su presencia es clave en programas de salud pública, centros comunitarios, instituciones educativas y clubes deportivo
-               </p>
+                    El rol del promotor deportivo surgió con la necesidad de democratizar el acceso al deporte y mejorar
+                    la calidad de vida de las poblaciones mediante la actividad física. A partir del siglo XX, con el
+                    crecimiento del deporte escolar, comunitario y profesional, se hizo evidente la necesidad de contar
+                    con figuras especializadas que pudieran organizar y motivar la práctica deportiva de manera
+                    inclusiva y estructurada.
+                    Hoy en día, su presencia es clave en programas de salud pública, centros comunitarios, instituciones
+                    educativas y clubes deportivo
+                </p>
             </div>
             <div class="w-full">
                 <img class="w-full dark:hiddenrounded-xl rounded-xl " src="../../assets/img/seccion-1.png"
@@ -256,7 +265,8 @@ const obtenerMensaje = () => {
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
                                 clip-rule="evenodd" />
                         </svg>
-                        <strong>Conocimiento técnico-deportivo: Maneja principios del entrenamiento físico, la salud y el rendimiento.</strong>
+                        <strong>Conocimiento técnico-deportivo: Maneja principios del entrenamiento físico, la salud y
+                            el rendimiento.</strong>
                     </li>
                     <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
                         <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -265,7 +275,8 @@ const obtenerMensaje = () => {
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
                                 clip-rule="evenodd" />
                         </svg>
-                        <strong>Habilidad para planificar: Diseña rutinas, sesiones y eventos deportivos según objetivos y niveles.</strong>
+                        <strong>Habilidad para planificar: Diseña rutinas, sesiones y eventos deportivos según objetivos
+                            y niveles.</strong>
                     </li>
                     <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
 
@@ -276,7 +287,8 @@ const obtenerMensaje = () => {
                                 clip-rule="evenodd" />
                         </svg>
 
-                        <strong>Capacidad de liderazgo: Motiva e inspira a personas o grupos a mantenerse activos.</strong>
+                        <strong>Capacidad de liderazgo: Motiva e inspira a personas o grupos a mantenerse
+                            activos.</strong>
                     </li>
                     <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
                         <svg class="size-7.5 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -285,9 +297,10 @@ const obtenerMensaje = () => {
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
                                 clip-rule="evenodd" />
                         </svg>
-                        <strong>Empatía y comunicación efectiva: Se adapta a las necesidades físicas, emocionales y sociales de los participantes.</strong>
+                        <strong>Empatía y comunicación efectiva: Se adapta a las necesidades físicas, emocionales y
+                            sociales de los participantes.</strong>
                     </li>
-                  
+
                 </ul>
             </div>
         </div>
@@ -361,7 +374,8 @@ const obtenerMensaje = () => {
             </div>
 
             <div>
-                <h3 class="mb-4 mt-6 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">Importancia promotor deportivo
+                <h3 class="mb-4 mt-6 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">Importancia promotor
+                    deportivo
                 </h3>
 
                 <ul>
@@ -401,7 +415,7 @@ const obtenerMensaje = () => {
                         </svg>
                         <strong>Organiza eventos que fortalecen la convivencia social.</strong>
                     </li>
-                         <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
+                    <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
                         <svg class="size-7 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
@@ -465,19 +479,24 @@ const obtenerMensaje = () => {
                         </svg>
                         <strong>Instructor en programas de rehabilitación y bienestar</strong>
                     </li>
-                  
+
                 </ul>
             </div>
 
             <div>
-                <h3 class="mb-4 mt-6 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">¿Por que estudiar Promotor deportivo?
+                <h3 class="mb-4 mt-6 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">¿Por que estudiar Promotor
+                    deportivo?
                 </h3>
-                <strong>Estudiar para ser promotor deportivo es una excelente opción para quienes quieren combinar su pasión por el deporte con un impacto positivo en la comunidad. Esta carrera te permite fomentar hábitos saludables, promover la inclusión social y desarrollar habilidades en organización y liderazgo. Además, ofrece variadas oportunidades laborales en escuelas, clubes, eventos y programas deportivos, contribuyendo al bienestar y crecimiento social a través del deporte.</strong>
-              
+                <strong>Estudiar para ser promotor deportivo es una excelente opción para quienes quieren combinar su
+                    pasión por el deporte con un impacto positivo en la comunidad. Esta carrera te permite fomentar
+                    hábitos saludables, promover la inclusión social y desarrollar habilidades en organización y
+                    liderazgo. Además, ofrece variadas oportunidades laborales en escuelas, clubes, eventos y programas
+                    deportivos, contribuyendo al bienestar y crecimiento social a través del deporte.</strong>
+
             </div>
         </div>
-        
-        
+
+
 
     </section>
 
@@ -487,8 +506,14 @@ const obtenerMensaje = () => {
             <img class="w-full dark:hidden rounded-xl" src="../../assets/img/foto4.jpg" alt="dashboard image">
             <img class="w-full rounded-xl hidden dark:block" src="../../assets/img/foto4.jpg" alt="dashboard image">
             <div class="mt-4 md:mt-0">
-                <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Perfil del Estudiante</h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">El estudiante de promoción de entrenamiento deportivo se caracteriza por poseer una combinación de intereses y habilidades relacionadas con la salud, el deporte y la actividad física. Este perfil requiere conocimientos sólidos sobre el funcionamiento del cuerpo humano, técnicas de entrenamiento, motivación, y capacidad para diseñar y supervisar programas de actividad física que mejoren el rendimiento y el bienestar de las personas.</p>
+                <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Perfil del Estudiante
+                </h2>
+                <p class="mb-6 font-normal text-gray-500 md:text-lg">El estudiante de promoción de entrenamiento
+                    deportivo se caracteriza por poseer una combinación de intereses y habilidades relacionadas con la
+                    salud, el deporte y la actividad física. Este perfil requiere conocimientos sólidos sobre el
+                    funcionamiento del cuerpo humano, técnicas de entrenamiento, motivación, y capacidad para diseñar y
+                    supervisar programas de actividad física que mejoren el rendimiento y el bienestar de las personas.
+                </p>
             </div>
         </div>
     </section>
