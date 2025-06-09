@@ -540,7 +540,7 @@ const obtenerMensaje = () => {
                     <!-- HEADER -->
                     <div class="flex items-center justify-between p-5 border-b border-gray-200 dark:border-gray-900">
                         <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">🎉Bienvenido a
-                            nuestro test sobre la Aduana</h3>
+                            nuestro test sobre la Administración</h3>
                         <button @click="showModal1 = false"
                             class="cursor-pointer text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center">
                             <svg class="w-3 h-3" fill="none" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
