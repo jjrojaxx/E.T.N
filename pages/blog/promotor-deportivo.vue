@@ -58,6 +58,52 @@ onBeforeUnmount(() => {
     cancelAnimationFrame(animationFrameId)
 })
 
+//-- VARIABLES DE TEST --//
+const showResult = ref(false)
+const selectedAnswers = ref([])
+const correctAnswers = ['C', 'B', 'C', 'A']
+const score = ref(0)
+const showModal1 = ref(false)
+
+
+// Modal para mostrar el test
+const calcularResultado = () => {
+    let puntos = 0
+    selectedAnswers.value.forEach((respuesta, index) => {
+        if (respuesta === correctAnswers[index]) {
+            puntos += 25
+        }
+    })
+    score.value = puntos
+    showModal1.value = false
+    showResult.value = true
+}
+
+const reiniciarTest = () => {
+    // Reinicia el score y vuelve a mostrar el modal de preguntas
+    score.value = 0
+    showModal1.value = true
+    showResult.value = false
+
+    // Limpia las respuestas seleccionadas
+    selectedAnswers.value = [];
+}
+
+const closetModalResult = () => {
+    score.value = 0
+    showResult.value = false
+    selectedAnswers.value = [];
+}
+
+const obtenerMensaje = () => {
+    if (score.value === 100) return "🎉 ¡Excelente! Has dominado el tema de la telemática.";
+    if (score.value >= 75) return "💪 Muy bien, tienes buen conocimiento.";
+    if (score.value >= 50) return "👍 Aceptable, pero aún puedes mejorar.";
+    if (score.value >= 25) return "🧐 Necesitas repasar un poco más.";
+    return "😅 No acertaste ninguna. ¡Intenta de nuevo!";
+}
+
+
 </script>
 <template>
     <!-- Hero de pagina -->
@@ -107,7 +153,8 @@ onBeforeUnmount(() => {
             class="gap-8 items-center justify-between py-12 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-24 lg:px-6">
             <img class="w-full rounded-xl" src="../../assets/img/telematicaHero.jpg" alt="dashboard image">
             <div class="mt-4 md:mt-0">
-                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Que es la Telematica?
+                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Que es la
+                    Telematica?
                 </h2>
                 <p class="mb-6 font-normal text-gray-500 md:text-lg">El concepto de telemática refiere a la combinación
                     de la informática y de la tecnología de la comunicación para el envío y la recepción de datos. La
@@ -119,10 +166,12 @@ onBeforeUnmount(() => {
 
     <section class="bg-blue-100">
         <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid-cols-2 sm:py-16 lg:px-6">
-            <h2 class="mb-8 text-3xl lg:text-5xl tracking-tight font-bold text-gray-950 text-center">Los 3 planos de la telemática
+            <h2 class="mb-8 text-3xl lg:text-5xl tracking-tight font-bold text-gray-950 text-center">Los 3 planos de la
+                telemática
             </h2>
             <div class="flex gap-4 flex-wrap justify-center">
-                <div class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
+                <div
+                    class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
                     <svg class="size-16 text-[#150484]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
                         height="24" fill="currentColor" viewBox="0 0 24 24">
                         <path fill-rule="evenodd"
@@ -135,7 +184,8 @@ onBeforeUnmount(() => {
                         información que
                         llega al usuario final</p>
                 </div>
-                <div class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
+                <div
+                    class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
                     <svg class="size-16 text-[#150484]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
                         height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -143,12 +193,14 @@ onBeforeUnmount(() => {
                     </svg>
 
 
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#150484] text-center">Plano de señalización y control
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#150484] text-center">Plano de señalización
+                        y control
                     </h5>
                     <p class="font-normal text-gray-800 text-center">Maneja la comunicación entre el sistema y el
                         usuario para decisiones efectivas</p>
                 </div>
-                <div class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
+                <div
+                    class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
                     <svg class="size-16 text-[#150484]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
                         height="24" fill="currentColor" viewBox="0 0 24 24">
                         <path
@@ -169,9 +221,11 @@ onBeforeUnmount(() => {
     </section>
 
     <section class="bg-blue-100">
-        <div class="gap-8 items-center flex-col sm:flex-row py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:flex md:grid-cols-2 sm:py-16 lg:px-6">
+        <div
+            class="gap-8 items-center flex-col sm:flex-row py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:flex md:grid-cols-2 sm:py-16 lg:px-6">
             <div class="mt-4 md:mt-0 w-full">
-                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Origen e historia de la telemática
+                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Origen e historia de la
+                    telemática
                 </h2>
                 <p class="mb-6 font-normal text-gray-900 md:text-lg">
                     El término telemática fue acuñado en <strong> Francia en 1976 </strong> en el Informe Nora-Minc
@@ -184,14 +238,17 @@ onBeforeUnmount(() => {
             </div>
         </div>
     </section>
+
     <section class="bg-blue-100">
-        <div class="gap-8 items-start flex flex-col-reverse sm:flex-row py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:flex md:grid-cols-2 sm:py-16 lg:px-6">
+        <div
+            class="gap-8 items-start flex flex-col-reverse sm:flex-row py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:flex md:grid-cols-2 sm:py-16 lg:px-6">
             <div class="w-full">
                 <img class="w-full dark:hiddenrounded-xl rounded-xl " src="../../assets/img/seccion-1.png"
                     alt="dashboard image">
             </div>
             <div class="mt-4 md:mt-0 w-full">
-                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Aplicaciones de la telemática</h2>
+                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Aplicaciones de la
+                    telemática</h2>
                 <ul>
                     <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
                         <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -247,9 +304,11 @@ onBeforeUnmount(() => {
     </section>
 
     <section class="bg-blue-100">
-        <div class="w-full flex flex-col lg:flex-row justify-between items-start pt-0 pb-2 px-4 mx-auto max-w-screen-xl">
+        <div
+            class="w-full flex flex-col lg:flex-row justify-between items-start pt-0 pb-2 px-4 mx-auto max-w-screen-xl">
             <div>
-                <h2 class="mb-4 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">Estudio Clave / Asignaturas Principales</h2>
+                <h2 class="mb-4 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">Estudio Clave / Asignaturas
+                    Principales</h2>
                 <ul>
                     <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
                         <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -406,6 +465,7 @@ onBeforeUnmount(() => {
         </div>
 
     </section>
+
     <section class="bg-gray-950">
         <div
             class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
@@ -421,6 +481,347 @@ onBeforeUnmount(() => {
             </div>
         </div>
     </section>
+
+
+
+    <button @click="showModal1 = true" data-popover-target="popover-animation" id="extralarge-modal" type="button"
+        class="text-white bg-[#150484] focus:ring-4 focus:outline-none cursor-pointer focus:ring-blue-300 font-medium rounded-full fixed bottom-6 right-6 text-sm px-5 py-5 text-center transition-all hover:scale-101 "><svg
+            class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd"
+                d="M6 2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 1 0 0-2h-2v-2h2a1 1 0 0 0 1-1V4a2 2 0 0 0-2-2h-8v16h5v2H7a1 1 0 1 1 0-2h1V2H6Z"
+                clip-rule="evenodd" />
+        </svg>
+    </button>
+
+    <div data-popover id="popover-animation" role="tooltip"
+        class="absolute z-10 inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-1 dark:text-gray-400 dark:border-gray-900 dark:bg-gray-950">
+        <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-800 dark:bg-gray-900">
+            <h3 class="font-semibold text-gray-900 dark:text-white">Realiza nuestro test</h3>
+        </div>
+        <div class="px-3 py-2">
+            <p>Haga click aqui para hacer la pequeña encuesta</p>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
+
+    <transition name="fade">
+        <div v-if="showModal1"
+            class="fixed w-full inset-0 z-50 flex items-center justify-center bg-[#000000ec] bg-opacity-50 px-4 py-8">
+            <transition name="scale">
+                <div
+                    class="bg-white dark:bg-gray-950 rounded-2xl shadow-lg w-full max-w-4xl max-h-[90vh] overflow-y-auto animate-fade-in">
+                    <!-- HEADER -->
+                    <div class="flex items-center justify-between p-5 border-b border-gray-200 dark:border-gray-900">
+                        <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">🎉Bienvenido a
+                            nuestro test sobre el Promotor Deportivo</h3>
+                        <button @click="showModal1 = false"
+                            class="cursor-pointer text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center">
+                            <svg class="w-3 h-3" fill="none" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1l6 6m0 0l6 6M7 7l6-6M7 7L1 13" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- BODY -->
+                    <div class="py-6 px-4 sm:px-18 space-y-4 text-gray-700 dark:text-gray-300">
+                        <div class="question mb-8">
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">¿Qué es el turismo
+                                sostenible?</h2>
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[0] === 'A',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[0] !== 'A'
+                                }">
+
+                                <div class="flex hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg">
+                                    <input type="radio" class="hidden" name="q1" value="A"
+                                        v-model="selectedAnswers[0]" />
+                                    <p class="text-gray-800 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Viajar sin gastar
+                                        dinero.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[0] === 'B',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[0] !== 'B'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q1" value="B"
+                                        v-model="selectedAnswers[0]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Turismo que busca
+                                        solo la diversión.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[0] === 'C',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[0] !== 'C'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q1" value="C"
+                                        v-model="selectedAnswers[0]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong> Turismo que
+                                        respeta el medio ambiente, la cultura y apoya a la comunidad local</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[0] === 'D',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[0] !== 'D'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q1" value="D"
+                                        v-model="selectedAnswers[0]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Turismo de lujo</p>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="question mb-8">
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 2: ¿Cuál es
+                                un ejemplo de turismo sostenible?</h2>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[1] === 'A',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[1] !== 'A'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q2" value="A"
+                                        v-model="selectedAnswers[1]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Quedarse en grandes
+                                        cadenas hoteleras multinacionales</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[1] === 'B',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[1] !== 'B'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q2" value="B"
+                                        v-model="selectedAnswers[1]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>
+                                        C) </p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[1] === 'C',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[1] !== 'C'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q2" value="C"
+                                        v-model="selectedAnswers[1]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Comprar souvenirs
+                                        importados</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[1] === 'D',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[1] !== 'D'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q2" value="D"
+                                        v-model="selectedAnswers[1]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Usar jets privados
+
+                                    </p>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="question mb-8">
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 3: ¿Por qué
+                                es importante apoyar negocios locales cuando viajas?</h2>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[2] === 'A',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[2] !== 'A'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q3" value="A"
+                                        v-model="selectedAnswers[2]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Para gastar más
+                                        dinero.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[2] === 'B',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[2] !== 'B'
+                                }">
+                                <div
+                                    class="flex items-center p-2 hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q3" value="B"
+                                        v-model="selectedAnswers[2]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Porque es más
+                                        barato.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[2] === 'C',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[2] !== 'C'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q3" value="C"
+                                        v-model="selectedAnswers[2]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Porque fortalece la
+                                        economía local y conserva la cultura.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[2] === 'D',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[2] !== 'D'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q3" value="D"
+                                        v-model="selectedAnswers[2]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Porque así se
+                                        evitan los impuestos.</p>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="question mb-4">
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 4: ¿Qué
+                                puedes hacer para reducir tu impacto ambiental como turista?</h2>
+
+                            <label class="flex items-center p-2  transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[3] === 'A',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[3] !== 'A'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q4" value="A"
+                                        v-model="selectedAnswers[3]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Usar transporte
+                                        público o bicicleta.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[3] === 'B',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[3] !== 'B'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q4" value="B"
+                                        v-model="selectedAnswers[3]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Tirar basura en la
+                                        calle</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2  transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[3] === 'C',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[3] !== 'C'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q4" value="C"
+                                        v-model="selectedAnswers[3]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Comprar productos
+                                        con mucho empaque.</p>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[3] === 'D',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[3] !== 'D'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q4" value="D"
+                                        v-model="selectedAnswers[3]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Usar aire
+                                        acondicionado al máximo</p>
+                                </div>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- FOOTER -->
+                    <div class="flex justify-end gap-2 p-4 border-t border-gray-200 dark:border-gray-900">
+                        <button @click="calcularResultado()"
+                            class="cursor-pointer bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Mostrar
+                            resultado 🖍️</button>
+                    </div>
+                </div>
+            </transition>
+        </div>
+    </transition>
+
+    <transition name="fade">
+        <div v-if="showResult"
+            class="fixed inset-0 z-50 flex items-center justify-center bg-[#000000ec] bg-opacity-50 px-4 py-8">
+            <div class="bg-white dark:bg-gray-950 rounded-2xl shadow-lg w-full max-w-xl p-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-4">🎯 Resultado del Test</h2>
+                <p class="text-xl text-center text-gray-700 dark:text-gray-300">Obtuviste <strong>{{ score }}%</strong>
+                    de respuestas correctas.</p>
+                <p class="text-lg text-center text-gray-700 dark:text-gray-300 italic">
+                    {{ obtenerMensaje() }}
+                </p>
+
+                <div class="mt-6 text-center">
+
+                    <button @click="reiniciarTest()"
+                        class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded-lg mr-3">
+                        🔁 Volver a intentar
+                    </button>
+                    <button @click="closetModalResult()"
+                        class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </transition>
 
 </template>
 <style scoped>
@@ -511,19 +912,38 @@ onBeforeUnmount(() => {
     animation: pulseGradient 10s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
 }
 
-@media screen {}
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.25s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.scale-enter-active,
+.scale-leave-active {
+    transition: transform 0.25s ease;
+}
+
+.scale-enter-from,
+.scale-leave-to {
+    transform: scale(0.95);
+}
+
 
 @media screen and (max-width: 1023px) {
     .gradient-text {
         line-height: 60px;
     }
 }
+
 @media screen and (max-width: 767px) {
     .gradient-text {
         line-height: 40px;
     }
 }
-@media screen and (max-width: 369px) {
 
-}
+@media screen and (max-width: 369px) {}
 </style>

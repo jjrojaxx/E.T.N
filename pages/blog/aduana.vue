@@ -10,6 +10,12 @@ const items = [
     'Logística y Distribución Internacional',
 ]
 
+const showResult = ref(false)
+const selectedAnswers = ref([])
+const correctAnswers = ['C', 'C', 'B', 'C']
+const score = ref(0)
+const showModal1 = ref(false)
+
 const track = ref(null)
 let translateX = ref(0)
 let animationFrameId
@@ -54,6 +60,44 @@ onBeforeUnmount(() => {
     cancelAnimationFrame(animationFrameId)
 })
 
+// Modal para mostrar el test
+const calcularResultado = () => {
+    let puntos = 0
+    selectedAnswers.value.forEach((respuesta, index) => {
+        if (respuesta === correctAnswers[index]) {
+            puntos += 25
+        }
+    })
+    score.value = puntos
+    showModal1.value = false
+    showResult.value = true
+}
+
+const reiniciarTest = () => {
+    // Reinicia el score y vuelve a mostrar el modal de preguntas
+    score.value = 0
+    showModal1.value = true
+    showResult.value = false
+
+    // Limpia las respuestas seleccionadas
+    selectedAnswers.value = [];
+}
+
+const closetModalResult = () => {
+    score.value = 0
+    showResult.value = false
+    selectedAnswers.value = [];
+}
+
+const obtenerMensaje = () => {
+    if (score.value === 100) return "🎉 ¡Excelente! Has dominado el tema de la telemática.";
+    if (score.value >= 75) return "💪 Muy bien, tienes buen conocimiento.";
+    if (score.value >= 50) return "👍 Aceptable, pero aún puedes mejorar.";
+    if (score.value >= 25) return "🧐 Necesitas repasar un poco más.";
+    return "😅 No acertaste ninguna. ¡Intenta de nuevo!";
+}
+
+
 </script>
 <template>
     <!-- Hero de pagina -->
@@ -67,9 +111,9 @@ onBeforeUnmount(() => {
                     carrera que une redes, telecomunicaciones y tecnología. Pon a prueba lo aprendido con un test
                     interactivo y descubre si estás listo para transformar el mundo digital.</p>
                 <div class="flex flex-col sm:flex-row">
-                    <a href="test/telematica"
+                    <div @click="showModal1 = true" 
                         class="mb-2 sm:mb-0 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-white bg-[#150484] rounded-lg hover:bg-[#041184]  focus:ring-4">Relizar
-                        Test</a>
+                        Test</div>
                     <a href="/"
                         class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-white border-3 border-white rounded-lg hover:border-[#041184] hover:bg-[#041184] transition-all focus:ring-4">Ver
                         otras mensiones
@@ -185,6 +229,7 @@ onBeforeUnmount(() => {
             </div>
         </div>
     </section>
+
     <section class="bg-blue-100">
         <div class="gap-8 items-start flex flex-col-reverse sm:flex-row py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:flex md:grid-cols-2 sm:py-16 lg:px-6">
             <div class="w-full">
@@ -396,6 +441,7 @@ onBeforeUnmount(() => {
         
 
     </section>
+
     <section class="bg-gray-950">
         <div
             class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
@@ -408,6 +454,325 @@ onBeforeUnmount(() => {
             </div>
         </div>
     </section>
+    
+    <button @click="showModal1 = true" data-popover-target="popover-animation" id="extralarge-modal" type="button"
+        class="text-white bg-[#150484] focus:ring-4 focus:outline-none cursor-pointer focus:ring-blue-300 font-medium rounded-full fixed bottom-6 right-6 text-sm px-5 py-5 text-center transition-all hover:scale-101 "><svg
+            class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd"
+                d="M6 2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 1 0 0-2h-2v-2h2a1 1 0 0 0 1-1V4a2 2 0 0 0-2-2h-8v16h5v2H7a1 1 0 1 1 0-2h1V2H6Z"
+                clip-rule="evenodd" />
+        </svg>
+    </button>
+
+    <div data-popover id="popover-animation" role="tooltip"
+        class="absolute z-10 inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-1 dark:text-gray-400 dark:border-gray-900 dark:bg-gray-950">
+        <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-800 dark:bg-gray-900">
+            <h3 class="font-semibold text-gray-900 dark:text-white">Realiza nuestro test</h3>
+        </div>
+        <div class="px-3 py-2">
+            <p>Haga click aqui para hacer la pequeña encuesta</p>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
+
+    <transition name="fade">
+        <div v-if="showModal1"
+            class="fixed w-full inset-0 z-50 flex items-center justify-center bg-[#000000ec] bg-opacity-50 px-4 py-8">
+            <transition name="scale">
+                <div
+                    class="bg-white dark:bg-gray-950 rounded-2xl shadow-lg w-full max-w-4xl max-h-[90vh] overflow-y-auto animate-fade-in">
+                    <!-- HEADER -->
+                    <div class="flex items-center justify-between p-5 border-b border-gray-200 dark:border-gray-900">
+                        <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">🎉Bienvenido a
+                            nuestro test sobre la Aduana</h3>
+                        <button @click="showModal1 = false"
+                            class="cursor-pointer text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center">
+                            <svg class="w-3 h-3" fill="none" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1l6 6m0 0l6 6M7 7l6-6M7 7L1 13" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- BODY -->
+                    <div class="py-6 px-4 sm:px-18 space-y-4 text-gray-700 dark:text-gray-300">
+                        <div class="question mb-8">
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 1: ¿Qué es una aduana?</h2>
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[0] === 'A',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[0] !== 'A'
+                                }">
+
+                                <div class="flex hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg">
+                                    <input type="radio" class="hidden" name="q1" value="A"
+                                        v-model="selectedAnswers[0]" />
+                                    <p class="text-gray-800 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Un banco internacional que regula el comercio.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[0] === 'B',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[0] !== 'B'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q1" value="B"
+                                        v-model="selectedAnswers[0]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Una entidad encargada de administrar los impuestos internos.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[0] === 'C',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[0] !== 'C'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q1" value="C"
+                                        v-model="selectedAnswers[0]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Un organismo encargado de controlar el ingreso y salida de mercancías en un país.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[0] === 'D',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[0] !== 'D'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q1" value="D"
+                                        v-model="selectedAnswers[0]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Una empresa privada de logística internacional.</p>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="question mb-8">
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 2: ¿Qué documento se utiliza para declarar una importación?</h2>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[1] === 'A',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[1] !== 'A'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q2" value="A"
+                                        v-model="selectedAnswers[1]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Pasaporte comercial.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[1] === 'B',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[1] !== 'B'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q2" value="B"
+                                        v-model="selectedAnswers[1]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Declaración de aduana.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[1] === 'C',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[1] !== 'C'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q2" value="C"
+                                        v-model="selectedAnswers[1]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Factura de exportación.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[1] === 'D',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[1] !== 'D'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q2" value="D"
+                                        v-model="selectedAnswers[1]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Licencia de funcionamiento.</p>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="question mb-8">
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 3: ¿Qué significa arancel aduanero?d</h2>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[2] === 'A',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[2] !== 'A'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q3" value="A"
+                                        v-model="selectedAnswers[2]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>El tiempo de espera en una aduana.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[2] === 'B',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[2] !== 'B'
+                                }">
+                                <div
+                                    class="flex items-center p-2 hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q3" value="B"
+                                        v-model="selectedAnswers[2]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>El permiso de entrada para turistas.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[2] === 'C',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[2] !== 'C'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q3" value="C"
+                                        v-model="selectedAnswers[2]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>El impuesto aplicado a productos importados o exportados.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[2] === 'D',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[2] !== 'D'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q3" value="D"
+                                        v-model="selectedAnswers[2]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>El seguro obligatorio del transporte internacional.</p>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="question mb-4">
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 4: ¿Cuál de las siguientes funciones pertenece a la aduana?</h2>
+
+                            <label class="flex items-center p-2  transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[3] === 'A',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[3] !== 'A'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q4" value="A"
+                                        v-model="selectedAnswers[3]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Hacer campañas de vacunación.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[3] === 'B',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[3] !== 'B'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q4" value="B"
+                                        v-model="selectedAnswers[3]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Regular el contenido publicitario.</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-2  transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[3] === 'C',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[3] !== 'C'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q4" value="C"
+                                        v-model="selectedAnswers[3]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Controlar el contrabando de mercancías.</p>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
+                                :class="{
+                                    'bg-gray-800 shadow text-white': selectedAnswers[3] === 'D',
+                                    'hover:bg-gray-800 hover:shadow': selectedAnswers[3] !== 'D'
+                                }">
+                                <div
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input class="hidden" type="radio" name="q4" value="D"
+                                        v-model="selectedAnswers[3]" />
+                                    <p class="text-gray-600 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Organizar elecciones nacionales.</p>
+                                </div>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- FOOTER -->
+                    <div class="flex justify-end gap-2 p-4 border-t border-gray-200 dark:border-gray-900">
+                        <button @click="calcularResultado()"
+                            class="cursor-pointer bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Mostrar
+                            resultado 🖍️</button>
+                    </div>
+                </div>
+            </transition>
+        </div>
+    </transition>
+
+    <transition name="fade">
+        <div v-if="showResult"
+            class="fixed inset-0 z-50 flex items-center justify-center bg-[#000000ec] bg-opacity-50 px-4 py-8">
+            <div class="bg-white dark:bg-gray-950 rounded-2xl shadow-lg w-full max-w-xl p-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-4">🎯 Resultado del Test</h2>
+                <p class="text-xl text-center text-gray-700 dark:text-gray-300">Obtuviste <strong>{{ score }}%</strong>
+                    de respuestas correctas.</p>
+                <p class="text-lg text-center text-gray-700 dark:text-gray-300 italic">
+                    {{ obtenerMensaje() }}
+                </p>
+
+                <div class="mt-6 text-center">
+
+                    <button @click="reiniciarTest()"
+                        class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded-lg mr-3">
+                        🔁 Volver a intentar
+                    </button>
+                    <button @click="closetModalResult()"
+                        class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </transition>
 
 </template>
 <style scoped>
@@ -498,7 +863,25 @@ onBeforeUnmount(() => {
     animation: pulseGradient 10s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
 }
 
-@media screen {}
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.25s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.scale-enter-active,
+.scale-leave-active {
+    transition: transform 0.25s ease;
+}
+
+.scale-enter-from,
+.scale-leave-to {
+    transform: scale(0.95);
+}
 
 @media screen and (max-width: 1023px) {
     .gradient-text {

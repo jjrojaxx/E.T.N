@@ -12,7 +12,7 @@ const items = [
 
 const showResult = ref(false)
 const selectedAnswers = ref([])
-const correctAnswers = ['C', 'B', 'C', 'C']
+const correctAnswers = ['C', 'C', 'B', 'B']
 const score = ref(0)
 const showModal1 = ref(false)
 const track = ref(null)
@@ -111,9 +111,9 @@ const obtenerMensaje = () => {
                     carrera que une redes, telecomunicaciones y tecnología. Pon a prueba lo aprendido con un test
                     interactivo y descubre si estás listo para transformar el mundo digital.</p>
                 <div class="flex flex-col sm:flex-row">
-                    <a href="test/telematica"
+                    <div @click="showModal1 = true" 
                         class="mb-2 sm:mb-0 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-white bg-[#150484] rounded-lg hover:bg-[#041184]  focus:ring-4">Relizar
-                        Test</a>
+                        Test</div>
                     <a href="/"
                         class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-white border-3 border-white rounded-lg hover:border-[#041184] hover:bg-[#041184] transition-all focus:ring-4">Ver
                         otras mensiones
@@ -283,7 +283,8 @@ const obtenerMensaje = () => {
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
                                 clip-rule="evenodd" />
                         </svg>
-                        <strong>Organización: Distribuir recursos y tareas para optimizar el funcionamiento de la empresa.</strong>
+                        <strong>Organización: Distribuir recursos y tareas para optimizar el funcionamiento de la
+                            empresa.</strong>
                     </li>
                     <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
 
@@ -402,7 +403,8 @@ const obtenerMensaje = () => {
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
                                 clip-rule="evenodd" />
                         </svg>
-                        <strong>Administración Empresarial: Organización y dirección de empresas privadas para lograr sus objetivos comerciales.</strong>
+                        <strong>Administración Empresarial: Organización y dirección de empresas privadas para lograr
+                            sus objetivos comerciales.</strong>
                     </li>
                     <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
                         <svg class="size-7 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -411,7 +413,8 @@ const obtenerMensaje = () => {
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
                                 clip-rule="evenodd" />
                         </svg>
-                        <strong>Administración Financiera: Manejo y control de los recursos financieros para asegurar la estabilidad y crecimiento económico de una organización.</strong>
+                        <strong>Administración Financiera: Manejo y control de los recursos financieros para asegurar la
+                            estabilidad y crecimiento económico de una organización.</strong>
                     </li>
                 </ul>
             </div>
@@ -473,7 +476,8 @@ const obtenerMensaje = () => {
             </div>
 
             <div>
-                <h3 class="mb-4 mt-6 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">¿Por que estudiar Administración?
+                <h3 class="mb-4 mt-6 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">¿Por que estudiar
+                    Administración?
                 </h3>
                 <p><strong>Estudiar Aduana te permite participar activamente en el comercio internacional, asegurando el
                         cumplimiento de leyes y regulaciones al importar o exportar mercancías. Es una carrera con alta
@@ -549,8 +553,8 @@ const obtenerMensaje = () => {
                     <!-- BODY -->
                     <div class="py-6 px-4 sm:px-18 space-y-4 text-gray-700 dark:text-gray-300">
                         <div class="question mb-8">
-                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 1: ¿Qué es
-                                una aduana?</h2>
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 1: ¿Qué es la
+                                administración?</h2>
                             <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
                                 :class="{
                                     'bg-gray-800 shadow text-white': selectedAnswers[0] === 'A',
@@ -561,8 +565,8 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q1" value="A"
                                         v-model="selectedAnswers[0]" />
                                     <p class="text-gray-800 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Un banco
-                                        internacional que regula el comercio.</p>
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>El proceso de crear
+                                        leyes gubernamentales.</p>
                                 </div>
                             </label>
 
@@ -576,8 +580,8 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q1" value="B"
                                         v-model="selectedAnswers[0]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Una entidad
-                                        encargada de administrar los impuestos internos.</p>
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>La capacidad de
+                                        influenciar a otras personas.</p>
                                 </div>
                             </label>
 
@@ -591,8 +595,8 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q1" value="C"
                                         v-model="selectedAnswers[0]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Un organismo
-                                        encargado de controlar el ingreso y salida de mercancías en un país</p>
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>El arte de dirigir,
+                                        planear y controlar los recursos para alcanzar objetivos.</p>
                                 </div>
                             </label>
 
@@ -606,15 +610,16 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q1" value="D"
                                         v-model="selectedAnswers[0]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Una empresa privada
-                                        de logística internacional.</p>
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>La gestión
+                                        exclusiva de recursos financieros.</p>
                                 </div>
                             </label>
                         </div>
 
                         <div class="question mb-8">
-                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 2: ¿Qué
-                                documento se utiliza para declarar una importación?</h2>
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 2:¿Cuál es
+                                una de las funciones principales de la administración?
+                            </h2>
 
                             <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
                                 :class="{
@@ -626,8 +631,8 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q2" value="A"
                                         v-model="selectedAnswers[1]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Pasaporte
-                                        comercial.</p>
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Publicar noticias
+                                        empresariales.</p>
                                 </div>
                             </label>
 
@@ -641,8 +646,8 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q2" value="B"
                                         v-model="selectedAnswers[1]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Declaración de
-                                        aduana.</p>
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Controlar los
+                                        precios del mercado.</p>
                                 </div>
                             </label>
 
@@ -656,8 +661,8 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q2" value="C"
                                         v-model="selectedAnswers[1]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Factura de
-                                        exportación.</p>
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong> Planificar los
+                                        recursos y las actividades para alcanzar metas.</p>
                                 </div>
                             </label>
 
@@ -671,15 +676,15 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q2" value="D"
                                         v-model="selectedAnswers[1]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Licencia de
-                                        funcionamiento.</p>
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Contratar personal
+                                        sin procesos previos.</p>
                                 </div>
                             </label>
                         </div>
 
                         <div class="question mb-8">
                             <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 3: ¿Qué
-                                significa arancel aduanero?</h2>
+                                significa organizar en el contexto administrativo?</h2>
 
                             <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
                                 :class="{
@@ -691,8 +696,8 @@ const obtenerMensaje = () => {
                                     <input class="hidden" type="radio" name="q3" value="A"
                                         v-model="selectedAnswers[2]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">A) </strong>El tiempo de espera
-                                        en una aduana.</p>
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Hacer listas de
+                                        tareas pendientes.</p>
                                 </div>
                             </label>
 
@@ -706,8 +711,8 @@ const obtenerMensaje = () => {
                                     <input class="hidden" type="radio" name="q3" value="B"
                                         v-model="selectedAnswers[2]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">B) </strong>El permiso de
-                                        entrada para turistas.</p>
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Distribuir y
+                                        coordinar recursos y actividades de manera estructurada.</p>
                                 </div>
                             </label>
 
@@ -721,8 +726,8 @@ const obtenerMensaje = () => {
                                     <input class="hidden" type="radio" name="q3" value="C"
                                         v-model="selectedAnswers[2]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">C) </strong>El impuesto
-                                        aplicado a productos importados o exportados.</p>
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Decorar una oficina
+                                        corporativa.</p>
                                 </div>
                             </label>
 
@@ -736,14 +741,15 @@ const obtenerMensaje = () => {
                                     <input class="hidden" type="radio" name="q3" value="D"
                                         v-model="selectedAnswers[2]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">D) </strong>El seguro
-                                        obligatorio del transporte internacional.</p>
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Aumentar el sueldo
+                                        a todos los empleados.</p>
                                 </div>
                             </label>
                         </div>
 
                         <div class="question mb-4">
-                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 4: ¿Cuál de las siguientes funciones pertenece a la aduana?</h2>
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 4: ¿Qué
+                                representa el liderazgo en la administración?</h2>
 
                             <label class="flex items-center p-2  transition duration-200 rounded-lg cursor-pointer mb-2"
                                 :class="{
@@ -755,7 +761,8 @@ const obtenerMensaje = () => {
                                     <input class="hidden" type="radio" name="q4" value="A"
                                         v-model="selectedAnswers[3]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Hacer campañas de vacunación.</p>
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>La capacidad de
+                                        castigar al personal.</p>
                                 </div>
                             </label>
 
@@ -769,7 +776,8 @@ const obtenerMensaje = () => {
                                     <input class="hidden" type="radio" name="q4" value="B"
                                         v-model="selectedAnswers[3]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Regular el contenido publicitario.</p>
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>La habilidad de
+                                        motivar e influir en un equipo para lograr metas.</p>
                                 </div>
                             </label>
 
@@ -783,7 +791,10 @@ const obtenerMensaje = () => {
                                     <input class="hidden" type="radio" name="q4" value="C"
                                         v-model="selectedAnswers[3]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Controlar el contrabando de mercancías.</p>
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>La obligación de
+                                        seguir órdenes sin cuestionarlas.
+
+                                    </p>
                                 </div>
                             </label>
                             <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
@@ -796,7 +807,7 @@ const obtenerMensaje = () => {
                                     <input class="hidden" type="radio" name="q4" value="D"
                                         v-model="selectedAnswers[3]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Organizar elecciones nacionales.</p>
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Una herramienta para delegar todo el trabajo.</p>
                                 </div>
 
                             </label>
