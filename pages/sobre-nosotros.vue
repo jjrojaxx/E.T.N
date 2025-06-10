@@ -78,7 +78,7 @@
     <section class="bg-white">
         <div
             class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-            <div class="mt-4 md:mt-0">
+            <div class="mt-4 mb-3 md:mt-0">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 ">Nuestros Valores</h2>
                 <p class="mb-6 font-normal text-gray-600 md:text-lg">Nuestra labor se rige por un conjunto de valores
                     fundamentales que guían cada una de nuestras acciones y decisiones:</p>
@@ -116,6 +116,8 @@
     background-image: url('../assets/img/bg-hero.jpg');
     background-size: cover;
     background-position: center;
+    position: relative;
+    height: 100vh;
 }
 
 .bg-img::before {

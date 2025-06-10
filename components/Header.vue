@@ -8,7 +8,7 @@
                 </NuxtLink>
                 <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                     <div class="flex justify-center items-center gap-3">
-                        <a href="https://www.facebook.com/profile.php?id=61576302114497&rdid=Vsy7PpkDtqLICZSw&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16ShF2pzJW%2F#">
+                        <a href="https://www.facebook.com/profile.php?id=61576302114497&rdid=Vsy7PpkDtqLICZSw&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16ShF2pzJW%2F#" target="_blank">
                             <svg class="size-7 hover:text-[#250e8f] transition-all text-gray-800 dark:text-white" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                 viewBox="0 0 24 24">
@@ -17,7 +17,7 @@
                                     clip-rule="evenodd" />
                             </svg>
                         </a>
-                        <a href="https://www.instagram.com/e.t.c.n_manuelatanasiogirardot?igsh=MWtxbHhlaGF5aXM0cw%3D%3D">
+                        <a href="https://www.instagram.com/e.t.c.n_manuelatanasiogirardot?igsh=MWtxbHhlaGF5aXM0cw%3D%3D" target="_blank">
                             <svg class="size-7 hover:text-[#250e8f] transition-all text-gray-800 dark:text-white mt-0.4" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24">
@@ -26,7 +26,7 @@
                                     clip-rule="evenodd" />
                             </svg>
                         </a>
-                        <a href="https://www.tiktok.com/@e.t.n.manuel.atanasio?_t=ZM-8wt6LM8p46P&_r=1">
+                        <a href="https://www.tiktok.com/@e.t.n.manuel.atanasio?_t=ZM-8wt6LM8p46P&_r=1" target="_blank">
                             <svg class="size-5.5 hover:text-[#250e8f] transition-all text-gray-800 dark:text-white" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 449.45 515.38">
@@ -61,7 +61,7 @@
                                 nosotros</a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="#contacto"
                                 class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#150484] md:dark:hover:text-[#150484] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition-all">Contacto</a>
                         </li>
                     </ul>

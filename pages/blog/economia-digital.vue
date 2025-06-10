@@ -234,6 +234,7 @@ onBeforeUnmount(() => {
             </div>
         </div>
     </section>
+
     <section class="bg-blue-100">
         <div
             class="gap-8 items-start flex flex-col-reverse sm:flex-row py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:flex md:grid-cols-2 sm:py-16 lg:px-6">
@@ -295,8 +296,8 @@ onBeforeUnmount(() => {
 
     <section class="bg-blue-100">
         <div
-            class="w-full flex flex-col lg:flex-row justify-between items-start pt-0 pb-2 px-4 mx-auto max-w-screen-xl">
-            <div>
+            class="w-full flex flex-col lg:mb-12 lg:flex-row justify-between items-start pt-0 pb-2 px-4 mx-auto max-w-screen-xl">
+            <div class="w-full lg:w-1/2">
                 <h2 class="mb-4 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">Estudio Clave / Asignaturas
                     Principales</h2>
                 <ul>
@@ -360,17 +361,14 @@ onBeforeUnmount(() => {
                 </ul>
             </div>
 
-            <div>
-                <h3 class="mb-4 mt-6 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">El futuro de la economía
+            <div class="w-full lg:w-1/2">
+                <h3 class="mb-4 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">El futuro de la economía
                     digital y la innovación tecnológica
                 </h3>
-
-
-
             </div>
         </div>
 
-        <div class="gap-8 items-start py-8 px-4 mx-auto max-w-screen-xl  ">
+        <div class="gap-8 flex flex-col lg:flex-row items-start py-8 px-4 mx-auto max-w-screen-xl  ">
             <div class="md:mt-0 w-full lg:w-1/2">
                 <h2 class="mb-4 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">Oportunidades Futuras</h2>
                 <ul>
@@ -425,8 +423,8 @@ onBeforeUnmount(() => {
                 </ul>
             </div>
 
-            <div>
-                <h3 class="mb-4 mt-6 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">¿Por que estudiar
+            <div  class="md:mt-0 w-full lg:w-1/2">
+                <h3 class="mb-4 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">¿Por que estudiar
                     Electricidad?
                 </h3>
                 <strong>Estudiar Economía Digital te prepara para entender y aprovechar el impacto de las tecnologías
@@ -441,6 +439,7 @@ onBeforeUnmount(() => {
 
 
     </section>
+
     <section class="bg-gray-950">
         <div
             class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">

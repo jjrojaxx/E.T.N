@@ -315,12 +315,11 @@ const obtenerMensaje = () => {
     </section>
 
     <section class="bg-blue-100">
-        <div
-            class="w-full flex flex-col lg:flex-row justify-between items-start pt-0 pb-2 px-4 mx-auto max-w-screen-xl">
-            <div>
+        <div class="w-full flex flex-col lg:flex-row justify-between items-start pt-0 pb-2 px-4 mx-auto max-w-screen-xl">
+            <div class="w-full lg:w-1/2"> 
                 <h2 class="mb-4 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">Estudio Clave / Asignaturas
                     Principales</h2>
-                <ul>
+                <ul class="mb-4">
                     <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
                         <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -381,8 +380,8 @@ const obtenerMensaje = () => {
                 </ul>
             </div>
 
-            <div>
-                <h3 class="mb-4 mt-6 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">Tipos de Administración
+            <div class="w-full lg:w-1/2">
+                <h3 class="mb-4 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">Tipos de Administración
                 </h3>
 
                 <ul>
@@ -420,8 +419,8 @@ const obtenerMensaje = () => {
             </div>
         </div>
 
-        <div class="gap-8 items-start py-8 px-4 mx-auto max-w-screen-xl  ">
-            <div class="md:mt-0 w-full lg:w-1/2">
+        <div class="gap-8 flex flex-col lg:flex-row items-start py-8 px-4 mx-auto max-w-screen-xl">
+            <div class="w-full lg:w-1/2">
                 <h2 class="mb-4 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">Oportunidades Futuras</h2>
                 <ul>
                     <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
@@ -475,11 +474,11 @@ const obtenerMensaje = () => {
                 </ul>
             </div>
 
-            <div>
-                <h3 class="mb-4 mt-6 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">¿Por que estudiar
+            <div class="w-full lg:w-1/2">
+                <h3 class="mb-4 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">¿Por que estudiar
                     Administración?
                 </h3>
-                <p><strong>Estudiar Aduana te permite participar activamente en el comercio internacional, asegurando el
+                <p class="text-gray-900 md:text-lg"><strong>Estudiar Aduana te permite participar activamente en el comercio internacional, asegurando el
                         cumplimiento de leyes y regulaciones al importar o exportar mercancías. Es una carrera con alta
                         demanda laboral, tanto en el sector público como privado, y te forma en áreas clave como
                         logística, legislación, seguridad y gestión aduanera. Además, contribuyes a la economía del país

@@ -30,7 +30,7 @@ const images = [
     <section class="bg-white dark:bg-gray-950 mt-23">
         <div class="max-w-screen px-4 py-42 mx-auto bg-img">
             <div class="flex flex-col items-center">
-                <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span
+                <h1 class="mb-4 text-center text-3xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span
                         class="text-[#150484]">Educación con
                         valores</span> y excelencia</h1>
                 <p class="text-center max-w-2xl mb-6 font-normal text-white lg:mb-8 md:text-lg lg:text-xl">
@@ -243,7 +243,7 @@ const images = [
 
     <section class="bg-white dark:bg-gray-950">
         <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-            <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+            <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400 mb-4">
                 <h2 class="mb-4  text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Conoce la historia de
                     nuestra escuela E.T.C.N “Manuel Atanasio Girardot</h2>
                 <p class="mb-4"> La E.T.C.N "Manuel Atanasio Girardot", fundada el 29 de enero de 1973, busca formar
@@ -279,7 +279,7 @@ const images = [
                     pedacito de nuestra comunidad, desde eventos memorables hasta el día a día de nuestros estudiantes y
                     docentes, reflejando el compromiso con la formación integral y el futuro de Venezuela.</p>
             </div>
-            <div class="grid grid-cols-4 gap-4">
+            <div class="grid grid-cols-2 mb-4 gap-4 lg:grid-cols-4">
                 <img src="../public/img/carrusel-1.jpg" alt=""
                     class="w-full h-auto rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
                 <img src="../public/img/carrusel-2.jpg" alt=""
@@ -289,18 +289,18 @@ const images = [
                 <img src="../public/img/carrusel-4.jpg" alt=""
                     class="w-full h-auto rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
             </div>
-            <div class="grid grid-cols-2 grid-rows-1 gap-4">
+            <div class="grid grid-cols-2 gap-4">
                 <img src="../public/img/carrusel-5.jpg" alt=""
-                    class="w-full h-80 rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
+                    class="w-full h-auto rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
                 <img src="../public/img/carrusel-1.jpg" alt=""
-                    class="w-full h-80 rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
+                    class="w-full h-auto rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
             </div>
         </div>
     </section>
 
-    <section class="bg-white">
-        <div class="flex flex-row mx-auto max-w-screen-xl py-8 px-5">
-            <div class="w-1/2">
+    <section class="bg-white" id="contacto">
+        <div class="flex flex-col lg:flex-row mx-auto max-w-screen-xl py-8 px-5">
+            <div class="w-full lg:w-1/2 mb-12">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900">Contáctanos</h2>
                 <p class="mb-6 text-gray-700 font-normal">¿Tienes dudas? Escríbenos y te responderemos lo antes posible.
                 </p>
@@ -334,7 +334,7 @@ const images = [
                     </a>
                 </div>
             </div>
-            <div class="w-1/2">
+            <div class="w-full lg:w-1/2">
                 <h2 class="mb-4  text-4xl tracking-tight font-bold text-gray-900">Ubicación</h2>
                 <p class="mb-6 text-gray-700 font-normal">Ven a visitarnos o conoce dónde estamos ubicados.</p>
                 <div class="w-full h-1/2 md:h-full rounded-md overflow-hidden shadow-md">
@@ -352,6 +352,8 @@ const images = [
     background-image: url('../assets/img/bg-hero.jpg');
     background-size: cover;
     background-position: center;
+    position: relative;
+    height: 100vh;
 }
 
 .bg-img::before {
