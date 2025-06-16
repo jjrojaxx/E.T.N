@@ -90,7 +90,7 @@ const closetModalResult = () => {
 }
 
 const obtenerMensaje = () => {
-    if (score.value === 100) return "🎉 ¡Excelente! Has dominado el tema de la telemática.";
+    if (score.value === 100) return "🎉 ¡Excelente! Has dominado el tema de la Aduana.";
     if (score.value >= 75) return "💪 Muy bien, tienes buen conocimiento.";
     if (score.value >= 50) return "👍 Aceptable, pero aún puedes mejorar.";
     if (score.value >= 25) return "🧐 Necesitas repasar un poco más.";
@@ -417,7 +417,7 @@ const obtenerMensaje = () => {
                         <strong>Control y Fiscalización Aduanera</strong>
                     </li>
                     <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
-                        <svg class="size-6 text-black-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="currentColor" viewBox="0 01aq 24 24">
                             <path fill-rule="evenodd"
                                 d="M14.6144 7.19994c.3479.48981.5999 1.15357.5999 1.80006 0 1.6569-1.3432 3-3 3-1.6569 0-3.00004-1.3431-3.00004-3 0-.67539.22319-1.29865.59983-1.80006M6.21426 6v4m0-4 6.00004-3 6 3-6 2-2.40021-.80006M6.21426 6l3.59983 1.19994M6.21426 19.8013v-2.1525c0-1.6825 1.27251-3.3075 2.95093-3.6488l3.04911 2.9345 3-2.9441c1.7026.3193 3 1.9596 3 3.6584v2.1525c0 .6312-.5373 1.1429-1.2 1.1429H7.41426c-.66274 0-1.2-.5117-1.2-1.1429Z"
@@ -616,7 +616,7 @@ const obtenerMensaje = () => {
                         </div>
 
                         <div class="question mb-8">
-                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 3: ¿Qué significa arancel aduanero?d</h2>
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 3: ¿Qué significa arancel aduanero?</h2>
 
                             <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
                                 :class="{
