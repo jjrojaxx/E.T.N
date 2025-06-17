@@ -60,8 +60,12 @@
                                 class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#250e8f] md:dark:hover:text-[#150484] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition-all">Sobre
                                 nosotros</a>
                         </li>
+                          <li>
+                            <a href="/#menciones"
+                                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#150484] md:dark:hover:text-[#150484] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition-all">Menciones</a>
+                        </li>
                         <li>
-                            <a href="#contacto"
+                            <a href="/#contacto"
                                 class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#150484] md:dark:hover:text-[#150484] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition-all">Contacto</a>
                         </li>
                     </ul>

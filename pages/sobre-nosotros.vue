@@ -6,7 +6,7 @@
             <div class="flex flex-col items-center">
                 <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">Sobre nosotros
                 </h1>
-                <p class="text-center max-w-2xl mb-6 font-normal text-white lg:mb-8 md:text-lg lg:text-xl">
+                <p class="text-center max-w-2xl font-normal text-white md:text-lg lg:text-xl">
                     Formamos personas desde el nivel inicial hasta el secundario con un enfoque integral, moderno y
                     humano.
                 </p>
@@ -18,11 +18,8 @@
     <section class="bg-gray-950">
         <div
             class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-            <img class="w-full dark:hidden"
-                src=""
-                alt="dashboard image">
-            <img class="w-full hidden dark:block"
-                src="/assets/img/nuestra historia.jpg"
+            <img class="w-full h-auto rounded-lg shadow-lg"
+                src="../assets/img/nuestra historia.jpg"
                 alt="dashboard image">
             <div class="mt-4 md:mt-0">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Nuestra Historia</h2>
@@ -46,10 +43,7 @@
                     estudiantes para su exitosa inserción laboral y su contribución activa como ciudadanos críticos y
                     comprometidos con la sociedad. </p>
             </div>
-            <img class="w-full dark:hidden"
-                src="/assets/img/mision.jpg"
-                alt="dashboard image">
-            <img class="w-full hidden dark:block"
+            <img class="w-full h-auto rounded-lg shadow-lg"
                 src="assets/img/mision.jpg"
                 alt="dashboard image">
 
@@ -59,10 +53,7 @@
     <section class="bg-gray-950">
         <div
             class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-            <img class="w-full dark:hidden"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
-                alt="dashboard image">
-            <img class="w-full hidden dark:block"
+            <img class="w-full h-auto rounded-lg shadow-lg"
                 src="assets/img/visio.jpg"
                 alt="dashboard image">
             <div class="mt-4 md:mt-0">
@@ -98,10 +89,8 @@
                     </li>
                 </ul>
             </div>
-            <img class="w-full dark:hidden"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
-                alt="dashboard image">
-            <img class="w-full hidden dark:block"
+
+            <img class="w-full h-auto rounded-lg shadow-lg"
                 src="assets/img/valores.jpg"
                 alt="dashboard image">
 
@@ -117,7 +106,6 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 100vh;
 }
 
 .bg-img::before {

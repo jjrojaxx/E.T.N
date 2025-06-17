@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { FaFontAwesome } from 'react-icons/fa6'
 const svgColors = ref([])
 const items = [
     'Comercio Internacional',
@@ -104,13 +105,16 @@ const obtenerMensaje = () => {
     <section class="bg-img mt-23 pt-15 pb-15">
         <div class="max-w-screen px-4 px mx-auto">
             <div class="flex flex-col items-center mb-4">
-                <h1 class="text-center mb-4 text-3xl font-bold md:text-5xl lg:text-6xl gradient-text">Aduanas tu puerta de entrada al comercio internacional</h1>
+                <h1 class="text-center mb-4 text-3xl font-bold md:text-5xl lg:text-6xl gradient-text">Aduanas tu puerta
+                    de entrada al comercio internacional</h1>
                 <p class="text-center max-w-2xl mb-6 font-normal gradient-p lg:mb-8 md:text-lg lg:text-xl">Explora
-                   una carrera que une comercio internacional, logística y gestión fronteriza.
-                   Pon a prueba lo aprendido con un test interactivo y descubre si estás listo para facilitar el movimiento del mundo.</p>
+                    una carrera que une comercio internacional, logística y gestión fronteriza.
+                    Pon a prueba lo aprendido con un test interactivo y descubre si estás listo para facilitar el
+                    movimiento del mundo.</p>
                 <div class="flex flex-col sm:flex-row">
-                    <div @click="showModal1 = true" 
-                        class="mb-2 sm:mb-0 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-white bg-[#150484] rounded-lg hover:bg-[#041184]  focus:ring-4">Relizar
+                    <div @click="showModal1 = true"
+                        class="mb-2 sm:mb-0 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-white bg-[#150484] rounded-lg hover:bg-[#041184]  focus:ring-4">
+                        Relizar
                         Test</div>
                     <a href="/"
                         class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-white border-3 border-white rounded-lg hover:border-[#041184] hover:bg-[#041184] transition-all focus:ring-4">Ver
@@ -145,19 +149,25 @@ const obtenerMensaje = () => {
             class="gap-8 items-center justify-between py-12 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-24 lg:px-6">
             <img class="w-full rounded-xl" src="../../assets/img/aduana.jpg" alt="dashboard image">
             <div class="mt-4 md:mt-0">
-                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Que es la Aduana?
+                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Que es la
+                    Aduana?
                 </h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">Una aduana es una oficina pública ubicada en puntos estratégicos como puertos, aeropuertos, fronteras o estaciones ferroviarias, encargada de controlar el tráfico de mercancías que ingresan y salen de un país. Su función principal es verificar y fiscalizar estas mercancías, asegurando el cumplimiento de las leyes vigentes.</p>
+                <p class="mb-6 font-normal text-gray-500 md:text-lg">Una aduana es una oficina pública ubicada en puntos
+                    estratégicos como puertos, aeropuertos, fronteras o estaciones ferroviarias, encargada de controlar
+                    el tráfico de mercancías que ingresan y salen de un país. Su función principal es verificar y
+                    fiscalizar estas mercancías, asegurando el cumplimiento de las leyes vigentes.</p>
             </div>
         </div>
     </section>
 
     <section class="bg-blue-100">
         <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid-cols-2 sm:py-16 lg:px-6">
-            <h2 class="mb-8 text-3xl lg:text-5xl tracking-tight font-bold text-gray-950 text-center">Principales funciones
+            <h2 class="mb-8 text-3xl lg:text-5xl tracking-tight font-bold text-gray-950 text-center">Principales
+                funciones
             </h2>
             <div class="flex gap-4 flex-wrap justify-center">
-                <div class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
+                <div
+                    class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
                     <svg class="size-16 text-[#150484]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
                         height="24" fill="currentColor" viewBox="0 0 24 24">
                         <path fill-rule="evenodd"
@@ -165,10 +175,13 @@ const obtenerMensaje = () => {
                             clip-rule="evenodd" />
                     </svg>
 
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">Regular el comercio exterior</h5>
-                    <p class="font-normal text-gray-800 text-center"> Controlan y supervisan el movimiento de bienes importados y exportados para garantizar el cumplimiento de las normativas.</p>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">Regular el comercio
+                        exterior</h5>
+                    <p class="font-normal text-gray-800 text-center"> Controlan y supervisan el movimiento de bienes
+                        importados y exportados para garantizar el cumplimiento de las normativas.</p>
                 </div>
-                <div class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
+                <div
+                    class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
                     <svg class="size-16 text-[#150484]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
                         height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -176,11 +189,14 @@ const obtenerMensaje = () => {
                     </svg>
 
 
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight  text-[#150484] text-center"> Cobro de impuestos y aranceles
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight  text-[#150484] text-center"> Cobro de impuestos y
+                        aranceles
                     </h5>
-                    <p class="font-normal text-gray-800 text-center"> Recaudan los tributos correspondientes a las operaciones de comercio internacional.</p>
+                    <p class="font-normal text-gray-800 text-center"> Recaudan los tributos correspondientes a las
+                        operaciones de comercio internacional.</p>
                 </div>
-                <div class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
+                <div
+                    class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
                     <svg class="size-16 text-[#150484]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
                         height="24" fill="currentColor" viewBox="0 0 24 24">
                         <path
@@ -190,11 +206,14 @@ const obtenerMensaje = () => {
                     </svg>
 
 
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">Prevención de productos ilegales</h5>
-                    <p class="font-normal text-gray-800 text-center"> Impiden la entrada y salida de mercancías prohibidas como drogas, armas y otros productos ilegales.</p>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">Prevención de
+                        productos ilegales</h5>
+                    <p class="font-normal text-gray-800 text-center"> Impiden la entrada y salida de mercancías
+                        prohibidas como drogas, armas y otros productos ilegales.</p>
                 </div>
 
-                 <div class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
+                <div
+                    class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
                     <svg class="size-16 text-[#150484]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
                         height="24" fill="currentColor" viewBox="0 0 24 24">
                         <path
@@ -204,8 +223,10 @@ const obtenerMensaje = () => {
                     </svg>
 
 
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">Lucha contra el fraude aduanero</h5>
-                    <p class="font-normal text-gray-800 text-center"> Detectan y evitan falsificaciones, adulteraciones y evasiones fiscales para proteger la economía.</p>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">Lucha contra el fraude
+                        aduanero</h5>
+                    <p class="font-normal text-gray-800 text-center"> Detectan y evitan falsificaciones, adulteraciones
+                        y evasiones fiscales para proteger la economía.</p>
                 </div>
 
             </div>
@@ -214,12 +235,20 @@ const obtenerMensaje = () => {
     </section>
 
     <section class="bg-blue-100">
-        <div class="gap-8 items-center flex-col sm:flex-row py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:flex md:grid-cols-2 sm:py-16 lg:px-6">
+        <div
+            class="gap-8 items-center flex-col sm:flex-row py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:flex md:grid-cols-2 sm:py-16 lg:px-6">
             <div class="mt-4 md:mt-0 w-full">
-                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Origen e historia de la Aduana
+                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Origen e historia de la
+                    Aduana
                 </h2>
                 <p class="mb-6 font-normal text-gray-900 md:text-lg">
-                 Las aduanas tienen su origen en <strong>la antigüedad</strong>, cuando las civilizaciones comenzaron a comerciar bienes a través de fronteras territoriales. Ya en el Imperio Romano existían sistemas de control y cobro de impuestos sobre mercancías que cruzaban sus límites. El concepto moderno de aduanas se consolidó durante la Edad Media y la época colonial, con la regulación formal del comercio internacional y la implementación de aranceles para proteger las economías nacionales. Actualmente, las aduanas desempeñan un papel fundamental en la regulación del comercio exterior, el control sanitario, la seguridad y la recaudación fiscal a nivel global.</p>
+                    Las aduanas tienen su origen en <strong>la antigüedad</strong>, cuando las civilizaciones comenzaron
+                    a comerciar bienes a través de fronteras territoriales. Ya en el Imperio Romano existían sistemas de
+                    control y cobro de impuestos sobre mercancías que cruzaban sus límites. El concepto moderno de
+                    aduanas se consolidó durante la Edad Media y la época colonial, con la regulación formal del
+                    comercio internacional y la implementación de aranceles para proteger las economías nacionales.
+                    Actualmente, las aduanas desempeñan un papel fundamental en la regulación del comercio exterior, el
+                    control sanitario, la seguridad y la recaudación fiscal a nivel global.</p>
             </div>
             <div class="w-full">
                 <img class="w-full dark:hiddenrounded-xl rounded-xl " src="../../assets/img/aduana1.jpg"
@@ -229,25 +258,28 @@ const obtenerMensaje = () => {
     </section>
 
     <section class="bg-blue-100">
-        <div class="gap-8 items-start flex flex-col-reverse sm:flex-row py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:flex md:grid-cols-2 sm:py-16 lg:px-6">
+        <div
+            class="gap-8 items-start flex flex-col-reverse sm:flex-row py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:flex md:grid-cols-2 sm:py-16 lg:px-6">
             <div class="w-full">
                 <img class="w-full dark:hiddenrounded-xl rounded-xl " src="../../assets/img/aduana3.jpg"
                     alt="dashboard image">
             </div>
             <div class="mt-4 md:mt-0 w-full">
-                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Importancia de las Aduanas</h2>
+                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Importancia de las Aduanas
+                </h2>
                 <ul>
-                    <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
-                        <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    <li class="mb-1  font-normal text-gray-900 md:text-lg flex items-center">
+                         <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
                                 clip-rule="evenodd" />
                         </svg>
-                        <strong>Garantizar la seguridad nacional: Impidiendo la circulación de productos ilegales o peligrosos</strong>
+                        <strong>Garantizar la seguridad nacional: Impidiendo la circulación de productos ilegales o
+                            peligrosos</strong>
                     </li>
                     <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
-                        <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                          <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
@@ -257,34 +289,38 @@ const obtenerMensaje = () => {
                     </li>
                     <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
 
-                        <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                          <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
                                 clip-rule="evenodd" />
                         </svg>
 
-                        <strong>Contribuir a la economía: A través de la recaudación de impuestos que financian al Estado.</strong>
+                        <strong>Contribuir a la economía: A través de la recaudación de impuestos que financian al
+                            Estado.</strong>
                     </li>
                     <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
-                        <svg class="size-7.5 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                          <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
                                 clip-rule="evenodd" />
                         </svg>
-                        <strong>  Luchar contra el comercio ilícito: Disminuyendo el tráfico ilegal de mercancías.</strong>
+                        <strong> Luchar contra el comercio ilícito: Disminuyendo el tráfico ilegal de
+                            mercancías.</strong>
                     </li>
-                  
+
                 </ul>
             </div>
         </div>
     </section>
 
     <section class="bg-blue-100">
-        <div class="w-full flex flex-col lg:flex-row justify-between items-start pt-0 pb-2 px-4 mx-auto max-w-screen-xl">
+        <div
+            class="w-full flex flex-col lg:flex-row justify-between items-start pt-0 pb-2 px-4 mx-auto max-w-screen-xl">
             <div class="w-full lg:w-1/2 mb-12">
-                <h2 class="mb-4 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">Estudio Clave / Asignaturas Principales</h2>
+                <h2 class="mb-4 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">Estudio Clave / Asignaturas
+                    Principales</h2>
                 <ul>
                     <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
                         <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -358,7 +394,8 @@ const obtenerMensaje = () => {
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
                                 clip-rule="evenodd" />
                         </svg>
-                        <strong>Aduana terrestre: Controla mercancías que circulan por carretera o zonas fronterizas.</strong>
+                        <strong>Aduana terrestre: Controla mercancías que circulan por carretera o zonas
+                            fronterizas.</strong>
                     </li>
                     <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
                         <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -425,19 +462,23 @@ const obtenerMensaje = () => {
                         </svg>
                         <strong>Logística y Distribución Internacional</strong>
                     </li>
-                  
+
                 </ul>
             </div>
 
             <div class="w-full lg:w-1/2">
                 <h3 class="mb-4 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">¿Por que estudiar Aduana?
                 </h3>
-                <p class="text-gray-900"><strong>Estudiar Aduana te permite participar activamente en el comercio internacional, asegurando el cumplimiento de leyes y regulaciones al importar o exportar mercancías. Es una carrera con alta demanda laboral, tanto en el sector público como privado, y te forma en áreas clave como logística, legislación, seguridad y gestión aduanera. Además, contribuyes a la economía del país y a la protección frente a productos ilegales.</strong></p>
-              
+                <p class="text-gray-900"><strong>Estudiar Aduana te permite participar activamente en el comercio
+                        internacional, asegurando el cumplimiento de leyes y regulaciones al importar o exportar
+                        mercancías. Es una carrera con alta demanda laboral, tanto en el sector público como privado, y
+                        te forma en áreas clave como logística, legislación, seguridad y gestión aduanera. Además,
+                        contribuyes a la economía del país y a la protección frente a productos ilegales.</strong></p>
+
             </div>
         </div>
-        
-        
+
+
 
     </section>
 
@@ -449,11 +490,15 @@ const obtenerMensaje = () => {
             <div class="mt-4 md:mt-0">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Perfil del Estudiante
                 </h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">El estudiante de aduanas se distingue por una combinación de conocimientos, habilidades y competencias que le permiten desenvolverse eficazmente en el ámbito del comercio internacional y la gestión aduanera. Este perfil requiere capacidad analítica, atención al detalle, conocimientos legales y administrativos, así como habilidades para la resolución de problemas y la toma de decisiones en un entorno dinámico y regulado.</p>
+                <p class="mb-6 font-normal text-gray-500 md:text-lg">El estudiante de aduanas se distingue por una
+                    combinación de conocimientos, habilidades y competencias que le permiten desenvolverse eficazmente
+                    en el ámbito del comercio internacional y la gestión aduanera. Este perfil requiere capacidad
+                    analítica, atención al detalle, conocimientos legales y administrativos, así como habilidades para
+                    la resolución de problemas y la toma de decisiones en un entorno dinámico y regulado.</p>
             </div>
         </div>
     </section>
-    
+
     <button @click="showModal1 = true" data-popover-target="popover-animation" id="extralarge-modal" type="button"
         class="text-white bg-[#150484] focus:ring-4 focus:outline-none cursor-pointer focus:ring-blue-300 font-medium rounded-full fixed bottom-6 right-6 text-sm px-5 py-5 text-center transition-all hover:scale-101 "><svg
             class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -497,7 +542,8 @@ const obtenerMensaje = () => {
                     <!-- BODY -->
                     <div class="py-6 px-4 sm:px-18 space-y-4 text-gray-700 dark:text-gray-300">
                         <div class="question mb-8">
-                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 1: ¿Qué es una aduana?</h2>
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 1: ¿Qué es
+                                una aduana?</h2>
                             <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
                                 :class="{
                                     'bg-gray-800 shadow text-white': selectedAnswers[0] === 'A',
@@ -508,7 +554,8 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q1" value="A"
                                         v-model="selectedAnswers[0]" />
                                     <p class="text-gray-800 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Un banco internacional que regula el comercio.</p>
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Un banco
+                                        internacional que regula el comercio.</p>
                                 </div>
                             </label>
 
@@ -522,7 +569,8 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q1" value="B"
                                         v-model="selectedAnswers[0]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Una entidad encargada de administrar los impuestos internos.</p>
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Una entidad
+                                        encargada de administrar los impuestos internos.</p>
                                 </div>
                             </label>
 
@@ -536,7 +584,8 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q1" value="C"
                                         v-model="selectedAnswers[0]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Un organismo encargado de controlar el ingreso y salida de mercancías en un país.</p>
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Un organismo
+                                        encargado de controlar el ingreso y salida de mercancías en un país.</p>
                                 </div>
                             </label>
 
@@ -550,13 +599,15 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q1" value="D"
                                         v-model="selectedAnswers[0]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Una empresa privada de logística internacional.</p>
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Una empresa privada
+                                        de logística internacional.</p>
                                 </div>
                             </label>
                         </div>
 
                         <div class="question mb-8">
-                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 2: ¿Qué documento se utiliza para declarar una importación?</h2>
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 2: ¿Qué
+                                documento se utiliza para declarar una importación?</h2>
 
                             <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
                                 :class="{
@@ -568,7 +619,8 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q2" value="A"
                                         v-model="selectedAnswers[1]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Pasaporte comercial.</p>
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Pasaporte
+                                        comercial.</p>
                                 </div>
                             </label>
 
@@ -582,7 +634,8 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q2" value="B"
                                         v-model="selectedAnswers[1]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Declaración de aduana.</p>
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Declaración de
+                                        aduana.</p>
                                 </div>
                             </label>
 
@@ -596,7 +649,8 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q2" value="C"
                                         v-model="selectedAnswers[1]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Factura de exportación.</p>
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Factura de
+                                        exportación.</p>
                                 </div>
                             </label>
 
@@ -610,13 +664,15 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q2" value="D"
                                         v-model="selectedAnswers[1]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Licencia de funcionamiento.</p>
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Licencia de
+                                        funcionamiento.</p>
                                 </div>
                             </label>
                         </div>
 
                         <div class="question mb-8">
-                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 3: ¿Qué significa arancel aduanero?</h2>
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 3: ¿Qué
+                                significa arancel aduanero?</h2>
 
                             <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
                                 :class="{
@@ -628,7 +684,8 @@ const obtenerMensaje = () => {
                                     <input class="hidden" type="radio" name="q3" value="A"
                                         v-model="selectedAnswers[2]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">A) </strong>El tiempo de espera en una aduana.</p>
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>El tiempo de espera
+                                        en una aduana.</p>
                                 </div>
                             </label>
 
@@ -642,7 +699,8 @@ const obtenerMensaje = () => {
                                     <input class="hidden" type="radio" name="q3" value="B"
                                         v-model="selectedAnswers[2]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">B) </strong>El permiso de entrada para turistas.</p>
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>El permiso de
+                                        entrada para turistas.</p>
                                 </div>
                             </label>
 
@@ -656,7 +714,8 @@ const obtenerMensaje = () => {
                                     <input class="hidden" type="radio" name="q3" value="C"
                                         v-model="selectedAnswers[2]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">C) </strong>El impuesto aplicado a productos importados o exportados.</p>
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>El impuesto
+                                        aplicado a productos importados o exportados.</p>
                                 </div>
                             </label>
 
@@ -670,13 +729,15 @@ const obtenerMensaje = () => {
                                     <input class="hidden" type="radio" name="q3" value="D"
                                         v-model="selectedAnswers[2]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">D) </strong>El seguro obligatorio del transporte internacional.</p>
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>El seguro
+                                        obligatorio del transporte internacional.</p>
                                 </div>
                             </label>
                         </div>
 
                         <div class="question mb-4">
-                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 4: ¿Cuál de las siguientes funciones pertenece a la aduana?</h2>
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 4: ¿Cuál de
+                                las siguientes funciones pertenece a la aduana?</h2>
 
                             <label class="flex items-center p-2  transition duration-200 rounded-lg cursor-pointer mb-2"
                                 :class="{
@@ -688,7 +749,8 @@ const obtenerMensaje = () => {
                                     <input class="hidden" type="radio" name="q4" value="A"
                                         v-model="selectedAnswers[3]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Hacer campañas de vacunación.</p>
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Hacer campañas de
+                                        vacunación.</p>
                                 </div>
                             </label>
 
@@ -702,7 +764,8 @@ const obtenerMensaje = () => {
                                     <input class="hidden" type="radio" name="q4" value="B"
                                         v-model="selectedAnswers[3]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Regular el contenido publicitario.</p>
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Regular el
+                                        contenido publicitario.</p>
                                 </div>
                             </label>
 
@@ -716,7 +779,8 @@ const obtenerMensaje = () => {
                                     <input class="hidden" type="radio" name="q4" value="C"
                                         v-model="selectedAnswers[3]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Controlar el contrabando de mercancías.</p>
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Controlar el
+                                        contrabando de mercancías.</p>
                                 </div>
                             </label>
                             <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
@@ -729,7 +793,8 @@ const obtenerMensaje = () => {
                                     <input class="hidden" type="radio" name="q4" value="D"
                                         v-model="selectedAnswers[3]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Organizar elecciones nacionales.</p>
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Organizar
+                                        elecciones nacionales.</p>
                                 </div>
 
                             </label>
@@ -882,17 +947,19 @@ const obtenerMensaje = () => {
     transform: scale(0.95);
 }
 
+
+
 @media screen and (max-width: 1023px) {
     .gradient-text {
         line-height: 60px;
     }
 }
+
 @media screen and (max-width: 767px) {
     .gradient-text {
         line-height: 40px;
     }
 }
-@media screen and (max-width: 369px) {
 
-}
+@media screen and (max-width: 369px) {}
 </style>
