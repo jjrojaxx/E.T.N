@@ -403,7 +403,7 @@ onBeforeUnmount(() => {
             </div>
         </div>
 
-        <div class="gap-8 flex flex-cul lg:flex-row items-start py-8 px-4 mx-auto max-w-screen-xl ">
+        <div class="gap-8 flex flex-col lg:flex-row items-start py-8 px-4 mx-auto max-w-screen-xl ">
             <div class="md:mt-0 w-full lg:w-1/2">
                 <h2 class="mb-4 text-3xl lg:4xl tracking-tight font-bold text-gray-900 ">Oportunidades Futuras</h2>
                 <ul>
