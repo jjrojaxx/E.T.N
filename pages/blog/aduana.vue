@@ -1,6 +1,5 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
-import { FaFontAwesome } from 'react-icons/fa6'
 const svgColors = ref([])
 const items = [
     'Comercio Internacional',
