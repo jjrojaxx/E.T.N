@@ -280,19 +280,19 @@ const images = [
                     docentes, reflejando el compromiso con la formación integral y el futuro de Venezuela.</p>
             </div>
             <div class="grid grid-cols-2 mb-4 gap-4 lg:grid-cols-4">
-                <img src="../public/img/carrusel-1.jpg" alt=""
+                <img src="../public/img/momento1.jpg" alt=""
                     class="w-full h-auto rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
-                <img src="../public/img/carrusel-2.jpg" alt=""
+                <img src="../public/img/momento4 1.png" alt=""
                     class="w-full h-auto rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
-                <img src="../public/img/carrusel-3.jpg" alt=""
+                <img src="../public/img/momento3 1.png" alt=""
                     class="w-full h-auto rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
-                <img src="../public/img/carrusel-4.jpg" alt=""
+                <img src="../public/img/momento2.jpg" alt=""
                     class="w-full h-auto rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
             </div>
             <div class="grid grid-cols-2 gap-4">
-                <img src="../public/img/carrusel-5.jpg" alt=""
+                <img src="../public/img/momento5 1.png" alt=""
                     class="w-full h-auto rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
-                <img src="../public/img/carrusel-1.jpg" alt=""
+                <img src="../public/img/momento.jpg" alt=""
                     class="w-full h-auto rounded-lg shadow-lg hover:scale-102 transition-all cursor-pointer">
             </div>
         </div>

@@ -5,8 +5,10 @@ const items = [
     'Ejercicio',
     'Deporte',
     'Fuerza',
-    'Flexibilidadsl,cls,cls,',
+    'Flexibilidadsl',
     'Cardio',
+    'Entrenador Personal',
+    'Nutrición Deportiva',
 ]
 
 const track = ref(null)
@@ -56,7 +58,7 @@ onBeforeUnmount(() => {
 //-- VARIABLES DE TEST --//
 const showResult = ref(false)
 const selectedAnswers = ref([])
-const correctAnswers = ['C', 'B', 'C', 'A']
+const correctAnswers = ['B', 'C', 'B', 'C']
 const score = ref(0)
 const showModal1 = ref(false)
 
@@ -91,7 +93,7 @@ const closetModalResult = () => {
 }
 
 const obtenerMensaje = () => {
-    if (score.value === 100) return "🎉 ¡Excelente! Has dominado el tema de la telemática.";
+    if (score.value === 100) return "🎉 ¡Excelente! Has dominado el tema deL Promotor Deportivo.";
     if (score.value >= 75) return "💪 Muy bien, tienes buen conocimiento.";
     if (score.value >= 50) return "👍 Aceptable, pero aún puedes mejorar.";
     if (score.value >= 25) return "🧐 Necesitas repasar un poco más.";
@@ -105,10 +107,12 @@ const obtenerMensaje = () => {
     <section class="bg-img mt-23 pt-15 pb-15">
         <div class="max-w-screen px-4 px mx-auto">
             <div class="flex flex-col items-center mb-4">
-                <h1 class="text-center mb-4 text-3xl font-bold md:text-5xl lg:text-6xl gradient-text">Impulsa el bienestar y el rendimiento con el <br> Promotor de entrenamiento deportivo</h1>
+                <h1 class="text-center mb-4 text-3xl font-bold md:text-5xl lg:text-6xl gradient-text">Impulsa el
+                    bienestar y el rendimiento con el <br> Promotor de entrenamiento deportivo</h1>
                 <p class="text-center max-w-2xl mb-6 font-normal gradient-p lg:mb-8 md:text-lg lg:text-xl">Explora
                     Explora una carrera que une actividad física, salud y liderazgo.
-                    Pon a prueba lo aprendido con un test interactivo y descubre si estás listo para inspirar y transformar vidas como Promotor Deportivo.
+                    Pon a prueba lo aprendido con un test interactivo y descubre si estás listo para inspirar y
+                    transformar vidas como Promotor Deportivo.
                 </p>
                 <div class="flex flex-col sm:flex-row">
                     <a href="test/telematica"
@@ -128,11 +132,25 @@ const obtenerMensaje = () => {
                 <div v-for="(item, index) in items" :key="index"
                     class="flex-shrink-0 py-4 px-6 rounded-full font-bold text-2xl flex items-center gradient-text">
 
-                    <svg class="size-10 mt-1 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
-                        height="24" fill="none" viewBox="0 0 24 24"
-                        :style="{ stroke: svgColors[index], transition: 'stroke 0.6s ease' }">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M8 20v-9l-4 1.125V20h4Zm0 0h8m-8 0V6.66667M16 20v-9l4 1.125V20h-4Zm0 0V6.66667M18 8l-6-4-6 4m5 1h2m-2 3h2" />
+                    <svg class="size-10 mt-1 mr-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" height="24"
+                        fill="none" :style="{ stroke: svgColors[index], transition: 'stroke 0.6s ease' }">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <circle cx="33.69" cy="32" r="24.99" stroke-linecap="round"></circle>
+                            <polygon points="33.43 20.18 22.84 27.88 26.89 40.32 39.98 40.32 44.02 27.88 33.43 20.18"
+                                stroke-linecap="round"></polygon>
+                            <polyline points="40.41 7.92 33.43 13.48 26.59 8.04" stroke-linecap="round"></polyline>
+                            <line x1="33.43" y1="20.18" x2="33.43" y2="13.48" stroke-linecap="round"></line>
+                            <polyline points="58.68 32 50.6 25.92 53.78 17.14" stroke-linecap="round"></polyline>
+                            <polyline points="40.72 55.99 44.02 46.39 54.05 46.49" stroke-linecap="round"></polyline>
+                            <polyline points="25.61 55.65 22.55 46.39 13.26 46.39" stroke-linecap="round"></polyline>
+                            <polyline points="8.7 32 15.99 25.97 13.16 17.76" stroke-linecap="round"></polyline>
+                            <line x1="22.84" y1="27.88" x2="15.99" y2="25.97" stroke-linecap="round"></line>
+                            <line x1="26.89" y1="40.32" x2="22.55" y2="46.39" stroke-linecap="round"></line>
+                            <line x1="39.98" y1="40.32" x2="44.02" y2="46.39" stroke-linecap="round"></line>
+                            <line x1="44.02" y1="27.89" x2="50.6" y2="25.92" stroke-linecap="round"></line>
+                        </g>
                     </svg>
 
                     {{ item }}
@@ -145,7 +163,7 @@ const obtenerMensaje = () => {
     <section class="bg-gray-950">
         <div
             class="gap-8 items-center justify-between py-12 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-24 lg:px-6">
-            <img class="w-full rounded-xl" src="../../assets/img/telematicaHero.jpg" alt="dashboard image">
+            <img class="w-full rounded-xl" src="../../assets/img/deporte 1.jpg" alt="dashboard image">
             <div class="mt-4 md:mt-0">
                 <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Qué es un
                     Promotor de entrenamiento deportivo?
@@ -164,7 +182,8 @@ const obtenerMensaje = () => {
 
     <section class="bg-blue-100">
         <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid-cols-2 sm:py-16 lg:px-6">
-            <h2 class="mb-8 text-3xl lg:text-5xl tracking-tight font-bold text-gray-950 text-center">Características de promotor deportivo
+            <h2 class="mb-8 text-3xl lg:text-5xl tracking-tight font-bold text-gray-950 text-center">Características de
+                promotor deportivo
             </h2>
             <div class="flex gap-4 flex-wrap justify-center">
                 <div
@@ -176,8 +195,11 @@ const obtenerMensaje = () => {
                             clip-rule="evenodd" />
                     </svg>
 
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]"> Conocimiento técnico y pedagógico</h5>
-                    <p class="font-normal text-gray-800 text-center"> Posee formación sólida en entrenamiento deportivo, anatomía, nutrición y didáctica, lo que le permite planificar sesiones seguras y efectivas adaptadas a las necesidades de cada población.
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]"> Conocimiento técnico
+                        y pedagógico</h5>
+                    <p class="font-normal text-gray-800 text-center"> Posee formación sólida en entrenamiento deportivo,
+                        anatomía, nutrición y didáctica, lo que le permite planificar sesiones seguras y efectivas
+                        adaptadas a las necesidades de cada población.
                     </p>
                 </div>
                 <div
@@ -191,7 +213,9 @@ const obtenerMensaje = () => {
 
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#150484] text-center">Liderazgo y motivación
                     </h5><br>
-                    <p class="font-normal text-gray-800 text-center">Es un agente de cambio que guía e inspira a otros a adoptar estilos de vida saludables, fomentando la disciplina, el trabajo en equipo y la perseverancia a través del deporte.</p>
+                    <p class="font-normal text-gray-800 text-center">Es un agente de cambio que guía e inspira a otros a
+                        adoptar estilos de vida saludables, fomentando la disciplina, el trabajo en equipo y la
+                        perseverancia a través del deporte.</p>
 
                 </div>
                 <div
@@ -205,8 +229,11 @@ const obtenerMensaje = () => {
                     </svg>
 
 
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#150484] text-center">Fomento de la actividad física</h5>
-                    <p class="font-normal text-gray-800 text-center">El Promotor Deportivo diseña, organiza y ejecuta actividades físicas y recreativas orientadas a mejorar la salud, la condición física y la integración social de diferentes grupos de personas.</p>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#150484] text-center">Fomento de la
+                        actividad física</h5>
+                    <p class="font-normal text-gray-800 text-center">El Promotor Deportivo diseña, organiza y ejecuta
+                        actividades físicas y recreativas orientadas a mejorar la salud, la condición física y la
+                        integración social de diferentes grupos de personas.</p>
                 </div>
             </div>
 
@@ -230,7 +257,7 @@ const obtenerMensaje = () => {
                 </p>
             </div>
             <div class="w-full">
-                <img class="w-full dark:hiddenrounded-xl rounded-xl " src="../../assets/img/seccion-1.png"
+                <img class="w-full dark:hiddenrounded-xl rounded-xl " src="../../assets/img/deporte3.jpg"
                     alt="dashboard image">
             </div>
         </div>
@@ -240,15 +267,15 @@ const obtenerMensaje = () => {
         <div
             class="gap-8 items-start flex flex-col-reverse sm:flex-row py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:flex md:grid-cols-2 sm:py-16 lg:px-6">
             <div class="w-full">
-                <img class="w-full dark:hiddenrounded-xl rounded-xl " src="../../assets/img/seccion-1.png"
+                <img class="w-full dark:hiddenrounded-xl rounded-xl " src="../../assets/img/deporte2.jpg"
                     alt="dashboard image">
             </div>
             <div class="mt-4 md:mt-0 w-full">
-                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Aplicaciones de la
-                    telemática</h2>
+                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Aplicaciones del Promotor
+                    de entrenamiento</h2>
                 <ul>
-                    <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
-                        <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    <li class="icon-list-item">
+                        <svg class="icono-svg text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
@@ -256,8 +283,8 @@ const obtenerMensaje = () => {
                         </svg>
                         <strong> Desarrolla valores como disciplina, trabajo en equipo y liderazgo.</strong>
                     </li>
-                    <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
-                        <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    <li class="icon-list-item">
+                        <svg class="icono-svg text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
@@ -265,9 +292,9 @@ const obtenerMensaje = () => {
                         </svg>
                         <strong>Diseña entrenamientos adaptados a cada persona o grupo.</strong>
                     </li>
-                    <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
+                    <li class="icon-list-item">
 
-                        <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        <svg class="icono-svg text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
@@ -276,8 +303,8 @@ const obtenerMensaje = () => {
 
                         <strong> Aplica en escuelas y comunidades promoviendo el deporte.</strong>
                     </li>
-                    <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
-                        <svg class="size-7.5 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    <li class="icon-list-item">
+                        <svg class="icono-svg text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
@@ -285,14 +312,15 @@ const obtenerMensaje = () => {
                         </svg>
                         <strong> Evalúa el progreso físico mediante pruebas y seguimiento personalizado.</strong>
                     </li>
-                                        <li class="mb-1 font-norFmal text-gray-900 md:text-lg flex items-center">
-                        <svg class="size-7.5 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    <li class="icon-list-item">
+                        <svg class="icono-svg text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
                                 clip-rule="evenodd" />
                         </svg>
-                        <strong> Organiza eventos deportivos que motivan la participación y el espíritu competitivo.</strong>
+                        <strong> Organiza eventos deportivos que motivan la participación y el espíritu
+                            competitivo.</strong>
                     </li>
 
                 </ul>
@@ -373,8 +401,8 @@ const obtenerMensaje = () => {
                 </h3>
 
                 <ul>
-                    <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
-                        <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    <li class="icon-list-item">
+                        <svg class="icono-svg text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
@@ -382,8 +410,8 @@ const obtenerMensaje = () => {
                         </svg>
                         <strong>Incentiva la práctica deportiva en la comunidad.</strong>
                     </li>
-                    <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
-                        <svg class="size-6 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    <li class="icon-list-item">
+                        <svg class="icono-svg text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
@@ -391,8 +419,8 @@ const obtenerMensaje = () => {
                         </svg>
                         <strong>Detecta y apoya nuevos talentos.</strong>
                     </li>
-                    <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
-                        <svg class="size-7 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    <li class="icon-list-item">
+                        <svg class="icono-svg text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
@@ -400,8 +428,8 @@ const obtenerMensaje = () => {
                         </svg>
                         <strong>Fomenta valores como la disciplina y el trabajo en equipo.</strong>
                     </li>
-                    <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
-                        <svg class="size-7 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    <li class="icon-list-item">
+                        <svg class="icono-svg text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
@@ -409,8 +437,8 @@ const obtenerMensaje = () => {
                         </svg>
                         <strong>Organiza eventos que fortalecen la convivencia social.</strong>
                     </li>
-                    <li class="mb-1 font-normal text-gray-900 md:text-lg flex items-center">
-                        <svg class="size-7 text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    <li class="icon-list-item">
+                        <svg class="icono-svg text-blue-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
                                 d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
@@ -498,7 +526,7 @@ const obtenerMensaje = () => {
         <div
             class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
             <img class="w-full dark:hidden rounded-xl" src="../../assets/img/foto4.jpg" alt="dashboard image">
-            <img class="w-full rounded-xl hidden dark:block" src="../../assets/img/foto4.jpg" alt="dashboard image">
+            <img class="w-full rounded-xl hidden dark:block" src="../../assets/img/deporte4.jpg" alt="dashboard image">
             <div class="mt-4 md:mt-0">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Perfil del Estudiante
                 </h2>
@@ -556,21 +584,23 @@ const obtenerMensaje = () => {
 
                     <!-- BODY -->
                     <div class="py-6 px-4 sm:px-18 space-y-4 text-gray-700 dark:text-gray-300">
+
+                        <!-- Pregunta 1 -->
                         <div class="question mb-8">
-                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">¿Qué es el turismo
-                                sostenible?</h2>
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Pregunta 1: ¿Qué hace
+                                un promotor de entrenamiento deportivo?</h2>
+
                             <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
                                 :class="{
                                     'bg-gray-800 shadow text-white': selectedAnswers[0] === 'A',
                                     'hover:bg-gray-800 hover:shadow': selectedAnswers[0] !== 'A'
                                 }">
-
                                 <div class="flex hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg">
                                     <input type="radio" class="hidden" name="q1" value="A"
                                         v-model="selectedAnswers[0]" />
                                     <p class="text-gray-800 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Viajar sin gastar
-                                        dinero.</p>
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Diseña videojuegos
+                                        para deportes</p>
                                 </div>
                             </label>
 
@@ -584,8 +614,8 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q1" value="B"
                                         v-model="selectedAnswers[0]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Turismo que busca
-                                        solo la diversión.</p>
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Planifica y
+                                        organiza actividades físicas para fomentar la salud y el deporte</p>
                                 </div>
                             </label>
 
@@ -599,8 +629,8 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q1" value="C"
                                         v-model="selectedAnswers[0]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">C) </strong> Turismo que
-                                        respeta el medio ambiente, la cultura y apoya a la comunidad local</p>
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Vende ropa
+                                        deportiva en tiendas</p>
                                 </div>
                             </label>
 
@@ -614,27 +644,28 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q1" value="D"
                                         v-model="selectedAnswers[0]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Turismo de lujo</p>
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Se encarga del
+                                        mantenimiento de estadios</p>
                                 </div>
                             </label>
                         </div>
 
+                        <!-- Pregunta 2 -->
                         <div class="question mb-8">
-                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 2: ¿Cuál es
-                                un ejemplo de turismo sostenible?</h2>
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Pregunta 2: ¿Cuál de
+                                estas actividades podría organizar un promotor deportivo?</h2>
 
                             <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
                                 :class="{
                                     'bg-gray-800 shadow text-white': selectedAnswers[1] === 'A',
                                     'hover:bg-gray-800 hover:shadow': selectedAnswers[1] !== 'A'
                                 }">
-                                <div
-                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                <div class="flex hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg">
                                     <input type="radio" class="hidden" name="q2" value="A"
                                         v-model="selectedAnswers[1]" />
-                                    <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Quedarse en grandes
-                                        cadenas hoteleras multinacionales</p>
+                                    <p class="text-gray-800 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Una competencia de
+                                        videojuegos</p>
                                 </div>
                             </label>
 
@@ -648,8 +679,8 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q2" value="B"
                                         v-model="selectedAnswers[1]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">B) </strong>
-                                        C) </p>
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Una campaña de
+                                        lectura</p>
                                 </div>
                             </label>
 
@@ -663,8 +694,8 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q2" value="C"
                                         v-model="selectedAnswers[1]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Comprar souvenirs
-                                        importados</p>
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Un torneo
+                                        intercolegial de fútbol</p>
                                 </div>
                             </label>
 
@@ -678,44 +709,43 @@ const obtenerMensaje = () => {
                                     <input type="radio" class="hidden" name="q2" value="D"
                                         v-model="selectedAnswers[1]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Usar jets privados
-
-                                    </p>
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Una feria de comida
+                                        rápida</p>
                                 </div>
                             </label>
                         </div>
 
+                        <!-- Pregunta 3 -->
                         <div class="question mb-8">
-                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 3: ¿Por qué
-                                es importante apoyar negocios locales cuando viajas?</h2>
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Pregunta 3: ¿Por qué es
+                                importante el trabajo del promotor deportivo en la comunidad?</h2>
 
                             <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
                                 :class="{
                                     'bg-gray-800 shadow text-white': selectedAnswers[2] === 'A',
                                     'hover:bg-gray-800 hover:shadow': selectedAnswers[2] !== 'A'
                                 }">
-                                <div
-                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
-                                    <input class="hidden" type="radio" name="q3" value="A"
+                                <div class="flex hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg">
+                                    <input type="radio" class="hidden" name="q3" value="A"
                                         v-model="selectedAnswers[2]" />
-                                    <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Para gastar más
-                                        dinero.</p>
+                                    <p class="text-gray-800 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Para que todos
+                                        compitan profesionalmente</p>
                                 </div>
                             </label>
 
-                            <label class="flex items-center transition duration-200 rounded-lg cursor-pointer mb-2"
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
                                 :class="{
                                     'bg-gray-800 shadow text-white': selectedAnswers[2] === 'B',
                                     'hover:bg-gray-800 hover:shadow': selectedAnswers[2] !== 'B'
                                 }">
                                 <div
-                                    class="flex items-center p-2 hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
-                                    <input class="hidden" type="radio" name="q3" value="B"
+                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
+                                    <input type="radio" class="hidden" name="q3" value="B"
                                         v-model="selectedAnswers[2]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Porque es más
-                                        barato.</p>
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Porque ayuda a
+                                        mejorar la salud física, promover valores y prevenir el sedentarismo</p>
                                 </div>
                             </label>
 
@@ -726,11 +756,11 @@ const obtenerMensaje = () => {
                                 }">
                                 <div
                                     class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
-                                    <input class="hidden" type="radio" name="q3" value="C"
+                                    <input type="radio" class="hidden" name="q3" value="C"
                                         v-model="selectedAnswers[2]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Porque fortalece la
-                                        economía local y conserva la cultura.</p>
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Porque ayuda a
+                                        vender más productos deportivos</p>
                                 </div>
                             </label>
 
@@ -741,31 +771,31 @@ const obtenerMensaje = () => {
                                 }">
                                 <div
                                     class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
-                                    <input class="hidden" type="radio" name="q3" value="D"
+                                    <input type="radio" class="hidden" name="q3" value="D"
                                         v-model="selectedAnswers[2]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Porque así se
-                                        evitan los impuestos.</p>
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Para reemplazar a
+                                        los entrenadores</p>
                                 </div>
                             </label>
                         </div>
 
-                        <div class="question mb-4">
-                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Preguntas 4: ¿Qué
-                                puedes hacer para reducir tu impacto ambiental como turista?</h2>
+                        <!-- Pregunta 4 -->
+                        <div class="question mb-8">
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Pregunta 4: ¿Qué
+                                habilidad necesita un buen promotor deportivo?</h2>
 
-                            <label class="flex items-center p-2  transition duration-200 rounded-lg cursor-pointer mb-2"
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
                                 :class="{
                                     'bg-gray-800 shadow text-white': selectedAnswers[3] === 'A',
                                     'hover:bg-gray-800 hover:shadow': selectedAnswers[3] !== 'A'
                                 }">
-                                <div
-                                    class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
-                                    <input class="hidden" type="radio" name="q4" value="A"
+                                <div class="flex hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg">
+                                    <input type="radio" class="hidden" name="q4" value="A"
                                         v-model="selectedAnswers[3]" />
-                                    <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Usar transporte
-                                        público o bicicleta.</p>
+                                    <p class="text-gray-800 dark:text-gray-400"><strong
+                                            class="text-blue-300 font-extrabold text-lg">A) </strong>Dormir muchas horas
+                                    </p>
                                 </div>
                             </label>
 
@@ -776,28 +806,29 @@ const obtenerMensaje = () => {
                                 }">
                                 <div
                                     class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
-                                    <input class="hidden" type="radio" name="q4" value="B"
+                                    <input type="radio" class="hidden" name="q4" value="B"
                                         v-model="selectedAnswers[3]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Tirar basura en la
-                                        calle</p>
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong>Ignorar al público
+                                    </p>
                                 </div>
                             </label>
 
-                            <label class="flex items-center p-2  transition duration-200 rounded-lg cursor-pointer mb-2"
+                            <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
                                 :class="{
                                     'bg-gray-800 shadow text-white': selectedAnswers[3] === 'C',
                                     'hover:bg-gray-800 hover:shadow': selectedAnswers[3] !== 'C'
                                 }">
                                 <div
                                     class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
-                                    <input class="hidden" type="radio" name="q4" value="C"
+                                    <input type="radio" class="hidden" name="q4" value="C"
                                         v-model="selectedAnswers[3]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Comprar productos
-                                        con mucho empaque.</p>
+                                            class="text-blue-300 font-extrabold text-lg">C) </strong>Liderazgo,
+                                        comunicación y conocimiento en actividad física</p>
                                 </div>
                             </label>
+
                             <label class="flex items-center p-2 transition duration-200 rounded-lg cursor-pointer mb-2"
                                 :class="{
                                     'bg-gray-800 shadow text-white': selectedAnswers[3] === 'D',
@@ -805,16 +836,16 @@ const obtenerMensaje = () => {
                                 }">
                                 <div
                                     class="flex items-center hover:bg-gray-800 hover:shadow transition duration-200 rounded-lg cursor-pointer">
-                                    <input class="hidden" type="radio" name="q4" value="D"
+                                    <input type="radio" class="hidden" name="q4" value="D"
                                         v-model="selectedAnswers[3]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Usar aire
-                                        acondicionado al máximo</p>
+                                            class="text-blue-300 font-extrabold text-lg">D) </strong>Saber cocinar</p>
                                 </div>
-
                             </label>
                         </div>
+
                     </div>
+
 
                     <!-- FOOTER -->
                     <div class="flex justify-end gap-2 p-4 border-t border-gray-200 dark:border-gray-900">
