@@ -106,12 +106,11 @@ onBeforeUnmount(() => {
     <section class="bg-img mt-23 pt-15 pb-15">
         <div class="max-w-screen px-4 px mx-auto">
             <div class="flex flex-col items-center mb-4">
-                <h1 class="text-center mb-4 text-3xl font-bold md:text-5xl lg:text-6xl gradient-text">Impulsa el
-                    futuro digital con <br> el Turismo</h1>
+                <h1 class="text-center mb-4 text-3xl font-bold md:text-5xl lg:text-6xl gradient-text">
+                    Transforma el mundo viajando de forma responsable con el Turismo</h1>
                 <p class="text-center max-w-2xl mb-6 font-normal gradient-p lg:mb-8 md:text-lg lg:text-xl">Explora
-                    una
-                    carrera que une redes, telecomunicaciones y tecnología. Pon a prueba lo aprendido con un test
-                    interactivo y descubre si estás listo para transformar el mundo digital.</p>
+                   Explora una carrera que conecta cultura, naturaleza y sostenibilidad. Pon a prueba lo aprendido con un test interactivo y descubre si estás listo para transformar el mundo del turismo responsable.
+                </p>
                 <div class="flex flex-col sm:flex-row">
                     <a href="test/telematica"
                         class="mb-2 sm:mb-0 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-white bg-[#150484] rounded-lg hover:bg-[#041184]  focus:ring-4">Relizar
@@ -576,8 +575,7 @@ onBeforeUnmount(() => {
                                     <input type="radio" class="hidden" name="q2" value="B"
                                         v-model="selectedAnswers[1]" />
                                     <p class="text-gray-600 dark:text-gray-400"><strong
-                                            class="text-blue-300 font-extrabold text-lg">B) </strong>
-C) </p>
+                                            class="text-blue-300 font-extrabold text-lg">B) </strong> Visitar una reserva que protege la naturaleza y beneficia a la comunidad local.</p>
                                 </div>
                             </label>
 

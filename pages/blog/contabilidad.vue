@@ -48,7 +48,7 @@ const closetModalResult = () => {
 }
 
 const obtenerMensaje = () => {
-    if (score.value === 100) return "🎉 ¡Excelente! Has dominado el tema de la telemática.";
+    if (score.value === 100) return "🎉 ¡Excelente! Has dominado el tema de la Contabilidad.";
     if (score.value >= 75) return "💪 Muy bien, tienes buen conocimiento.";
     if (score.value >= 50) return "👍 Aceptable, pero aún puedes mejorar.";
     if (score.value >= 25) return "🧐 Necesitas repasar un poco más.";
@@ -105,12 +105,10 @@ onBeforeUnmount(() => {
     <section class="bg-img mt-23 pt-15 pb-15">
         <div class="max-w-screen px-4 px mx-auto">
             <div class="flex flex-col items-center mb-4">
-                <h1 class="text-center mb-4 text-3xl font-bold md:text-5xl lg:text-6xl gradient-text">Impulsa el
-                    futuro digital con <br> la Contabilidad</h1>
+                <h1 class="text-center mb-4 text-3xl font-bold md:text-5xl lg:text-6xl gradient-text">Domina el lenguaje de los números y transforma decisiones con <br> la Contabilidad</h1>
                 <p class="text-center max-w-2xl mb-6 font-normal gradient-p lg:mb-8 md:text-lg lg:text-xl">Explora
-                    una
-                    carrera que une redes, telecomunicaciones y tecnología. Pon a prueba lo aprendido con un test
-                    interactivo y descubre si estás listo para transformar el mundo digital.</p>
+                   Explora una carrera que domina las finanzas, organiza el futuro empresarial y controla los recursos. Pon a prueba lo aprendido con un test interactivo y descubre si estás listo para tomar decisiones contables que transforman el mundo.
+                 </p>
                 <div class="flex flex-col sm:flex-row">
                     <div @click="showModal1 = true" 
                         class="mb-2 sm:mb-0 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-white bg-[#150484] rounded-lg hover:bg-[#041184]  focus:ring-4">Relizar

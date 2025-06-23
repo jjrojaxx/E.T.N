@@ -13,7 +13,7 @@ const items = [
 //-- VARIABLES DE TEST --//
 const showResult = ref(false)
 const selectedAnswers = ref([])
-const correctAnswers = ['B', 'C', 'C', 'C']
+const correctAnswers = ['C', 'C', 'C', 'C']
 const score = ref(0)
 const showModal1 = ref(false)
 
@@ -48,7 +48,7 @@ const closetModalResult = () => {
 }
 
 const obtenerMensaje = () => {
-    if (score.value === 100) return "🎉 ¡Excelente! Has dominado el tema de la telemática.";
+    if (score.value === 100) return "🎉 ¡Excelente! Has dominado el tema de la Electricidad.";
     if (score.value >= 75) return "💪 Muy bien, tienes buen conocimiento.";
     if (score.value >= 50) return "👍 Aceptable, pero aún puedes mejorar.";
     if (score.value >= 25) return "🧐 Necesitas repasar un poco más.";
