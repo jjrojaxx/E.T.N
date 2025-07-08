@@ -9,5 +9,6 @@ html {
 }
 .icon-list-item{
   display: flex;
-  align-items: center;
+  align-items: start;
+  padding: 6px 0px;
 }
