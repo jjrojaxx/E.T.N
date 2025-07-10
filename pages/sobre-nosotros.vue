@@ -10,12 +10,7 @@
                     Formamos personas desde el nivel inicial hasta el secundario con un enfoque integral, moderno y
                     humano.
                 </p>
-                   <div class="flex flex-row">
-                        <a href="/sobre-nosotros"
-                         class="inline-flex items-center justify-center px-5 py-3 mr-3 mt-6 text-base font-medium text-white bg-[#150484] rounded-lg hover:bg-[#041184]  focus:ring-4">  
-                         Volver atras
-                       </a>
-                </div>
+                
             </div>
         </div>
     </section>

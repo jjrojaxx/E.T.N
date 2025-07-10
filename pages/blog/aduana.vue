@@ -211,23 +211,6 @@ const obtenerMensaje = () => {
                         prohibidas como drogas, armas y otros productos ilegales.</p>
                 </div>
 
-                <div
-                    class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
-                    <svg class="size-16 text-[#150484]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
-                        height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M13.5 2c-.178 0-.356.013-.492.022l-.074.005a1 1 0 0 0-.934.998V11a1 1 0 0 0 1 1h7.975a1 1 0 0 0 .998-.934l.005-.074A7.04 7.04 0 0 0 22 10.5 8.5 8.5 0 0 0 13.5 2Z" />
-                        <path
-                            d="M11 6.025a1 1 0 0 0-1.065-.998 8.5 8.5 0 1 0 9.038 9.039A1 1 0 0 0 17.975 13H11V6.025Z" />
-                    </svg>
-
-
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">Lucha contra el fraude
-                        aduanero</h5>
-                    <p class="font-normal text-gray-800 text-center"> Detectan y evitan falsificaciones, adulteraciones
-                        y evasiones fiscales para proteger la economía.</p>
-                </div>
-
             </div>
 
         </div>
