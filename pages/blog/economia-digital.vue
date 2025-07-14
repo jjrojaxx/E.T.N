@@ -144,7 +144,7 @@ onBeforeUnmount(() => {
     <section class="bg-gray-950">
         <div
             class="gap-8 items-center justify-between py-12 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-24 lg:px-6">
-            <img class="w-full rounded-xl" src="../../assets/img/economia1.jpg" alt="dashboard image">
+            <img class="w-full rounded-xl" src="../../assets/img/economia11.jpg" alt="dashboard image">
             <div class="mt-4 md:mt-0">
                 <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Que es la
                     Economia Digital?
