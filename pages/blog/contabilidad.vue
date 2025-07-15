@@ -146,7 +146,7 @@ onBeforeUnmount(() => {
             class="gap-8 items-center justify-between py-12 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-24 lg:px-6">
             <img class="w-full rounded-xl" src="../../assets/img/contablida.jpg" alt="dashboard image">
             <div class="mt-4 md:mt-0">
-                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Que es la
+                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 colorblan">¿Qué es la
                     Contabilidad?
                 </h2>
                 <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">La contabilidad es una disciplina que se encarga de
@@ -484,7 +484,7 @@ onBeforeUnmount(() => {
             <img class="w-full dark:hidden rounded-xl" src="../../assets/img/foto4.jpg" alt="dashboard image">
             <img class="w-full rounded-xl hidden dark:block" src="../../assets/img/contabilidad3.jpg" alt="dashboard image">
             <div class="mt-4 md:mt-0">
-                <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Perfil del Estudiante
+                <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 colorblan">Perfil del Estudiante
                 </h2>
                 <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">El perfil de un estudiante de contabilidad se
                     caracteriza por una combinación de habilidades analíticas, atención al detalle y capacidad para

@@ -30,7 +30,7 @@ const images = [
     <section class="bg-white dark:bg-gray-950 mt-23">
         <div class="max-w-screen px-4 py-42 mx-auto bg-img">
             <div class="flex flex-col items-center">
-                <h1 class="mb-4 text-center text-3xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span
+                <h1 class="mb-4 text-center text-3xl font-bold text-gray-900 colorblan md:text-5xl lg:text-6xl"><span
                         class="text-[#150484]">Educación con
                         valores</span> y excelencia</h1>
                 <p class="text-center max-w-2xl mb-6 font-normal text-white lg:mb-8 md:text-lg lg:text-xl">
@@ -244,7 +244,7 @@ const images = [
     <section class="bg-white dark:bg-gray-950">
         <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
             <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400 mb-4">
-                <h2 class="mb-4  text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Conoce la historia de
+                <h2 class="mb-4  text-4xl tracking-tight font-bold text-gray-900 colorblan">Conoce la historia de
                     nuestra escuela E.T.C.N “Manuel Atanasio Girardot</h2>
                 <p class="mb-4"> La E.T.C.N "Manuel Atanasio Girardot", fundada el 29 de enero de 1973, busca formar
                     tecnólogos eficientes con valores morales y culturales. Con el apoyo del Ministerio de Educación,

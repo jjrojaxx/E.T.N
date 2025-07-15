@@ -148,7 +148,7 @@ onBeforeUnmount(() => {
             class="gap-8 items-center justify-between py-12 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-24 lg:px-6">
             <img class="w-full rounded-xl" src="../../assets/img/turismo3.jpg" alt="dashboard image">
             <div class="mt-4 md:mt-0">
-                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Qué es el turismo?
+                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 colorblan">¿Qué es el turismo?
                 </h2>
                 <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">El turismo es el conjunto de actividades y servicios relacionados con las personas que viajan voluntaria y temporalmente a lugares distintos a su residencia habitual. Cada año, más de mil millones de turistas recorren el mundo, impulsando una industria fundamental para la economía global.</p>           
             </div>
@@ -441,7 +441,7 @@ onBeforeUnmount(() => {
             <img class="w-full dark:hidden rounded-xl" src="../../assets/img/foto4.jpg" alt="dashboard image">
             <img class="w-full rounded-xl hidden dark:block" src="../../assets/img/turismo2.jpg" alt="dashboard image">
             <div class="mt-4 md:mt-0">
-                <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Perfil del Estudiante</h2>
+                <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 colorblan">Perfil del Estudiante</h2>
                 <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">El estudiante de turismo se caracteriza por poseer una combinación de habilidades sociales, culturales y organizativas que le permiten desenvolverse con éxito en el sector turístico. Este perfil requiere interés por la cultura, capacidad de comunicación, atención al cliente, y habilidades para la gestión de servicios y recursos turísticos en un entorno dinámico y globalizado.</p>
             </div>
         </div>

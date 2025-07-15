@@ -145,7 +145,7 @@ const obtenerMensaje = () => {
             class="gap-8 items-center justify-between py-12 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-24 lg:px-6">
             <img class="w-full rounded-xl" src="/assets/img/administracion.jpg" alt="dashboard image">
             <div class="mt-4 md:mt-0">
-                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Que es la
+                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 colorblan">¿Qué es la
                     Administración?
                 </h2>
                 <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">La administración es una ciencia social que estudia cómo planificar, organizar, dirigir y controlar los recursos humanos, financieros y materiales en organizaciones humanas, con el fin de alcanzar objetivos específicos y obtener el mayor beneficio posible.</p>
@@ -459,7 +459,7 @@ const obtenerMensaje = () => {
             <img class="w-full dark:hidden rounded-xl" src="../../assets/img/foto4.jpg" alt="dashboard image">
             <img class="w-full rounded-xl hidden dark:block" src="../../assets/img/administracion2.jpg" alt="dashboard image">
             <div class="mt-4 md:mt-0">
-                <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Perfil del Estudiante
+                <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 colorblan">Perfil del Estudiante
                 </h2>
                 <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">El estudiante de administración se caracteriza por tener una combinación de habilidades analíticas, organizativas y de liderazgo que le permiten gestionar eficientemente recursos humanos, financieros y materiales en diferentes tipos de organizaciones. Este perfil requiere competencias en planificación, toma de decisiones, comunicación efectiva y adaptación a entornos dinámicos y competitivos.</p>
             </div>

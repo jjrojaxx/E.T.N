@@ -165,7 +165,7 @@ const obtenerMensaje = () => {
             class="gap-8 items-center justify-between py-12 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-24 lg:px-6">
             <img class="w-full rounded-xl" src="../../assets/img/deporte 1.jpg" alt="dashboard image">
             <div class="mt-4 md:mt-0">
-                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Qué es un
+                <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 colorblan">¿Qué es un
                     Promotor de entrenamiento deportivo?
                 </h2>
                 <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">Un Promotor de Entrenamiento Deportivo es un
@@ -528,7 +528,7 @@ const obtenerMensaje = () => {
             <img class="w-full dark:hidden rounded-xl" src="../../assets/img/foto4.jpg" alt="dashboard image">
             <img class="w-full rounded-xl hidden dark:block" src="../../assets/img/deporte4.jpg" alt="dashboard image">
             <div class="mt-4 md:mt-0">
-                <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Perfil del Estudiante
+                <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 colorblan">Perfil del Estudiante
                 </h2>
                 <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">El estudiante de promoción de entrenamiento
                     deportivo se caracteriza por poseer una combinación de intereses y habilidades relacionadas con la
