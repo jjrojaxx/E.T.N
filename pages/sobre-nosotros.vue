@@ -24,7 +24,7 @@
                 alt="dashboard image">
             <div class="mt-4 md:mt-0">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Nuestra Historia</h2>
-                <p class="mb-6 font-normal text-gray-700 md:text-lg">La E.T.C. "Manuel Atanasio Girardot" ha estado
+                <p class="colorblan mb-6 font-normal text-gray-700 md:text-lg">La E.T.C. "Manuel Atanasio Girardot" ha estado
                     formando técnicos profesionales integrales en Maracay, Aragua, Venezuela, desde su fundación el 29
                     de enero de 1973. Nuestro objetivo es proporcionar una educación de calidad que combine una sólida
                     base técnica con valores morales y culturales, preparando a los estudiantes para el éxito
@@ -38,7 +38,7 @@
             class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
             <div class="mt-4 md:mt-0">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 ">Nuestra Misión</h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">Formar profesionales técnicos integrales en el área
+                <p class="colorne mb-6 font-normal text-gray-500 md:text-lg">Formar profesionales técnicos integrales en el área
                     de comercio y servicios administrativos, mediante una educación de calidad que combine sólidos
                     conocimientos técnicos con el fomento de valores morales y culturales, preparando a nuestros
                     estudiantes para su exitosa inserción laboral y su contribución activa como ciudadanos críticos y
@@ -59,7 +59,7 @@
                 alt="dashboard image">
             <div class="mt-4 md:mt-0">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Nuestra Visión</h2>
-                <p class="mb-6 font-normal text-gray-700 md:text-lg">Ser la institución técnica de referencia en Maracay
+                <p class="colorblan mb-6 font-normal text-gray-700 md:text-lg">Ser la institución técnica de referencia en Maracay
                     y Aragua, reconocida por formar profesionales integrales con excelencia académica y sólidos valores,
                     preparados para afrontar con éxito los desafíos del futuro y contribuir significativamente al
                     desarrollo de nuestra sociedad.</p>
@@ -72,20 +72,20 @@
             class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
             <div class="mt-4 mb-3 md:mt-0">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 ">Nuestros Valores</h2>
-                <p class="mb-6 font-normal text-gray-600 md:text-lg">Nuestra labor se rige por un conjunto de valores
+                <p class="colorne mb-6 font-normal text-gray-600 md:text-lg">Nuestra labor se rige por un conjunto de valores
                     fundamentales que guían cada una de nuestras acciones y decisiones:</p>
                 <ul class="ml-3">
-                    <li class="text-gray-600 mb-1"><strong>Excelencia:</strong> Nos comprometemos con los más altos
+                    <li class="colorne text-gray-600 mb-1"><strong>Excelencia:</strong> Nos comprometemos con los más altos
                         estándares de calidad en todo lo que hacemos.</li>
-                    <li class="text-gray-600 mb-1"><strong>Integridad:</strong> Actuamos con hosnestidad calidad y
+                    <li class="colorne text-gray-600 mb-1"><strong>Integridad:</strong> Actuamos con hosnestidad calidad y
                         transparencia </li>
-                    <li class="text-gray-600 mb-1"><strong>Compromiso:</strong> Asumimos con responsabilidad cada reto,
+                    <li class="colorne text-gray-600 mb-1"><strong>Compromiso:</strong> Asumimos con responsabilidad cada reto,
                         brindando lo mejor de nosotros en beneficio de la comunidad educativa.</li>
-                    <li class="text-gray-600 mb-1"><strong>Respeto:</strong> Valoramos la diversidad, la dignidad de
+                    <li class="colorne text-gray-600 mb-1"><strong>Respeto:</strong> Valoramos la diversidad, la dignidad de
                         cada persona y promovemos una convivencia armoniosa. </li>
-                    <li class="text-gray-600 mb-1"><strong>Innovación:</strong> Fomentamos la creatividad y el
+                    <li class="colorne text-gray-600 mb-1"><strong>Innovación:</strong> Fomentamos la creatividad y el
                         pensamiento crítico para enfrentar los desafíos del presente y del futuro.</li>
-                    <li class="text-gray-600 mb-1"><strong>Colaboración:</strong> Trabajamos en equipo, fortaleciendo el
+                    <li class="colorne text-gray-600 mb-1"><strong>Colaboración:</strong> Trabajamos en equipo, fortaleciendo el
                         sentido de comunidad y el logro de metas compartidas.
                     </li>
                 </ul>
@@ -107,7 +107,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 98vh
+    height: 80vh
 }
 
 .bg-img::before {
