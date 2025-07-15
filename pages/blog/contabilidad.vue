@@ -149,7 +149,7 @@ onBeforeUnmount(() => {
                 <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Que es la
                     Contabilidad?
                 </h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">La contabilidad es una disciplina que se encarga de
+                <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">La contabilidad es una disciplina que se encarga de
                     registrar, clasificar y resumir todas las operaciones económicas y financieras de una organización o
                     individuo. Su propósito es ofrecer información clara, precisa y útil para la toma de decisiones, el
                     control de recursos y el cumplimiento de obligaciones legales y fiscales.
@@ -177,7 +177,7 @@ onBeforeUnmount(() => {
 
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">¿Quién puede llevar la
                         contabilidad de una empresa?</h5>
-                    <p class="font-normal text-gray-800 text-center">Un contador público titulado o un profesional
+                    <p class="colorne font-normal text-gray-800 text-center">Un contador público titulado o un profesional
                         capacitado en contabilidad. Las pequeñas empresas pueden apoyarse en asesores o software
                         contable.</p>
                 </div>
@@ -193,7 +193,7 @@ onBeforeUnmount(() => {
                     <h5 class="mb-2 text-2xl font-bold tracking-tight  text-[#150484] text-center">¿Qué es el estado de
                         resultados?
                     </h5>
-                    <p class="font-normal text-gray-800 text-center">Es un informe contable que muestra las ganancias o
+                    <p class="colorne font-normal text-gray-800 text-center">Es un informe contable que muestra las ganancias o
                         pérdidas de una empresa durante un periodo determinado, considerando ingresos y gastos.</p>
                 </div>
                 <div
@@ -209,7 +209,7 @@ onBeforeUnmount(() => {
 
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">¿La contabilidad es
                         solo para empresas grandes?</h5>
-                    <p class="font-normal text-gray-800 text-center">No. Toda actividad económica, por pequeña que sea,
+                    <p class="colorne font-normal text-gray-800 text-center">No. Toda actividad económica, por pequeña que sea,
                         se beneficia del control contable para ser más eficiente y cumplir con las leyes.</p>
                 </div>
 
@@ -225,7 +225,7 @@ onBeforeUnmount(() => {
                 <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Origen y evolución de la
                     contabilidad
                 </h2>
-                <p class="mb-6 font-normal text-gray-900 md:text-lg">
+                <p class="colorne mb-6 font-normal text-gray-900 md:text-lg">
                     La historia de la contabilidad se remonta a las civilizaciones antiguas, como la egipcia,
                     mesopotámica y romana, donde ya se llevaban registros básicos de bienes y transacciones. Sin
                     embargo, fue en el siglo XV cuando el monje franciscano Luca Pacioli sistematizó el método de
@@ -486,7 +486,7 @@ onBeforeUnmount(() => {
             <div class="mt-4 md:mt-0">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Perfil del Estudiante
                 </h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">El perfil de un estudiante de contabilidad se
+                <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">El perfil de un estudiante de contabilidad se
                     caracteriza por una combinación de habilidades analíticas, atención al detalle y capacidad para
                     interpretar información financiera. Este perfil requiere conocimientos sólidos en normas contables,
                     capacidad para manejar datos numéricos con precisión, y competencias para asesorar en la gestión

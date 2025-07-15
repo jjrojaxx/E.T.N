@@ -153,7 +153,7 @@ onBeforeUnmount(() => {
                 <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Que es la
                     Telematica?
                 </h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">El concepto de telemática refiere a la combinación
+                <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">El concepto de telemática refiere a la combinación
                     de la informática y de la tecnología de la comunicación para el envío y la recepción de datos. La
                     noción se asocia a diferentes técnicas, procesos, conocimientos y dispositivos propios de las
                     telecomunicaciones y de la computación.</p>
@@ -177,7 +177,7 @@ onBeforeUnmount(() => {
                     </svg>
 
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#150484]">Plano del usuario</h5>
-                    <p class="font-normal text-gray-800 text-center">Procesa y distribuye la
+                    <p class="colorne font-normal text-gray-800 text-center">Procesa y distribuye la
                         información que
                         llega al usuario final</p>
                 </div>
@@ -193,7 +193,7 @@ onBeforeUnmount(() => {
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#150484] text-center">Plano de señalización
                         y control
                     </h5>
-                    <p class="font-normal text-gray-800 text-center">Maneja la comunicación entre el sistema y el
+                    <p class="colorne font-normal text-gray-800 text-center">Maneja la comunicación entre el sistema y el
                         usuario para decisiones efectivas</p>
                 </div>
                 <div
@@ -208,7 +208,7 @@ onBeforeUnmount(() => {
 
 
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#150484]">Plano de gestión</h5>
-                    <p class="font-normal text-gray-800 text-center">Administra la información operativa y la relación
+                    <p class="colorne font-normal text-gray-800 text-center">Administra la información operativa y la relación
                         con operadores de red</p>
                 </div>
 
@@ -476,7 +476,7 @@ onBeforeUnmount(() => {
             <div class="mt-4 md:mt-0">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Perfil del Estudiante
                 </h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">El perfil de un estudiante de telemática se
+                <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">El perfil de un estudiante de telemática se
                     caracteriza por una combinación de intereses, habilidades y aptitudes que le permiten desenvolverse
                     con éxito en este campo multidisciplinario. La telemática, que fusiona la informática y las
                     telecomunicaciones, requiere un conjunto específico de cualidades en sus estudiantes.</p>

@@ -151,7 +151,7 @@ const obtenerMensaje = () => {
                 <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Que es la
                     Aduana?
                 </h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">Una aduana es una oficina pública ubicada en puntos
+                <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">Una aduana es una oficina pública ubicada en puntos
                     estratégicos como puertos, aeropuertos, fronteras o estaciones ferroviarias, encargada de controlar
                     el tráfico de mercancías que ingresan y salen de un país. Su función principal es verificar y
                     fiscalizar estas mercancías, asegurando el cumplimiento de las leyes vigentes.</p>
@@ -176,7 +176,7 @@ const obtenerMensaje = () => {
 
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">Regular el comercio
                         exterior</h5>
-                    <p class="font-normal text-gray-800 text-center"> Controlan y supervisan el movimiento de bienes
+                    <p class="colorne font-normal text-gray-800 text-center"> Controlan y supervisan el movimiento de bienes
                         importados y exportados para garantizar el cumplimiento de las normativas.</p>
                 </div>
                 <div
@@ -191,7 +191,7 @@ const obtenerMensaje = () => {
                     <h5 class="mb-2 text-2xl font-bold tracking-tight  text-[#150484] text-center"> Cobro de impuestos y
                         aranceles
                     </h5>
-                    <p class="font-normal text-gray-800 text-center"> Recaudan los tributos correspondientes a las
+                    <p class="colorne font-normal text-gray-800 text-center"> Recaudan los tributos correspondientes a las
                         operaciones de comercio internacional.</p>
                 </div>
                 <div
@@ -207,7 +207,7 @@ const obtenerMensaje = () => {
 
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">Prevención de
                         productos ilegales</h5>
-                    <p class="font-normal text-gray-800 text-center"> Impiden la entrada y salida de mercancías
+                    <p class="colorne font-normal text-gray-800 text-center"> Impiden la entrada y salida de mercancías
                         prohibidas como drogas, armas y otros productos ilegales.</p>
                 </div>
 
@@ -223,7 +223,7 @@ const obtenerMensaje = () => {
                 <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Origen e historia de la
                     Aduana
                 </h2>
-                <p class="mb-6 font-normal text-gray-900 md:text-lg">
+                <p class="colorne mb-6 font-normal text-gray-900 md:text-lg">
                     Las aduanas tienen su origen en <strong>la antigüedad</strong>, cuando las civilizaciones comenzaron
                     a comerciar bienes a través de fronteras territoriales. Ya en el Imperio Romano existían sistemas de
                     control y cobro de impuestos sobre mercancías que cruzaban sus límites. El concepto moderno de
@@ -463,7 +463,7 @@ const obtenerMensaje = () => {
             <div class="mt-4 md:mt-0">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Perfil del Estudiante
                 </h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">El estudiante de aduanas se distingue por una
+                <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">El estudiante de aduanas se distingue por una
                     combinación de conocimientos, habilidades y competencias que le permiten desenvolverse eficazmente
                     en el ámbito del comercio internacional y la gestión aduanera. Este perfil requiere capacidad
                     analítica, atención al detalle, conocimientos legales y administrativos, así como habilidades para

@@ -168,7 +168,7 @@ const obtenerMensaje = () => {
                 <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Qué es un
                     Promotor de entrenamiento deportivo?
                 </h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">Un Promotor de Entrenamiento Deportivo es un
+                <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">Un Promotor de Entrenamiento Deportivo es un
                     profesional capacitado para organizar, coordinar e impulsar actividades físicas y deportivas en
                     comunidades, instituciones educativas o centros recreativos. Su labor está enfocada en fomentar el
                     ejercicio, el bienestar físico y los hábitos saludables en personas de todas las edades, adaptando
@@ -197,7 +197,7 @@ const obtenerMensaje = () => {
 
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]"> Conocimiento técnico
                         y pedagógico</h5>
-                    <p class="font-normal text-gray-800 text-center"> Posee formación sólida en entrenamiento deportivo,
+                    <p class="colorne font-normal text-gray-800 text-center"> Posee formación sólida en entrenamiento deportivo,
                         anatomía, nutrición y didáctica, lo que le permite planificar sesiones seguras y efectivas
                         adaptadas a las necesidades de cada población.
                     </p>
@@ -213,7 +213,7 @@ const obtenerMensaje = () => {
 
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#150484] text-center">Liderazgo y motivación
                     </h5><br>
-                    <p class="font-normal text-gray-800 text-center">Es un agente de cambio que guía e inspira a otros a
+                    <p class="colorne font-normal text-gray-800 text-center">Es un agente de cambio que guía e inspira a otros a
                         adoptar estilos de vida saludables, fomentando la disciplina, el trabajo en equipo y la
                         perseverancia a través del deporte.</p>
 
@@ -231,7 +231,7 @@ const obtenerMensaje = () => {
 
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#150484] text-center">Fomento de la
                         actividad física</h5>
-                    <p class="font-normal text-gray-800 text-center">El Promotor Deportivo diseña, organiza y ejecuta
+                    <p class="colorne font-normal text-gray-800 text-center">El Promotor Deportivo diseña, organiza y ejecuta
                         actividades físicas y recreativas orientadas a mejorar la salud, la condición física y la
                         integración social de diferentes grupos de personas.</p>
                 </div>
@@ -246,7 +246,7 @@ const obtenerMensaje = () => {
             <div class="mt-4 md:mt-0 w-full">
                 <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Origen y evolución del rol
                     del promotor deportivo</h2>
-                <p class="mb-6 font-normal text-gray-900 md:text-lg">
+                <p class="colorne mb-6 font-normal text-gray-900 md:text-lg">
                     El rol del promotor deportivo surgió con la necesidad de democratizar el acceso al deporte y mejorar
                     la calidad de vida de las poblaciones mediante la actividad física. A partir del siglo XX, con el
                     crecimiento del deporte escolar, comunitario y profesional, se hizo evidente la necesidad de contar
@@ -530,7 +530,7 @@ const obtenerMensaje = () => {
             <div class="mt-4 md:mt-0">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Perfil del Estudiante
                 </h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">El estudiante de promoción de entrenamiento
+                <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">El estudiante de promoción de entrenamiento
                     deportivo se caracteriza por poseer una combinación de intereses y habilidades relacionadas con la
                     salud, el deporte y la actividad física. Este perfil requiere conocimientos sólidos sobre el
                     funcionamiento del cuerpo humano, técnicas de entrenamiento, motivación, y capacidad para diseñar y

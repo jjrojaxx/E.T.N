@@ -150,7 +150,7 @@ onBeforeUnmount(() => {
             <div class="mt-4 md:mt-0">
                 <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Qué es el turismo?
                 </h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">El turismo es el conjunto de actividades y servicios relacionados con las personas que viajan voluntaria y temporalmente a lugares distintos a su residencia habitual. Cada año, más de mil millones de turistas recorren el mundo, impulsando una industria fundamental para la economía global.</p>           
+                <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">El turismo es el conjunto de actividades y servicios relacionados con las personas que viajan voluntaria y temporalmente a lugares distintos a su residencia habitual. Cada año, más de mil millones de turistas recorren el mundo, impulsando una industria fundamental para la economía global.</p>           
             </div>
         </div>
     </section>
@@ -169,7 +169,7 @@ onBeforeUnmount(() => {
                     </svg>
 
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">Consecuencias positivas</h5>
-                    <p class="font-normal text-gray-800 text-center"> El turismo impulsa la economía al incrementar ingresos y generar empleo. Además, es clave para la promoción del intercambio cultural y social entre naciones
+                    <p class="colorne font-normal text-gray-800 text-center"> El turismo impulsa la economía al incrementar ingresos y generar empleo. Además, es clave para la promoción del intercambio cultural y social entre naciones
                      </p>
                 </div>
                 <div class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
@@ -182,7 +182,7 @@ onBeforeUnmount(() => {
 
                     <h5 class="mb-2 text-2xl font-bold tracking-tight  text-[#150484] text-center">Consecuencias negativas
                     </h5>
-                    <p class="font-normal text-gray-800 text-center">El turismo puede causar gentrificación y presión sobre los servicios públicos, además de generar un impacto ambiental por residuos y alteración de ecosistemas.</p>
+                    <p class="colorne font-normal text-gray-800 text-center">El turismo puede causar gentrificación y presión sobre los servicios públicos, además de generar un impacto ambiental por residuos y alteración de ecosistemas.</p>
                 </div>
             </div>
 
@@ -194,7 +194,7 @@ onBeforeUnmount(() => {
             <div class="mt-4 md:mt-0 w-full">
                 <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Origen e historia del turismo
                 </h2>
-                <p class="mb-6 font-normal text-gray-900 md:text-lg">
+                <p class="colorne mb-6 font-normal text-gray-900 md:text-lg">
                    Aunque el término “turismo” proviene del francés tour, usado en el siglo XVII para describir viajes educativos de jóvenes aristócratas, el fenómeno tiene raíces mucho más antiguas. En la Antigüedad grecorromana ya existían viajes organizados con fines culturales y religiosos. Durante la Revolución Industrial, la mejora en medios de transporte popularizó el turismo masivo.
                 </p>
             </div>
@@ -442,7 +442,7 @@ onBeforeUnmount(() => {
             <img class="w-full rounded-xl hidden dark:block" src="../../assets/img/turismo2.jpg" alt="dashboard image">
             <div class="mt-4 md:mt-0">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Perfil del Estudiante</h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">El estudiante de turismo se caracteriza por poseer una combinación de habilidades sociales, culturales y organizativas que le permiten desenvolverse con éxito en el sector turístico. Este perfil requiere interés por la cultura, capacidad de comunicación, atención al cliente, y habilidades para la gestión de servicios y recursos turísticos en un entorno dinámico y globalizado.</p>
+                <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">El estudiante de turismo se caracteriza por poseer una combinación de habilidades sociales, culturales y organizativas que le permiten desenvolverse con éxito en el sector turístico. Este perfil requiere interés por la cultura, capacidad de comunicación, atención al cliente, y habilidades para la gestión de servicios y recursos turísticos en un entorno dinámico y globalizado.</p>
             </div>
         </div>
     </section>

@@ -150,7 +150,7 @@ onBeforeUnmount(() => {
                 <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Que es la
                     Electricidad?
                 </h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">La electricidad es un conjunto de fenómenos físicos
+                <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">La electricidad es un conjunto de fenómenos físicos
                     relacionados con la presencia y movimiento de cargas eléctricas. Estos fenómenos
                     incluyen la carga eléctrica, la corriente eléctrica, los campos eléctricos, el potencial eléctrico y
                     el magnetismo.
@@ -179,7 +179,7 @@ onBeforeUnmount(() => {
 
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">Corriente continua
                         (CC)</h5>
-                    <p class="font-normal text-gray-800 text-center">Flujo constante en una sola dirección, usada en
+                    <p class="colorne font-normal text-gray-800 text-center">Flujo constante en una sola dirección, usada en
                         baterías y electrónica.</p>
                 </div>
                 <div
@@ -194,7 +194,7 @@ onBeforeUnmount(() => {
                     <h5 class="mb-2 text-2xl font-bold tracking-tight  text-[#150484] text-center">Corriente alterna
                         (CA)
                     </h5>
-                    <p class="font-normal text-gray-800 text-center">Cambia de dirección periódicamente, usada en redes
+                    <p class="colorne font-normal text-gray-800 text-center">Cambia de dirección periódicamente, usada en redes
                         eléctricas domésticas e industriales.</p>
                 </div>
             </div>
@@ -208,7 +208,7 @@ onBeforeUnmount(() => {
             <div class="mt-4 md:mt-0 w-full">
                 <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Origen de la electricidad
                 </h2>
-                <p class="mb-6 font-normal text-gray-900 md:text-lg">
+                <p class="colorne mb-6 font-normal text-gray-900 md:text-lg">
                     Desde la antigüedad, la electricidad ha sido observada en fenómenos naturales como los relámpagos y
                     animales eléctricos. Los antiguos griegos descubrieron la electricidad estática hace más de 2,500
                     años al frotar ámbar.
@@ -475,7 +475,7 @@ onBeforeUnmount(() => {
             <div class="mt-4 md:mt-0">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Perfil del Estudiante
                 </h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">El estudiante de electricidad se caracteriza por
+                <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">El estudiante de electricidad se caracteriza por
                     una combinación de habilidades técnicas, analíticas y prácticas que le permiten diseñar, instalar,
                     mantener y supervisar sistemas eléctricos en diferentes ámbitos. Este perfil requiere conocimientos
                     sólidos en electricidad, electrónica y seguridad, así como capacidad para resolver problemas y

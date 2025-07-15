@@ -148,7 +148,7 @@ const obtenerMensaje = () => {
                 <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Que es la
                     Administración?
                 </h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">La administración es una ciencia social que estudia cómo planificar, organizar, dirigir y controlar los recursos humanos, financieros y materiales en organizaciones humanas, con el fin de alcanzar objetivos específicos y obtener el mayor beneficio posible.</p>
+                <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">La administración es una ciencia social que estudia cómo planificar, organizar, dirigir y controlar los recursos humanos, financieros y materiales en organizaciones humanas, con el fin de alcanzar objetivos específicos y obtener el mayor beneficio posible.</p>
             </div>
         </div>
     </section>
@@ -168,7 +168,7 @@ const obtenerMensaje = () => {
                     </svg>
 
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">Privada</h5>
-                    <p class="font-normal text-gray-800 text-center"> Busca organizar recursos de empresas para obtener beneficios económicos. Su meta es ser rentable y competitiva en el mercado. Se financia con capital privado y toma decisiones enfocadas en la eficiencia y las ganancias.</p>
+                    <p class="colorne font-normal text-gray-800 text-center"> Busca organizar recursos de empresas para obtener beneficios económicos. Su meta es ser rentable y competitiva en el mercado. Se financia con capital privado y toma decisiones enfocadas en la eficiencia y las ganancias.</p>
                 </div>
                 <div
                     class="border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4 flex flex-col items-center w-full md:w-1/3 lg:w-1/4">
@@ -181,7 +181,7 @@ const obtenerMensaje = () => {
 
                     <h5 class="mb-2 text-2xl font-bold tracking-tight  text-[#150484] text-center"> Pública
                     </h5>
-                    <p class="font-normal text-gray-800 text-center"> Se enfoca en gestionar recursos del Estado para el bien común. Su objetivo principal es ofrecer servicios a la sociedad, como salud, educación o seguridad. Está financiada con dinero público y guiada por leyes y normas.</p>
+                    <p class="colorne font-normal text-gray-800 text-center"> Se enfoca en gestionar recursos del Estado para el bien común. Su objetivo principal es ofrecer servicios a la sociedad, como salud, educación o seguridad. Está financiada con dinero público y guiada por leyes y normas.</p>
                 </div>
                 
             </div>
@@ -195,7 +195,7 @@ const obtenerMensaje = () => {
             <div class="mt-4 md:mt-0 w-full">
                 <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Origen de la administración
                 </h2>
-                <p class="mb-6 font-normal text-gray-900 md:text-lg">
+                <p class="colorne mb-6 font-normal text-gray-900 md:text-lg">
                    La administración ha existido desde las primeras civilizaciones, cuando fue necesario coordinar la producción y distribución de bienes. Ejemplos históricos incluyen las reglas burocráticas de Confucio en China, las Leyes de Manu en la India antigua y la República de Platón en Grecia.
                    Como disciplina formal, la administración surgió en el siglo XVIII con la Revolución Industrial, consolidándose con las teorías de Henry Fayol, padre de la administración clásica, y Frederick Taylor, padre de la administración científica.
                 </p>
@@ -461,7 +461,7 @@ const obtenerMensaje = () => {
             <div class="mt-4 md:mt-0">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Perfil del Estudiante
                 </h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">El estudiante de administración se caracteriza por tener una combinación de habilidades analíticas, organizativas y de liderazgo que le permiten gestionar eficientemente recursos humanos, financieros y materiales en diferentes tipos de organizaciones. Este perfil requiere competencias en planificación, toma de decisiones, comunicación efectiva y adaptación a entornos dinámicos y competitivos.</p>
+                <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">El estudiante de administración se caracteriza por tener una combinación de habilidades analíticas, organizativas y de liderazgo que le permiten gestionar eficientemente recursos humanos, financieros y materiales en diferentes tipos de organizaciones. Este perfil requiere competencias en planificación, toma de decisiones, comunicación efectiva y adaptación a entornos dinámicos y competitivos.</p>
             </div>
         </div>
     </section>
