@@ -149,7 +149,7 @@ onBeforeUnmount(() => {
                 <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">¿Que es la
                     Economia Digital?
                 </h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">La economía digital se refiere al uso intensivo de
+                <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">La economía digital se refiere al uso intensivo de
                     las tecnologías de la información y comunicación (TIC) en la producción, comercialización y consumo
                     de bienes y servicios. Este modelo transforma industrias tradicionales y genera nuevos modelos de
                     negocio basados en la conectividad global y la digitalización.
@@ -177,7 +177,7 @@ onBeforeUnmount(() => {
 
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-[#150484]">Infraestructura
                         tecnológica</h5>
-                    <p class="font-normal text-gray-800 text-center">Incluye hardware, software y talento humano
+                    <p class=" colorne font-normal text-gray-800 text-center">Incluye hardware, software y talento humano
                         especializado que sostiene el funcionamiento de los negocios digitales.</p>
                 </div>
                 <div
@@ -191,7 +191,7 @@ onBeforeUnmount(() => {
 
                     <h5 class="mb-2 text-2xl font-bold tracking-tight  text-[#150484] text-center">Negocio electrónico
                     </h5>
-                    <p class="font-normal text-gray-800 text-center">Se refiere a la gestión y operación de procesos
+                    <p class="colorne font-normal text-gray-800 text-center">Se refiere a la gestión y operación de procesos
                         mediante plataformas digitales y herramientas informáticas.</p>
                 </div>
                 <div
@@ -205,7 +205,7 @@ onBeforeUnmount(() => {
 
                     <h5 class="mb-2 text-2xl font-bold tracking-tight  text-[#150484] text-center">Comercio electrónico
                     </h5>
-                    <p class="font-normal text-gray-800 text-center">La compra y venta de productos y servicios a través
+                    <p class="colorne font-normal text-gray-800 text-center">La compra y venta de productos y servicios a través
                         de Internet, facilitando transacciones rápidas y seguras.</p>
                 </div>
             </div>
@@ -220,7 +220,7 @@ onBeforeUnmount(() => {
                 <h2 class="mb-4 text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 ">Sectores transformados por
                     la economía digital
                 </h2>
-                <p class="mb-6 font-normal text-gray-900 md:text-lg">
+                <p class="colorne mb-6 font-normal text-gray-900 md:text-lg">
                     Sectores tradicionales como la agricultura están incorporando tecnologías digitales que permiten
                     monitoreo remoto, análisis de datos en tiempo real y gestión eficiente de recursos, mejorando la
                     productividad y sostenibilidad.
@@ -447,7 +447,7 @@ onBeforeUnmount(() => {
             <div class="mt-4 md:mt-0">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Perfil del Estudiante
                 </h2>
-                <p class="mb-6 font-normal text-gray-500 md:text-lg">El estudiante de economía digital se caracteriza
+                <p class="colorblan mb-6 font-normal text-gray-500 md:text-lg">El estudiante de economía digital se caracteriza
                     por combinar conocimientos en economía, tecnología y análisis de datos, lo que le permite comprender
                     y aprovechar las oportunidades que ofrecen las plataformas digitales y los nuevos modelos de
                     negocio. Este perfil requiere habilidades analíticas, capacidad para la innovación, manejo de
